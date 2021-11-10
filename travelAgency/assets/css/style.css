@@ -179,11 +179,12 @@ a {
 
 .probootstrap-thumbnail {
   position: relative;
+  text-decoration: none;
   display: block;
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  opacity: 1; }
+  opacity: 1;}
   .probootstrap-thumbnail.sleep {
     opacity: .5; }
   .probootstrap-thumbnail img {
@@ -204,7 +205,8 @@ a {
     transition: .2s all ease;
     opacity: 0;
     visibility: hidden;
-    bottom: 30px; }
+    bottom: 30px;
+    color: #000; }
     @media (max-width: 991px) {
       .probootstrap-thumbnail h3 {
         font-size: 24px;
@@ -553,3 +555,5 @@ a {
 #section-services{
       border-top: 1px solid #e6e6e6;
 }
+
+.carousel-item { align-self: center;}
