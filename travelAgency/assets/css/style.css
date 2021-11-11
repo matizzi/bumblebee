@@ -253,7 +253,7 @@ a {
   position: relative; }
   .probootstrap_select-wrap:before {
     font-family: 'Ionicons';
-    speak: none;
+    speak-as: none;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -292,6 +292,31 @@ a {
           padding: 3em; } }
       @media (max-width: 991px) {
         .probootstrap-section-half .probootstrap-text .probootstrap-inner {
+          padding-left: 15px;
+          padding-right: 15px; } }
+
+.probootstrap-section-half1 {
+  width: 100%; }
+  .probootstrap-section-half1 .probootstrap-image,
+  .probootstrap-section-half1 .probootstrap-text {
+    width: 100%; 
+    padding: 3}
+    @media (max-width: 991px) {
+      .probootstrap-section-half1 .probootstrap-image,
+      .probootstrap-section-half1 .probootstrap-text {
+        width: 100%; } }
+  @media (max-width: 767px) {
+    .probootstrap-section-half1 .probootstrap-image {
+      height: 400px; } }
+  .probootstrap-section-half1 .probootstrap-text {
+    background: #ECECEC; }
+    .probootstrap-section-half1 .probootstrap-text .probootstrap-inner {
+      padding: 7em; }
+      @media (max-width: 991px) {
+        .probootstrap-section-half1 .probootstrap-text .probootstrap-inner {
+          padding: 3em; } }
+      @media (max-width: 991px) {
+        .probootstrap-section-half1 .probootstrap-text .probootstrap-inner {
           padding-left: 15px;
           padding-right: 15px; } }
 
@@ -569,5 +594,4 @@ a {
   height: 20px;
 }
 
-#probootstrap-navbar-paris {color:rgba(248, 244, 0, 0.863); } }
-;}
+#probootstrap-navbar-paris {color:rgba(248, 244, 0, 0.863); }
