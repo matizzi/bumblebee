@@ -120,8 +120,11 @@ a {
         padding: .5em 0; } }
     .probootstrap_navbar .nav-item .nav-link.active {
       color: #fff; }
+    .probootstrap_navbar.scrolled .nav-link.active {
+      color: #000 ; font-weight: bold;
+    }
   .probootstrap_navbar.scrolled {
-    background: rgba(255, 251, 0, 0.8);
+    background: rgba(255, 238, 0, 0.8);
     position: fixed;
     right: 0;
     left: 0;
@@ -559,4 +562,13 @@ a {
       border-top: 1px solid #e6e6e6;
 }
 
-.carousel-item { align-self: center;}
+.carousel-item {align-self: center;}
+
+#section-paris {background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 72px;
+  height: 20px;
+}
+
+#probootstrap-navbar-paris {color:rgba(248, 244, 0, 0.863); } }
+;}
+
