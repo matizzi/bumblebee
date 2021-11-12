@@ -295,30 +295,24 @@ a {
           padding-left: 15px;
           padding-right: 15px; } }
 
-.probootstrap-section-half1 {
-  width: 100%; }
-  .probootstrap-section-half1 .probootstrap-image,
-  .probootstrap-section-half1 .probootstrap-text {
-    width: 100%; 
-    padding: 3}
-    @media (max-width: 991px) {
-      .probootstrap-section-half1 .probootstrap-image,
-      .probootstrap-section-half1 .probootstrap-text {
-        width: 100%; } }
-  @media (max-width: 767px) {
-    .probootstrap-section-half1 .probootstrap-image {
-      height: 400px; } }
-  .probootstrap-section-half1 .probootstrap-text {
-    background: #ECECEC; }
-    .probootstrap-section-half1 .probootstrap-text .probootstrap-inner {
-      padding: 7em; }
-      @media (max-width: 991px) {
-        .probootstrap-section-half1 .probootstrap-text .probootstrap-inner {
-          padding: 3em; } }
-      @media (max-width: 991px) {
-        .probootstrap-section-half1 .probootstrap-text .probootstrap-inner {
-          padding-left: 15px;
-          padding-right: 15px; } }
+  
+  .probootstrap-section-half1 .probootstrap-text1 {
+    background: #ECECEC;
+    text-align: center; 
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+
+  .probootstrap-section-half2 .probootstrap-text2 {
+    text-align: center; 
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+
 
 .probootstrap_section {
   padding: 7em 0;
@@ -326,6 +320,7 @@ a {
   width: 100%; }
   .probootstrap_section.bg-light {
     background: #ECECEC !important; }
+
 
 .probootstrap_feature-v1 {
   padding: 3em;
