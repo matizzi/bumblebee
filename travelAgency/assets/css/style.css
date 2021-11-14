@@ -91,11 +91,16 @@ a {
     content: "";
     background: rgba(0, 0, 0, 0.4); }
 
-.navbar-brand  {
+
+.probootstrap_navbar #navbar-brand  {
+  color: yellow;
   text-transform: uppercase;
-  letter-spacing: .3em; }
+  letter-spacing: .3em;
+}
 
-
+.probootstrap_navbar.scrolled #navbar-brand  {
+  color: white;
+}
 
 .navbar-toggler span i {
   font-size: 30px; }
@@ -120,11 +125,8 @@ a {
         padding: .5em 0; } }
     .probootstrap_navbar .nav-item .nav-link.active {
       color: #fff; }
-    .probootstrap_navbar.scrolled .nav-link.active {
-      color: #000 ; font-weight: bold;
-    }
   .probootstrap_navbar.scrolled {
-    background: rgba(255, 238, 0, 0.8);
+    background: rgba(255, 238, 0, 0.95);
     position: fixed;
     right: 0;
     left: 0;
@@ -132,7 +134,15 @@ a {
     margin-top: -130px; }
     .probootstrap_navbar.scrolled .nav-item .nav-link {
       padding: .5em 1em;
-      color: #000; }
+      color: rgb(87, 86, 86); }
+    .probootstrap_navbar.scrolled .nav-item .nav-link.active {
+      font-weight: bold;
+      color: rgb(19, 19, 19);
+    }
+    .probootstrap_navbar.scrolled .nav-item .nav-link:hover:not(.active) {
+      /* color: black; */
+      text-shadow: 0 0 1px #000000;
+    }
     .probootstrap_navbar.scrolled.awake {
       margin-top: 0px;
       -webkit-transition: .3s all ease-out;
@@ -590,3 +600,12 @@ a {
 }
 
 #probootstrap-navbar-paris {color:rgba(248, 244, 0, 0.863); }
+
+
+.my_mb_80{
+  margin-bottom: 80px;
+}
+
+.navbar-simple{
+  background-color: rgb(71, 71, 71);
+}
