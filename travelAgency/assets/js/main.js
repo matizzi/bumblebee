@@ -172,15 +172,5 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
   	});
   }
   ThumbnailOpacity();
-
-  var datePicker = function() {
-		$('#probootstrap-date-departure, #probootstrap-date-arrival').datepicker({
-		  'format': 'm/d/yyyy',
-		  'autoclose': true
-		});
-	};
-	datePicker();
-
-
 });
 
