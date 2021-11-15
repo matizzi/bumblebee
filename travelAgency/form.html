@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Places &mdash; Free HTML5 Bootstrap 4 Theme by ProBootstrap.com</title>
+    <meta name="description" content="Free Bootstrap 4 Theme by ProBootstrap.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    
+    <link rel="stylesheet" href="assets/fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="assets/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="assets/css/select2.css">
+    
+
+    <link rel="stylesheet" href="assets/css/helpers.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+  </head>
+  <body data-spy="scroll" data-target="#probootstrap-navbar" data-offset="200">
+  
+
+    <nav class="navbar navbar-expand-lg navbar-dark probootstrap_navbar" id="probootstrap-navbar">
+      <div class="container">
+        <a id="navbar-brand" class="navbar-brand" href="/travelAgency/index.html">Bumblebee</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#probootstrap-menu" aria-controls="probootstrap-menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i class="ion-navicon"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="probootstrap-menu">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#section-city-guides">Cities</a></li>
+            <li class="nav-item"><a class="nav-link" href="#section-services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#section-travel">Experiences</a></li>
+            <li class="nav-item"><a class="nav-link" href="#section-contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+
+    <section class="probootstrap-cover overflow-hidden relative" id="section-form">
+        <form id="form">
+            <div class="form" id="formPart1">
+                <div>                  
+                    <label for="depcity">Select the departure city</label>
+                    <select id="depcity" name="depcity">
+                    <option value="porto">Porto</option>
+                    <option value="lisboa">Lisbon</option>
+                    <option value="faro">Faro</option>
+                    <option value="barcelona">Barcelona</option>
+                    <option value="palmademallorca">Palma de Mallorca</option>
+                    <option value="malaga">Malaga</option>
+                    <option value="alicante">Alicante</option>
+                    </select>
+            
+                    <label for="depcity">Select the destination city</label>
+                    <select id="depcity" name="depcity">
+                    <option value="paris">Paris</option>
+                    <option value="lisboa">Lisbon</option>
+                    <option value="stockholm">Stockholm</option>
+                    <option value="london">London</option>
+                    </select>
+
+                    <label for="departure">Select departure day:</label>
+                    <input type="date" id="departure" name="departure">
+            
+                    <p><a href="formpass.html" class="btn btn-primary">Next</a></p>
+                </div>
+            </div>
+            <div class="form" id="formPart2" style="display:none;">
+                <div>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <p></p>
+                    
+                    <p>Gender</p>
+                    <input type="radio" id="fem" name="gender" value="feminine">
+                    <label for="fem">Feminine</label><br>
+                    <input type="radio" id="masc" name="gender" value="masculine">
+                    <label for="masc">Masculine</label><br>
+            
+                    <label for="email">Enter your email:</label>
+                    <input type="email" id="email" name="email">
+            
+                    <label for="phone">Enter your phone number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p>If you are travelling with someone, fill in the fields below (according to your pack) </p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <button id="addPersonBtn"> Adicionar Pessoa </button>
+                    <div id="persons"></div>             
+            
+                    <p><a href="formdest.html" class="btn btn-primary">Previous</a></p>
+                    <p><a href="formdest.html" class="btn btn-primary">Next</a></p>
+                    <input type="submit" value="Submit">
+                    
+                    <input type="reset">
+                </div>
+            </div>
+            <div class="form" id="formPart3" style="display:none;"></div>
+        </form>
+    </footer>
+
+    
+    <script src="assets/js/jquery.min.js"></script>
+    
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    
+    <script src="assets/js/bootstrap-datepicker.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+
+    <script src="assets/js/select2.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/form.js"></script>
+
+    <script>
+      var datePicker = function() {
+        $('#probootstrap-date-departure, #probootstrap-date-arrival').datepicker({
+          'format': 'm/d/yyyy',
+          'autoclose': true
+        });
+      };
+      datePicker();
+    </script>
+  </body>
+</html>
