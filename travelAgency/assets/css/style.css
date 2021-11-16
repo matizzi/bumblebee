@@ -160,7 +160,7 @@ a {
   .border-bottom:after {
     width: 50px;
     height: 2px;
-    background: #00CA4C;
+    background: rgba(255, 238, 0, 0.95);
     position: absolute;
     content: "";
     bottom: 0;
@@ -647,4 +647,31 @@ a {
   .text-monuments {
     text-align: center;
     padding-top: 10px;
+  }
+
+  
+.cidades-ver-mais {
+  padding: 15px 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-weight: 400;
+  background-color: rgba(255, 238, 0, 0.541);
+  margin:auto;
+  border-radius:5px;
+  color:black;
+  border-style:none;
+  box-shadow:2px 4px 6px rgba(0, 0, 0, 0.733);}
+  
+  .cidades-ver-mais:hover{
+    background-color: rgba(255, 238, 0, 0.95); }
+
+
+  .ver-mais-button{
+    text-decoration:none;
+    color: #000;
+  }    
+
+  .ver-mais-button:hover{
+    color: #000000;
   }
