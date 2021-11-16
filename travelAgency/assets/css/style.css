@@ -603,11 +603,6 @@ a {
 }
 
 .navbar-simple{
-<<<<<<< HEAD
-  background-color: rgb(71, 71, 71);
-}
-
-=======
   background-color: rgba(255, 238, 0, 0.95);
 }
 
@@ -643,4 +638,4 @@ a {
   .experiencias-cidades:hover{
     background-color: rgba(255, 238, 0, 0.95); }
 
->>>>>>> 124679be63f9a7f87a31909f0141f180fa391eb1
+
