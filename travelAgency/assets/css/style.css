@@ -595,12 +595,13 @@ a {
 
 .navbar-simple{
   background-color: rgba(255, 238, 0, 0.95);
+  height: 60px;
 }
 
 
 .city-title {
   color: rgb(0, 0, 0);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
   font-size: 80px;
 }
 
@@ -620,7 +621,7 @@ a {
   letter-spacing: .15em;
   font-weight: 400;
   background-color: rgba(255, 238, 0, 0.541);
-  margin: 30px 20px 20px 300px;
+  margin:30px 150px 100px;
   border-radius: 5px;
   color:black;
   border-style: none;
@@ -629,7 +630,21 @@ a {
   .experiencias-cidades:hover{
     background-color: rgba(255, 238, 0, 0.95); }
 
+
 .experiences-button{
-  text-decoration: none
-  ;
-}
+  text-decoration:none;
+  color: #000;
+}    
+  .experiences-button:hover{
+    text-decoration: none;
+    color: #000;
+  }
+
+  .monuments-title {
+    text-align: center;
+  }
+
+  .text-monuments {
+    text-align: center;
+    padding-top: 10px;
+  }
