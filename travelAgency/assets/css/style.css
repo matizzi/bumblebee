@@ -305,22 +305,13 @@ a {
           padding-right: 15px; } }
 
   
-  .probootstrap-section-half1 .probootstrap-text1 {
-    background: #ECECEC;
-    text-align: center; 
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
-    }
-
-  .probootstrap-section-half2 .probootstrap-text2 {
-    text-align: center; 
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
-    }
+.probootstrap-section-half1 {
+  text-align: center; 
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  }
 
 
 .probootstrap_section {
