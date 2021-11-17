@@ -118,7 +118,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 
   var owlCarouselFunc = function() {
 	  $('.js-owl-carousel').owlCarousel({
-	    loop : false,
+	    loop : true,
 	    margin : 20,
 	    nav : true,
 	    stagePadding : 50,
