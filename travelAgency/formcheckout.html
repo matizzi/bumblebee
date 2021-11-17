@@ -34,42 +34,29 @@
     <link rel="stylesheet" href="assets/css/helpers.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/form.css">
-    <!--
+
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+   
     <style>
-      input[type=text], select {
+      input{
         width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
+        margin: 3px 0;
         display: inline-block;
-        border: 1px solid #ccc;
+        border: 1px solid rgb(255, 255, 255);
         border-radius: 4px;
         box-sizing: border-box;
       }
       
-      input[type=submit] {
-        width: 100%;
-        background-color: #4CAF50;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-      
-      input[type=submit]:hover {
-        background-color: #45a049;
-      }
-      
-      div {
+      form {
         border-radius: 5px;
-        background-color: #f2f2f2;
+        background-color: rgb(248, 248, 239);
         padding: 20px;
+        text-align: center;
       }
-      </style>-->
-      <style type="text/css">
-        body{background-color:rgb(248, 248, 239);} 
+
       </style>
+
 	</head>
 	<body>
     <nav class="navbar navbar-expand-lg navbar-dark probootstrap_navbar navbar-simple" id="probootstrap-navbar-cidades">
@@ -89,48 +76,63 @@
       </div>
     </nav>
     <!-- END nav -->
+
+    <i class="fas fa-shopping-basket"></i>
+
     <section class="probootstrap_section" id="section-paris-intro">
       <div class="container">
         
-          <form name="formcheckout" action="/action_page.php" method="get">
+          <form name="formcheckout" action="/action_page.php" method="get" class="was.validated">
+            
             <div class="col-lg-12 mt-4">
                 <h5 class="text-uppercase mb-4">Data billing</h5>
                 <div class="row">
-                  <div class="col-md-2">
+                  <div class="col-md-6">
                     <label for="name">Name</label>
                   </div>
-                  <div class="col-md-10">
-                    <input type="text" id="name" name="firstandlastname" placeholder="Maria Oliveira" style="width: 300px;">
+                  <div class="col-md-6">
+                    <input type="text" id="name" maxlength="20" name="firstandlastname" placeholder="Maria Oliveira" style="width: 300px;" required>
                   </div>
                 </div>
 
                 <div class="row">
-                  <div class="col-md-2">
+                  <div class="col-md-6">
                     <label for="nif">NIF</label>
                   </div>
-                  <div class="col-md-10">
-                    <input type="nif" name="NIF" placeholder="123456789">
+                  <div class="col-md-6">
+                    <input type="nif" name="NIF" maxlength="9" placeholder="123456789" style="width: 300px;" required>
                   </div>
                 </div>
 
                 <div class="row">
-                  <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" placeholder="maria@email.com">
+                  <div class="col-md-6">
+                    <label class="label" for="email">Email:</label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="email" id="email" name="email" placeholder="maria@email.com" style="width: 300px;" input="required">
+                  </div>
                 </div>
 
                 <div class="row">
-                  <label for="phone">Phone number:</label>
-                  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="963256357">
+                  <div class="col-md-6">
+                    <label for="phone">Phone number:</label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="tel" id="phone" name="phone" placeholder="963256357" maxlength="9" style="width: 300px;" required>
+                  </div>
                 </div>
             </div>  
-            <p>You will receive in your mailbox the bill and payment methods available.</p>
+            
+            <p>Your bill will be send to your mailbox, as well as the payment methods available.</p>
 
-            <p>Conditions</p>
-            <input type="radio" id="conditions" name="conditions" value="agree">
-            <label for="conditions">I agree with <a href="termsandconditions.html">terms and conditions</a>. </label>
-      
+            <h5 class="text-uppercase mb-4">Conditions</h5>
+            <div class="row">
+              <input type="radio" id="conditions" name="conditions" value="agree" required>
+              <label for="conditions">I agree with <a href="termsandconditions.html">terms and conditions</a>. </label>
+            </div>
+
             <p><a href="formdest.html" class="btn btn-primary">Previous</a></p>
-            <button type="submit" class="btn btn-primary" form="formcheckout" value="Submit">Submit</button>
+            <button type="submit" class="btn btn-primary" value="Submit">Submit</button>
           </form>
       </div>
     </section>
@@ -146,13 +148,13 @@
   
             <div class="mt-4">
               <!-- Facebook -->
-              <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fa fa-facebook-f"></i></a>
+              <a type="button" class="btn btn-floating btn-light btn-lg" href="https://www.facebook.com"><i class="fa fa-facebook-f"></i></a>
               <!-- Instagram -->
-              <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fa fa-instagram"></i></a>
+              <a type="button" class="btn btn-floating btn-light btn-lg" href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
               <!-- Youtube -->
-              <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fa fa-youtube"></i></a>
+              <a type="button" class="btn btn-floating btn-light btn-lg" href="https://www.youtube.com"><i class="fa fa-youtube"></i></a>
               <!-- Whatsaap -->
-              <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fa fa-whatsapp"></i></a>
+              <a type="button" class="btn btn-floating btn-light btn-lg" href="https://www.whatsapp.com"><i class="fa fa-whatsapp"></i></a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
