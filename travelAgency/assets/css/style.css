@@ -46,7 +46,8 @@ a {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 7em 0; }
+  padding: 7em 0;
+  height: 450px; }
   .probootstrap-cover .overlay {
     position: absolute;
     background: rgba(0, 0, 0, 0.5);
@@ -57,7 +58,7 @@ a {
   .probootstrap-cover a:hover {
     color: #fff; }
   .probootstrap-cover h2 {
-    color: #fff; }
+    color: #fff;}
   .probootstrap-cover p {
     color: rgba(255, 255, 255, 0.7); }
   .probootstrap-cover > .container > .row {
@@ -391,7 +392,7 @@ a {
       box-shadow: none;
       -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
-      border: 1px solid #00CA4C; }
+      border: 1px solid rgba(255, 238, 0, 0.95); }
   .probootstrap-form .form-group:last-child {
     margin-bottom: 0;
     padding-bottom: 0; }
@@ -679,3 +680,28 @@ a {
   width: 100%;
 }
 
+
+#submit {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-weight: 400;
+  background-color: rgba(255, 238, 0, 0.541);
+  margin:40px 180px 100px;
+  border-radius: 5px;
+  color:black;
+  border-style: none;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.733);}
+  
+  #submit:hover{
+    background-color: rgba(255, 238, 0, 0.95); }
+
+
+#submit{
+  text-decoration:none;
+  color: #000;
+}    
+  #submit:hover{
+    text-decoration: none;
+    color: #000;
+  }
