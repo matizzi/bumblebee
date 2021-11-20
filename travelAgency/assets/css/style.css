@@ -314,6 +314,11 @@ a {
   padding-right: 50px;
   }
 
+.probootstrap_footer {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  float: left;
+  width: 100%; }
 
 .probootstrap_section {
   padding: 7em 0;
@@ -705,3 +710,98 @@ a {
     text-decoration: none;
     color: #000;
   }
+
+.probootstrap-cover-index{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 7em 0;
+  height: 650px; }
+  .probootstrap-cover-index .overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .probootstrap-cover-index a:hover {
+    color: #fff; }
+  .probootstrap-cover-index h2 {
+    color: #fff;}
+  .probootstrap-cover-index p {
+    color: rgba(255, 255, 255, 0.7); }
+  .probootstrap-cover-index > .container > .row {
+    padding: 7em 0; }
+
+  .title-row {
+    background-color: rgba(255, 255, 0, 0.123);
+    padding: 100px;
+    margin-top: 0px;
+  }
+
+  .contact-link {
+    text-decoration: none;
+  }
+
+.imagem-meio-about-us {
+  background-image: url(../images/about-us-2.jpeg);
+  background-position: center;
+  background-size: cover;
+  
+}
+ 
+.missao-valores {
+  height: 400px;
+}
+
+.missao{
+  padding: 50px;
+}
+
+.valores {
+  padding: 50px;
+}
+
+.footer-brand-icon {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.footer-brand-icon:hover {
+  color: white;
+  cursor: pointer;
+}
+
+
+.search {
+  width: 100%;
+  position: relative;
+  box-shadow: 0 0 40px rgba(51, 51, 51, .1)
+}
+
+.search input {
+  height: 60px;
+  text-indent: 25px;
+  border: 2px solid #d6d4d4;
+}
+
+.search input:focus {
+  box-shadow: none;
+  border: 2px solid rgba(255, 238, 0, 0.95);
+}
+
+.search .fa-search {
+  color: grey;
+  position: absolute;
+  top: 20px;
+  left: 16px
+}
+
+.search button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 50px;
+  width: 110px;
+}
