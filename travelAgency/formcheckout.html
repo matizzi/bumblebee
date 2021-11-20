@@ -26,7 +26,7 @@
     
     <link rel="stylesheet" href="assets/fonts/flaticon/font/flaticon.css">
 
-    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
 
     <link rel="stylesheet" href="assets/css/select2.css">
     
@@ -82,45 +82,47 @@
     <i class="fas fa-shopping-basket"></i>
 
     
-    <div class="container">
+    <div class="container mt-4 probootstrap-animate">
         
           <form name="formcheckout" action="/action_page.php" method="get" class="was.validated">
             
+            <i class="fas fa-shopping-basket fa-3x pt-5"></i>
+
             <div class="col-lg-12 pt-4 pb-5">
                 <h5 class="text-uppercase mb-4">Data billing</h5>
                 <div class="row mb-3">
-                  <div class="col-md-4">
+                  <div class="col-md-6">
                     <label for="name">Name</label>
                   </div>
-                  <div class="col-md-8">
-                    <input type="text" id="name" maxlength="20" name="firstandlastname" placeholder="Maria Oliveira" style="width: 500px;" required>
+                  <div class="col-md-6">
+                    <input type="text" id="name" maxlength="20" name="firstandlastname" placeholder="Maria Oliveira" style="width: 400px;" required>
                   </div>
                 </div>
 
                 <div class="row mb-3">
-                  <div class="col-md-4">
+                  <div class="col-md-6">
                     <label for="nif">NIF</label>
                   </div>
-                  <div class="col-md-8">
-                    <input type="nif" name="NIF" maxlength="9" placeholder="123456789" style="width: 500px;" required>
+                  <div class="col-md-6">
+                    <input type="nif" name="NIF" maxlength="9" placeholder="123456789" style="width: 400px;" required>
                   </div>
                 </div>
 
                 <div class="row mb-3">
-                  <div class="col-md-4">
+                  <div class="col-md-6">
                     <label class="label" for="email">Email</label>
                   </div>
-                  <div class="col-md-8">
-                    <input type="email" id="email" name="email" placeholder="maria@email.com" style="width: 500px;" required>
+                  <div class="col-md-6">
+                    <input type="email" id="email" name="email" placeholder="maria@email.com" style="width: 400px;" required>
                   </div>
                 </div>
 
                 <div class="row mb-5">
-                  <div class="col-md-4">
+                  <div class="col-md-6">
                     <label for="phone">Phone number</label>
                   </div>
-                  <div class="col-md-8">
-                    <input type="tel" id="phone" name="phone" placeholder="963256357" maxlength="9" style="width: 500px;" required>
+                  <div class="col-md-6">
+                    <input type="tel" id="phone" name="phone" placeholder="963256357" maxlength="9" style="width: 400px;" required>
                   </div>
                 </div>
             </div>  
@@ -129,7 +131,7 @@
             
             <hr>
 
-            <h5 class="text-uppercase mb-5 mt-4">Conditions</h5>
+            <h5 class="text-uppercase mb-4 mt-5">Conditions</h5>
             <div class="row mb-3">
               <input type="radio" id="conditions" name="conditions" value="agree" required>
               <label for="conditions">I agree with all <a href="termsandconditions.html">terms and conditions</a>. </label>
@@ -199,14 +201,6 @@
 
     <script src="assets/js/main.js"></script>
    
-    <script>
-      var datePicker = function() {
-        $('#probootstrap-date-departure, #probootstrap-date-arrival').datepicker({
-          'format': 'm/d/yyyy',
-          'autoclose': true
-        });
-      };
-      datePicker();
-    </script>
+
 	</body>
 </html>
