@@ -678,6 +678,10 @@ a {
   padding-top: 60px;
   background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.733),white);
 }
+#head1{
+  font-size: 25px;
+  font-weight: lighter;
+}
 
 .mapa{
   width: 100%;
