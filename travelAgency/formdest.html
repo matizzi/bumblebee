@@ -67,37 +67,75 @@
         padding: 20px;
       }
       </style>-->
+      <style>
+        input{
+          width: 100%;
+          margin: 3px 0;
+          display: inline-block;
+          border: 1px solid rgb(255, 255, 255);
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        
+        form {
+          border-radius: 5px;
+          background-color: rgb(248, 248, 239);
+          padding: 20px;
+          text-align: center;
+        }
+  
+        </style>
 
 	</head>
 	<body>
+    <nav class="navbar navbar-expand-lg navbar-dark probootstrap_navbar navbar-simple" id="probootstrap-navbar-cidades">
+      <div class="container">
+        <a id="navbar-brand" class="navbar-brand" href="../index.html">Bumblebee</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#probootstrap-menu" aria-controls="probootstrap-menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i class="ion-navicon"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="probootstrap-menu">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="../travelAgency/cities/cities.html">Cities</a></li>
+            <li class="nav-item"><a class="nav-link" href="bservices.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="travel.html">Travel With Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
 
-    <div>
-      <form name="formfest" action="/action_page.php" method="get">
+    <div class="container">
+      <form name="formdest" action="/action_page.php" method="get">
+
+        <div class="col-lg-12 mt-4 mb-5">
     
-        <label for="depcity">Select the departure city</label>
-        <select id="depcity" name="depcity">
-          <option value="porto">Porto</option>
-          <option value="lisboa">Lisbon</option>
-          <option value="faro">Faro</option>
-          <option value="barcelona">Barcelona</option>
-          <option value="palmademallorca">Palma de Mallorca</option>
-          <option value="malaga">Malaga</option>
-          <option value="alicante">Alicante</option>
-        </select>
+          <label for="depcity">Select the departure city</label>
+          <select id="depcity" name="depcity">
+            <option value="porto">Porto</option>
+            <option value="lisboa">Lisbon</option>
+            <option value="faro">Faro</option>
+            <option value="barcelona">Barcelona</option>
+            <option value="palmademallorca">Palma de Mallorca</option>
+            <option value="malaga">Malaga</option>
+            <option value="alicante">Alicante</option>
+          </select>
 
-        <label for="destcity">Select the destination city</label>
-        <select id="destcity" name="destcity">
-          <option value="paris">Paris</option>
-          <option value="lisboa">Lisbon</option>
-          <option value="stockholm">Stockholm</option>
-          <option value="london">London</option>
-        </select>
+          <label for="destcity">Select the destination city</label>
+          <select id="destcity" name="destcity">
+            <option value="paris">Paris</option>
+            <option value="lisboa">Lisbon</option>
+            <option value="stockholm">Stockholm</option>
+            <option value="london">London</option>
+          </select>
 
-       
-        <label for="departure">Select departure day:</label>
-        <input type="date" id="departure" name="departure">
+        
+          <label for="departure">Select departure day:</label>
+          <input type="date" id="departure" name="departure">
 
-        <p><a href="formpass.html" class="btn btn-primary">Next</a></p>
+          <p><a href="formpass.html" class="btn btn-primary">Next</a></p>
+        </div>
       </form>
     </div>
 
