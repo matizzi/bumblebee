@@ -206,11 +206,52 @@
         <label for="extra4"> Transport from and to the Airport</label><br>
         <input type="checkbox" id="extra5" name="extra5" value="localguide">
         <label for="extra5"> Local tourist guide 24/7</label><br><br>
-        
-        <P>Do you have some requests or observations for your reservation?</P>
-        <textarea id="request" name="request" rows="6" cols="50">
-          Let us know, how can we improve your experience...
-        </textarea>
+
+        <div class="table-responsive">
+          <table class="table table-hover center" style="width: 700px;">
+            <thead>
+              <tr>
+                <th>Extra services</th>
+                <th>Price per day</th>
+                <th>Price per service</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Rent-a-car</td>
+                <td></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Transport to the Airport</td>
+                <td>-</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Transport from the Airport</td>
+                <td>-</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Transport from and to the Airport</td>
+                <td>-</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Local tourist guide 24/7</td>
+                <td></td>
+                <td>&euro;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <label for="extraservice">Specify what do you want</label>
+        <textarea id="extraservice" name="extraservice" rows="6" cols="50">Which days, airport...</textarea>
+
+      </div>
+        <label for="request">Do you have some requests or observations for your reservation?</label>
+        <textarea id="request" name="request" rows="6" cols="50">Let us know, how can we improve your experience?</textarea>
 
         <label for="brand">How did you hear about us?</label>
         <select id="brand" name="brand">
