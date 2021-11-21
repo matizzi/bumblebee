@@ -730,31 +730,26 @@ a {
     padding: 7em 0; }
 
   .title-row {
-    background-color: rgba(255, 255, 0, 0.123);
+    background-color: rgba(255, 255, 0, 0.2);
     padding: 100px;
-    margin-top: 0px;
   }
 
   .contact-link {
     text-decoration: none;
+  }
+  .contact-link:hover{
+    text-decoration: underline;
   }
 
 .imagem-meio-about-us {
   background-image: url(../images/about-us-2.jpeg);
   background-position: center;
   background-size: cover;
+  min-height: 300px;
   
 }
- 
-.missao-valores {
-  height: 400px;
-}
 
-.missao{
-  padding: 50px;
-}
-
-.valores {
+.padding50{
   padding: 50px;
 }
 
@@ -804,8 +799,9 @@ a {
 
 
 .probootstrap_navbar.scrolled .user-actions{
-  background-color: rgba(221, 206, 0, 0.95);
+  background-color: white;
   border: none;
+  cursor: pointer;
 }
 
 .login-text{
@@ -849,4 +845,15 @@ a {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.espaço-entre-texto {
+  margin-bottom: 50px;
+}
+
+.cards-values {
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+  border-radius: 50px;
+
 }
