@@ -214,18 +214,18 @@
     </nav>
     <!-- END nav -->
 
-    <div class="container mt-4 probootstrap-animate">
-      <form name="formdest" action="/action_page.php" method="post">
+    <div class="container pt-5 probootstrap-animate">
+      <form name="formdest" action="#" method="post">
 
         <i class="fas fa-plane-departure fa-3x pt-5"></i>
         
-        <div class="col-md-12 mt-4 mb-5">
+        <div class="col-md-12 pt-4">
           <h3 class="text-uppercase mb-4">Destination</h3>
 
           <div class="row">
             <label for="depcity">Select the departure city</label>
           </div>  
-          <div class="row mb-5">
+          <div class="row mb-4">
             <select id="depcity" name="depcity">
               <option value="porto">Porto</option>
               <option value="lisboa">Lisbon</option>
@@ -237,6 +237,18 @@
             </select>
           </div>
 
+          <div class="row mb-4">
+            <label for="packchoice">Select the experience pack</label>
+            <select id="packchoice" name="packchoice">
+              <option value="paris">Paris</option>
+              <option value="lisboa">Lisbon</option>
+              <option value="stockholm">Stockholm</option>
+              <option value="london">London</option>
+              <option value="dublin">Dublin</option>
+              <option value="aveiro">Aveiro</option>
+            </select>
+          </div>
+        
           <div class="table-responsive">
             <table class="table table-hover center" style="width: 700px;">
               <thead>
@@ -294,26 +306,16 @@
               </tbody>
             </table>
           </div>
-        </div>
-
-          <div class="row mb-4">
-            <label for="packchoice">Select the experience pack</label>
-            <select id="packchoice" name="packchoice">
-              <option value="paris">Paris</option>
-              <option value="lisboa">Lisbon</option>
-              <option value="stockholm">Stockholm</option>
-              <option value="london">London</option>
-              <option value="dublin">Dublin</option>
-              <option value="aveiro">Aveiro</option>
-            </select>
-          </div>
         
-          <div class="row mb-4">
+          <div class="row mt-5 mb-4">
             <label for="departure">Select departure day</label>
             <input type="date" id="departure" name="departure">
           </div>
 
-          <p><a href="formpass.html" class="btn btn-primary">Next</a></p>
+          <div class="row mt-5 pb-5">
+            <p><a href="formpass.html" class="btn btn-primary">Next</a></p>
+          </div>
+   
         </div>
       </form>
     </div>
