@@ -735,8 +735,13 @@ a {
     padding: 7em 0; }
 
   .title-row {
-    background-color: rgba(255, 255, 0, 0.2);
+    background-color: rgba(255, 238, 0, 0.24);
     padding: 100px;
+  }
+
+  .title-row-1 {
+    padding: 100px;
+    background-color: white;
   }
 
   .contact-link {
@@ -860,5 +865,15 @@ a {
   background-color: rgb(255, 255, 255);
   padding: 30px;
   border-radius: 50px;
-
 }
+
+.about-us-titles {
+  font-size: 50px;
+}
+
+.probootstrap_section_about_us{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
