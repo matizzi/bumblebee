@@ -101,7 +101,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark probootstrap_navbar" id="probootstrap-navbar">
       <div class="container">
         <a id="navbar-brand" class="navbar-brand" href="index.html">
-          <img src="assets/images/logo_1.png" alt="" width="80" class="d-inline-block align-text-center">
+          <img src="assets/images/logo_1.png" width="80" class="d-inline-block align-text-center">
           BUMBLEBEE
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#probootstrap-menu" aria-controls="probootstrap-menu" aria-expanded="false" aria-label="Toggle navigation">
@@ -109,9 +109,9 @@
         </button>
         <div class="collapse navbar-collapse" id="probootstrap-menu">
           <ul class="navbar-nav ml-auto me-auto">
-            <li class="nav-item"><a class="nav-link" href="#section-city-guides">Cities</a></li>
-            <li class="nav-item"><a class="nav-link" href="#section-services">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="#section-travel">Experiences</a></li>
+            <li class="nav-item"><a class="nav-link" href="#section-top-cities">Cities</a></li>
+            <li class="nav-item"><a class="nav-link" href="#bservices">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
             <li class="nav-item"><a class="nav-link" href="about-us.html">About us</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contacts</a></li>
             
@@ -119,8 +119,8 @@
           <form class="d-flex navbar-nav nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="nav-link login-text">Account</span><i class="navbar-user fas fa-user fa-2x footer-brand-icon"></i></a>
             <ul class="dropdown-menu user-actions" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modal-login">Login</a></li>
-              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modal-registration">Sign Up</a></li>
+              <li><button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modal-login">Login</button></li>
+              <li><button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modal-registration">Sign Up</button></li>
             </ul>
           </form>
         </div>
@@ -129,7 +129,7 @@
     <!-- END nav -->
     
 
-  <section class="probootstrap-cover-index overflow-hidden relative" id="section-home">
+    <section class="probootstrap-cover-index overflow-hidden relative" id="section-home">
       <div class="overlay">
         <div class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
@@ -147,7 +147,6 @@
             </div>
           </div>
         </div>
-      </div>
       </div>
       <div class="overlay"></div>
       <div class="container">
@@ -188,42 +187,43 @@
                           <option value="Paris">Paris</option>
                           <option value="Stockholm">Stockholm</option>
                         </select>
-                      </label>
-                      </div>
-                    </div>
-                    </div>
-                  </div>
-                  <!-- END row -->
-                  <div class="row mb-5">
-                    <div class="col">
-                      <div class="form-group">
-                        <label for="probootstrap-date-departure">Departure</label>
-                        <div class="probootstrap-date-wrap">
-                          <span class="icon ion-calendar"></span> 
-                          <input type="text" id="probootstrap-date-departure" class="form-control" placeholder="">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="form-group">
-                        <label for="probootstrap-date-arrival">Arrival</label>
-                        <div class="probootstrap-date-wrap">
-                          <span class="icon ion-calendar"></span> 
-                          <input type="text" id="probootstrap-date-arrival" class="form-control" placeholder="">
-                        </div>
+                        </label>
                       </div>
                     </div>
                   </div>
-                  <!-- END row -->
-                  <div class="row">
-                    <div class="col">
-                      <label for="round"><input type="radio" id="round" name="direction">  Round</label>
-                      <label for="oneway"><input type="radio" id="oneway" name="direction">  Oneway</label>
-                    </div>
-                    <div class="col" style="margin-bottom: 20px; text-size-adjust: 100%">
-                      <button class="cidades-ver-mais" data-bs-toggle="modal" data-bs-target="#modal-login">Buy experience</button>
-                    </div>
                 </div>
+                <!-- END row -->
+                <div class="row mb-4">
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="probootstrap-date-departure">Departure</label>
+                      <div class="probootstrap-date-wrap">
+                        <span class="icon ion-calendar"></span> 
+                        <input type="text" id="probootstrap-date-departure" class="form-control" placeholder=""></input>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="probootstrap-date-arrival">Arrival</label>
+                      <div class="probootstrap-date-wrap">
+                        <span class="icon ion-calendar"></span> 
+                        <input type="text" id="probootstrap-date-arrival" class="form-control" placeholder=""></input>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- END row -->
+                <div class="row">
+                  <div class="col">
+                    <label for="round"><input type="radio" id="round" name="direction">  Round</label>
+                    <label for="oneway"><input type="radio" id="oneway" name="direction">  Oneway</label>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="cidades-ver-mais" data-bs-toggle="modal" data-bs-target="#modal-login">Buy experience</button>
+                  </div>
+                </div>
+                <!-- END row -->
               </div>
             </form>
           </div>
@@ -233,364 +233,175 @@
     <!-- END section -->
     
 
-    <section class="probootstrap_section">
+    <section class="probootstrap_section mt-5">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-12 text-center probootstrap-animate">
             <h2 class="display-5 border-bottom">Bumblebee, a Travel Agency focused on Experiences</h2>
             <p class="lead"><em>Founded in 2021, Bumblebee wants to give you the best travel experiences you have ever had! With a bunch of cities and different services, you can for sure live your life to the fullest!</em></p>
-            <a class="cidades-ver-mais" href="about-us.html">Know more about us</a>
-            <img style="width:100px" src="assets\images\logo_1.png" alt="Bumblebee - Experience Agency">
+            <p>
+              <a href="about-us.html" class="cidades-ver-mais" role="button">Know more about us</a>
+              <img style="width:100px" src="assets\images\logo_1.png" alt="Bumblebee - Experience Agency"></img>
+            </p>
           </div>
         </div>  
       </div>
     </section>
     <!-- END section -->
-    
-    <section class="probootstrap_section" id="section-city-guides">
+
+    <section class="probootstrap_section bg-light" id="experiences">
       <div class="container">
         <div class="row text-center mb-5 probootstrap-animate">
           <div class="col-md-12">
-            <h2 class="display-4 border-bottom probootstrap-section-heading">Top cities</h2>
+            <h2 class="display-4 border-bottom probootstrap-section-heading">Most Wanted Experiences</h2>
           </div>
         </div>
-        <div class="row mb-4">
-          <div class="col-lg-3 col-md-6 probootstrap-animate my_mb_80">
+        <div class="row">
+          <div class="col-md-6">
+
+            <div class="media probootstrap-media d-flex align-items-stretch mb-4 probootstrap-animate">
+              <div class="probootstrap-media-image" style="background-image: url(assets/images/pagina-londres-4.jpg)"></div>
+              <div class="col-9 media-body">
+                <h5 class="mb-3">Leisure Pack - London</h5>
+                <p>3 nights in a 4 stars hotel, 1 ticket for the Hyde Park Winter Wonderland and the London Eye and more!</p>
+                <p>
+                  <a href="experiences.html#london" class="cidades-ver-mais" role="button">See all</a>
+                  <img style="width:80px" src="assets\images\logo_1.png" alt="Bumblebee - Experience Agency"></img>
+                </p>
+              </div>
+            </div>
+
+            <div class="media probootstrap-media d-flex align-items-stretch mb-4 probootstrap-animate">
+              <div class="probootstrap-media-image" style="background-image: url(assets/images/pagina-paris-3.jpg)"></div>
+              <div class="col-9 media-body">
+                <h5 class="mb-3">Romantic Pack - Paris</h5>
+                <p>1 ticket for the Eiffel Tower, city visit with a violin interpreter, pik-nik in Champs Ellisé and more!</p>
+                <p>
+                  <a href="experiences.html#paris" class="cidades-ver-mais" role="button">See all</a>
+                  <img style="width:80px" src="assets\images\logo_1.png" alt="Bumblebee - Experience Agency"></img>
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6">
+            
+            <div class="media probootstrap-media d-flex align-items-stretch mb-4 probootstrap-animate">
+              <div class="probootstrap-media-image" style="background-image: url(assets/images/pagina-estocolmo-3.jpg)"></div>
+              <div class="col-9 media-body">
+                <h5 class="mb-3">Adventurer Pack - Stockholm</h5>
+                <p>Private bike tour, Camping trip, game meat tasting and more</p>
+                <p>
+                  <a href="experiences.html#stockholm" class="cidades-ver-mais" role="button">See all</a>
+                  <img style="width:80px" src="assets\images\logo_1.png" alt="Bumblebee - Experience Agency"></img>
+                </p>
+              </div>
+            </div>
+
+            <div class="media probootstrap-media d-flex align-items-stretch mb-4 probootstrap-animate">
+              <div class="probootstrap-media-image" style="background-image: url(assets/images/pagina-aveiro-4.jpg)"></div>
+              <div class="col-9 media-body">
+                <h5 class="mb-3">Cultural Pack - Aveiro</h5>
+                <p>Moliceiro trip, conventional bakery (with <i>Ovos Moles</i>), <i>Costa Nova</i> visit and more!</p>
+                <p>
+                  <a href="experiences.html#aveiro" class="cidades-ver-mais" role="button">See all</a>
+                  <img style="width:80px" src="assets\images\logo_1.png" alt="Bumblebee - Experience Agency"></img>
+                </p>              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END section -->
+    
+    <section class="probootstrap_section mt-2" id="section-top-cities">
+      <div class="container">
+        <div class="row text-center mb-5 probootstrap-animate">
+          <div class="col-md-12">
+            <h2 class="display-5 border-bottom probootstrap-section-heading">Top Visited Cities With Bumblebee</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="owl-carousel js-owl-carousel-2">
+          <div class="probootstrap-animate mb-3">
             <a href="cities/aveiro.html" class="probootstrap-thumbnail">
               <img src="assets/images/aveiro.jpg" alt="" class="img-fluid">
-                <h3><b>Aveiro</b></h3>
+              <h3><b>Aveiro</b></h3>
             </a>
           </div>
-          <div class="col-lg-3 col-md-6 probootstrap-animate mb-3">
+          <div class="probootstrap-animate mb-3">
             <a href="cities/london.html" class="probootstrap-thumbnail">
               <img src="assets/images/london.jpeg" alt="" class="img-fluid">
               <h3><b>London</b></h3>
             </a>
           </div>
-          <div class="col-lg-3 col-md-6 probootstrap-animate mb-3">
+          <div class="probootstrap-animate mb-3">
             <a href="cities/lisbon.html" class="probootstrap-thumbnail">
               <img src="assets/images/lisbon.jpeg" alt="" class="img-fluid">
               <h3><b>Lisbon</b></h3>
             </a>
           </div>
-          <div class="col-lg-3 col-md-6 probootstrap-animate my_mb_80">
+          <div class="probootstrap-animate mb-3">
             <a href="cities/dublin.html" class="probootstrap-thumbnail">
               <img src="assets/images/dublin.jpg" alt="" class="img-fluid">
               <h3><b>Dublin</b></h3>
             </a>
           </div>
         </div>
-        <div class="row">
-          <button class="cidades-ver-mais"><a class="ver-mais-button" href="cities/cities.html">See more</a></button>
-        </div>
-      </div>
-    </section>
-    
-  
-
-    <section class="probootstrap_section" id="section-services">
-      <div class="container">
-        <div class="row text-center mb-5 probootstrap-animate">
-          <div class="col-md-12">
-            <h2 class="display-4 border-bottom probootstrap-section-heading">Our Services</h2>
+        <div class="row justify-content-center">
+          <div class="col text-center probootstrap-animate mt-4">
+            <p>
+              <a href="cities/cities.html" class="cidades-ver-mais" role="button">Know All Bumblebee's Cities</a>
+              <img style="width:100px" src="assets\images\logo_1.png" alt="Bumblebee - Experience Agency"></img>
+            </p>
           </div>
         </div>
       </div>
+      </div>
     </section>
+    <!-- END section -->    
         
 
-    <section class="probootstrap-section-half d-md-flex" id="section-about">
-      <div class="probootstrap-image probootstrap-animate" data-animate-effect="fadeIn" style="background-image: url(assets/images/img_2.jpg)"></div>
+    <section class="probootstrap-section-half d-md-flex" id="bservices">
+      <div class="probootstrap-image probootstrap-animate" data-animate-effect="fadeIn" style="background-image: url(assets/images/tourist_guide_1.jpg)"></div>
       <div class="probootstrap-text">
         <div class="probootstrap-inner probootstrap-animate" data-animate-effect="fadeInRight">
-          <h2 class="heading mb-4">Customer Service</h2>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-          <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-          <p><a href="#" class="btn btn-primary">Read More</a></p>
+          <h2 class="heading mb-4">Addicional Services</h2>
+          <p>Any Bumblebee's experience needs to be special... And with addicional services, you can personalize your experience and make it one of a kind!
+            <p>
+              <a href="bservices.html" class="cidades-ver-mais" role="button">Know more</a>
+              <img style="width:100px" src="assets\images\logo_1.png" alt="Bumblebee - Experience Agency"></img>
+            </p>
         </div>
       </div>
     </section>
 
 
     <section class="probootstrap-section-half d-md-flex">
-      <div class="probootstrap-image order-2 probootstrap-animate" data-animate-effect="fadeIn" style="background-image: url(assets/images/img_3.jpg)"></div>
+      <div class="probootstrap-image order-2 probootstrap-animate" data-animate-effect="fadeIn" style="background-image: url(assets/images/pagar-cartao.jpg)"></div>
       <div class="probootstrap-text order-1">
         <div class="probootstrap-inner probootstrap-animate" data-animate-effect="fadeInLeft">
           <h2 class="heading mb-4">Payment Options</h2>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-          <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-          <p><a href="#" class="btn btn-primary">Learn More</a></p>
+          <p>Fast, easy and at your service! Bumblebee uses all different tipes of payment, so you do not have to worry about it!</p>
+          <div>
+          <p>
+            <i class="fab fa-paypal fa-2x"></i>
+            <i class="fab fa-cc-visa fa-2x"></i>
+            <i class="fab fa-cc-amazon-pay fa-2x"></i>
+            <i class="fab fa-cc-mastercard fa-2x"></i>
+          </p>
+        </div>
+        <p>
+          <p>
+            <a href="bservices.html" class="cidades-ver-mais" role="button">Know more</a>
+            <img style="width:100px" src="assets\images\logo_1.png" alt="Bumblebee - Experience Agency"></img>
+          </p>
         </div>
       </div>
     </section>
     <!-- END section -->
-
-   
-    <!-- END section -->
-
-    <section class="probootstrap_section bg-light">
-      <div class="container">
-        <div class="row text-center mb-5 probootstrap-animate">
-          <div class="col-md-12">
-            <h2 class="display-4 border-bottom probootstrap-section-heading">More Services</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-
-            <div class="media probootstrap-media d-flex align-items-stretch mb-4 probootstrap-animate">
-              <div class="probootstrap-media-image" style="background-image: url(assets/images/img_1.jpg)">
-              </div>
-              <div class="media-body">
-                <h5 class="mb-3">01. Service Title Here</h5>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-              </div>
-            </div>
-
-            <div class="media probootstrap-media d-flex align-items-stretch mb-4 probootstrap-animate">
-              <div class="probootstrap-media-image" style="background-image: url(assets/images/img_2.jpg)">
-              </div>
-              <div class="media-body">
-                <h5 class="mb-3">02. Service Title Here</h5>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-md-6">
-            
-            <div class="media probootstrap-media d-flex align-items-stretch mb-4 probootstrap-animate">
-              <div class="probootstrap-media-image" style="background-image: url(assets/images/img_4.jpg)">
-              </div>
-              <div class="media-body">
-                <h5 class="mb-3">03. Service Title Here</h5>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-              </div>
-            </div>
-
-            <div class="media probootstrap-media d-flex align-items-stretch mb-4 probootstrap-animate">
-              <div class="probootstrap-media-image" style="background-image: url(assets/images/img_5.jpg)">
-              </div>
-              <div class="media-body">
-                <h5 class="mb-3">04. Service Title Here</h5>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END section -->
-
-    <section class="probootstrap_section" id="section-feature-testimonial">
-      <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-12 text-center mb-5 probootstrap-animate">
-            <h2 class="display-4 border-bottom probootstrap-section-heading">Testimonial</h2>
-            <blockquote class="">
-              <p class="lead mb-4"><em>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</em></p>
-              <p class="probootstrap-author">
-                <a href="https://probootstrap.com/" target="_blank">
-                  <img src="assets/images/person_1.jpg" alt="Free Template by ProBootstrap.com" class="rounded-circle">
-                  <span class="probootstrap-name">James Smith</span>
-                  <span class="probootstrap-title">Chief Executive Officer</span>
-                </a>
-              </p>
-            </blockquote>
-
-          </div>
-        </div>
-        
-      </div>
-    </section>
-    <!-- END section -->
-
-    <section class="probootstrap_section bg-light">
-      <div class="container">
-        <div class="row text-center mb-5 probootstrap-animate">
-          <div class="col-md-12">
-            <h2 class="display-4 border-bottom probootstrap-section-heading">News</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-
-            <div class="media probootstrap-media d-flex align-items-stretch mb-4 probootstrap-animate">
-              <div class="probootstrap-media-image" style="background-image: url(assets/images/img_1.jpg)">
-              </div>
-              <div class="media-body">
-                <span class="text-uppercase">January 1st 2018</span>
-                <h5 class="mb-3">Travel To United States Without Visa</h5>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                <p><a href="#">Read More</a></p>
-              </div>
-            </div>
-
-            <div class="media probootstrap-media d-flex align-items-stretch mb-4 probootstrap-animate">
-              <div class="probootstrap-media-image" style="background-image: url(assets/images/img_2.jpg)">
-              </div>
-              <div class="media-body">
-                <span class="text-uppercase">January 1st 2018</span>
-                <h5 class="mb-3">Travel To United States Without Visa</h5>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                <p><a href="#">Read More</a></p>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-md-6">
-            
-            <div class="media probootstrap-media d-flex align-items-stretch mb-4 probootstrap-animate">
-              <div class="probootstrap-media-image" style="background-image: url(assets/images/img_4.jpg)">
-              </div>
-              <div class="media-body">
-                <span class="text-uppercase">January 1st 2018</span>
-                <h5 class="mb-3">Travel To United States Without Visa</h5>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                <p><a href="#">Read More</a></p>
-              </div>
-            </div>
-
-            <div class="media probootstrap-media d-flex align-items-stretch mb-4 probootstrap-animate">
-              <div class="probootstrap-media-image" style="background-image: url(assets/images/img_5.jpg)">
-              </div>
-              <div class="media-body">
-                <span class="text-uppercase">January 1st 2018</span>
-                <h5 class="mb-3">Travel To United States Without Visa</h5>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                <p><a href="#">Read More</a></p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END section -->
-
-    <section class="probootstrap_section">
-      <div class="container">
-        <div class="row text-center mb-5 probootstrap-animate">
-          <div class="col-md-12">
-            <h2 class="display-4 border-bottom probootstrap-section-heading">Travel With Us</h2>
-          </div>
-        </div>
-        
-        <div class="row probootstrap-animate">
-          <div class="col-md-12">
-            <div class="owl-carousel js-owl-carousel-2">
-              <div>
-                <div class="media probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
-                  <img src="assets/images/sq_img_2.jpg" alt="Free Template by ProBootstrap" class="img-fluid">
-                  <div class="media-body">
-                    <h5 class="mb-3">02. Service Title Here</h5>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                  </div>
-                </div>
-              </div>
-              <!-- END slide item -->
-
-              <div>
-                <div class="media probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
-                  <img src="assets/images/sq_img_1.jpg" alt="Free Template by ProBootstrap" class="img-fluid">
-                  <div class="media-body">
-                    <h5 class="mb-3">02. Service Title Here</h5>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                  </div>
-                </div>
-              </div>
-              <!-- END slide item -->
-
-              <div>
-                <div class="media probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
-                  <img src="assets/images/sq_img_3.jpg" alt="Free Template by ProBootstrap" class="img-fluid">
-                  <div class="media-body">
-                    <h5 class="mb-3">02. Service Title Here</h5>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                  </div>
-                </div>
-              </div>
-              <!-- END slide item -->
-
-              <div>
-                <div class="media probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
-                  <img src="assets/images/sq_img_4.jpg" alt="Free Template by ProBootstrap" class="img-fluid">
-                  <div class="media-body">
-                    <h5 class="mb-3">02. Service Title Here</h5>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                  </div>
-                </div>
-              </div>
-              <!-- END slide item -->
-
-              <div>
-                <div class="media probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
-                  <img src="assets/images/sq_img_5.jpg" alt="Free Template by ProBootstrap" class="img-fluid">
-                  <div class="media-body">
-                    <h5 class="mb-3">02. Service Title Here</h5>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                  </div>
-                </div>
-              </div>
-              <!-- END slide item -->
-
-
-              <div>
-                <div class="media probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
-                  <img src="assets/images/sq_img_2.jpg" alt="Free Template by ProBootstrap" class="img-fluid">
-                  <div class="media-body">
-                    <h5 class="mb-3">02. Service Title Here</h5>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                  </div>
-                </div>
-              </div>
-              <!-- END slide item -->
-
-              <div>
-                <div class="media probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
-                  <img src="assets/images/sq_img_1.jpg" alt="Free Template by ProBootstrap" class="img-fluid">
-                  <div class="media-body">
-                    <h5 class="mb-3">02. Service Title Here</h5>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                  </div>
-                </div>
-              </div>
-              <!-- END slide item -->
-
-              <div>
-                <div class="media probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
-                  <img src="assets/images/sq_img_3.jpg" alt="Free Template by ProBootstrap" class="img-fluid">
-                  <div class="media-body">
-                    <h5 class="mb-3">02. Service Title Here</h5>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                  </div>
-                </div>
-              </div>
-              <!-- END slide item -->
-
-              <div>
-                <div class="media probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
-                  <img src="assets/images/sq_img_4.jpg" alt="Free Template by ProBootstrap" class="img-fluid">
-                  <div class="media-body">
-                    <h5 class="mb-3">02. Service Title Here</h5>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                  </div>
-                </div>
-              </div>
-              <!-- END slide item -->
-
-              <div>
-                <div class="media probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
-                  <img src="assets/images/sq_img_5.jpg" alt="Free Template by ProBootstrap" class="img-fluid">
-                  <div class="media-body">
-                    <h5 class="mb-3">02. Service Title Here</h5>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                  </div>
-                </div>
-              </div>
-              <!-- END slide item -->
-              
+             
             </div>
           </div>
         </div>
