@@ -27,7 +27,7 @@
     
     <link rel="stylesheet" href="assets/fonts/flaticon/font/flaticon.css">
 
-    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
 
     <link rel="stylesheet" href="assets/css/select2.css">
     
@@ -69,26 +69,28 @@
       </style>-->
 
       <style>
-        input{
-          width: 100%;
-          margin: 3px 0;
+        
+        input {
+          /* width: 100%; */
           display: inline-block;
           border: 1px solid rgb(255, 255, 255);
           border-radius: 4px;
           box-sizing: border-box;
         }
         
-        form {
-          border-radius: 5px;
+        .container1 {
           background-color: rgb(248, 248, 239);
+          /* padding-left: 200px;
           padding-right: 200px;
-          padding-left: 200px;
-          margin-top: 2,5cm;
-          margin-bottom: 2,5cm;
-          text-align: center;
+          margin-left: 50px;
+          margin-right: 50px; */
         }
-  
-        </style>
+
+        .center{
+          margin: auto;
+        }
+        
+      </style>
 
 	</head>
 	<body>
@@ -182,7 +184,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark probootstrap_navbar navbar-simple" id="probootstrap-navbar-cidades">
       <div class="container">
-        <a id="navbar-brand" class="navbar-brand" href="index.html">
+        <a id="navbar-brand" class="navbar-brand" href="../index.html">
           <img src="../assets/images/logo_1.png" alt="" width="80" class="d-inline-block align-text-center">
           BUMBLEBEE
         </a>
@@ -191,7 +193,7 @@
         </button>
         <div class="collapse navbar-collapse" id="probootstrap-menu">
           <ul class="navbar-nav ml-auto me-auto">
-            <li class="nav-item"><a class="nav-link active" href="cities.html">Cities</a></li>
+            <li class="nav-item"><a class="nav-link" href="cities.html">Cities</a></li>
             <li class="nav-item"><a class="nav-link" href="../bservices.html">Services</a></li>
             <li class="nav-item"><a class="nav-link" href="../experiences.html">Experiences</a></li>
             <li class="nav-item"><a class="nav-link" href="../about-us.html">About us</a></li>
@@ -210,25 +212,43 @@
     </nav>
     <!-- END nav -->
     
-    <div class="container mt-4 probootstrap-animate">
+    <div class="container container1 pt-5 probootstrap-animate">
       <form name="formextras" action="/action_page.php" method="post">
-        <p>Extra services</p>
-
-        <p>We have a range of services to make your experience more confortable and pleasant.</p>
+        <div class="row" style="text-align: center;">
+          <i class="fas fa-cart-plus fa-3x pt-5"></i>
+          <h2 class="text-uppercase pt-4 mb-4">Extra services</h2>
+        </div>
+        <div class="row mb-4" style="text-align: center;">
+          <p>We have a range of services to make your experience more confortable and pleasant.</p>
+        </div>
+     
         
-        <P>Are you looking for a rent-a-car service, transfer service or a local guide? Don't worry, we got you!<br>
-        (You can choose more than one service)</P>
-        <input type="checkbox" id="extra1" name="extra1" value="rent-a-car">
-        <label for="extra1"> Rent-a-car service during the stay</label><br>
-        <input type="checkbox" id="extra2" name="extra2" value="toairport">
-        <label for="extra2"> Transport to the Airport</label><br>
-        <input type="checkbox" id="extra3" name="extra3" value="fromairport">
-        <label for="extra3"> Transport from the Airport</label><br>
-        <input type="checkbox" id="extra4" name="extra4" value="fromandtoairport">
-        <label for="extra4"> Transport from and to the Airport</label><br>
-        <input type="checkbox" id="extra5" name="extra5" value="localguide">
-        <label for="extra5"> Local tourist guide 24/7</label><br><br>
 
+        <div class="row col-6 center mb-3">
+          <P>Are you looking for a rent-a-car service, transfer service or a local guide?<br/> Don't worry, we've got you!
+          (You can choose more than one service)</P>
+          <div class="form-check">
+            <label class="form-check-label" for="extra1">Rent-a-car service during the stay</label>
+            <input class="form-check-input" type="checkbox" id="extra1" name="extra1" value="rent-a-car">
+          </div>
+          <div class="form-check">
+            <label class="form-check-label" for="extra2">Transport to the Airport</label>
+            <input class="form-check-input" type="checkbox" id="extra2" name="extra2" value="toairport">
+          </div>
+          <div class="form-check">
+            <label class="form-check-label" for="extra3">Transport from the Airport</label>
+            <input class="form-check-input" type="checkbox" id="extra3" name="extra3" value="fromairport">
+          </div>
+          <div class="form-check">
+            <label class="form-check-label" for="extra4">Transport from and to the Airport</label>
+            <input class="form-check-input" type="checkbox" id="extra4" name="extra4" value="fromandtoairport">
+          </div>
+          <div class="form-check">
+            <label class="form-check-label" for="extra5">Local tourist guide 24/7</label>
+            <input class="form-check-input" type="checkbox" id="extra5" name="extra5" value="localguide">
+          </div>
+        </div>
+        
         <div class="table-responsive">
           <table class="table table-hover center" style="width: 700px;">
             <thead>
@@ -268,28 +288,41 @@
           </table>
         </div>
 
-        <label for="extraservice">Specify what do you want</label>
-        <textarea id="extraservice" name="extraservice" rows="6" cols="50">Which days, airport...</textarea>
+        <div class="row col-6 center mb-3 mt-5">
+          <label for="extraservice">Specify what do you want</label>
+          <textarea id="extraservice" name="extraservice" rows="6" cols="50">Which days, airport...</textarea>
+        </div>
 
-      </div>
-        <label for="request">Do you have some requests or observations for your reservation?</label>
-        <textarea id="request" name="request" rows="6" cols="50">Let us know! How can we improve your experience?</textarea>
+        <div class="row col-6 center mb-3">
+          <label for="request">Do you have some requests or observations for your reservation?</label>
+          <textarea id="request" name="request" rows="6" cols="50">Let us know! How can we improve your experience?</textarea>
+        </div>
 
-        <label for="brand">How did you hear about us?</label>
-        <select id="brand" name="brand">
-          <option value="friends">Friends</option>
-          <option value="onlineadvertisment">Online Advertisement</option>
-          <option value="searchengine">Search Engine</option>
-          <option value="socialmedia">Social Media</option>
-          <option value="magazine">Magazine</option>
-          <option value="television">Television</option>
-          <option value="other">Other</option>
-        </select>
+        <div class="row col-6 center mb-3">
+          <label for="brand">How did you hear about us?</label>
+          <select id="brand" name="brand">
+            <option value="friends">Friends</option>
+            <option value="onlineadvertisment">Online Advertisement</option>
+            <option value="searchengine">Search Engine</option>
+            <option value="socialmedia">Social Media</option>
+            <option value="magazine">Magazine</option>
+            <option value="television">Television</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
 
-        <p><a href="formpass.html" class="btn btn-primary">Previous</a></p>
-        <p><a href="formcheckout.html" class="btn btn-primary">Next</a></p>
+        <div class="row mb-0">
+          <div class="col" style="padding-left: 200px;">
+            <p><a href="formpass.html" class="btn btn-primary">Previous</a></p>
+          </div>
+          <div class="col" style="text-align: right; padding-right: 200px;">
+            <p><a href="formcheckout.html" class="btn btn-primary">Next</a></p>
+          </div>
+        </div>
+
       </form>
     </div>
+
 
     <footer class="probootstrap_footer text-white bg-dark">
       <div class="container">

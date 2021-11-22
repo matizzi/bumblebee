@@ -41,8 +41,8 @@
     <style>
       input{
         width: 100%;
-        margin: 3px 0;
-        display: inline-block;
+        /**margin: 3px 0;**/
+        display: block;
         border: 1px solid rgb(255, 255, 255);
         border-radius: 4px;
         box-sizing: border-box;
@@ -51,11 +51,16 @@
       form {
         border-radius: 5px;
         background-color: rgb(248, 248, 239);
-        padding-right: 200px;
-        padding-left: 200px;
+        /**padding-right: 200px;
+        padding-left: 200px;**/
         margin-top: 2,5cm;
         margin-bottom: 2,5cm;
         text-align: center;
+      }
+
+      .center{
+        margin-left: auto;
+        margin-right: auto;
       }
 
       </style>
@@ -161,7 +166,7 @@
         </button>
         <div class="collapse navbar-collapse" id="probootstrap-menu">
           <ul class="navbar-nav ml-auto me-auto">
-            <li class="nav-item"><a class="nav-link active" href="cities.html">Cities</a></li>
+            <li class="nav-item"><a class="nav-link" href="cities.html">Cities</a></li>
             <li class="nav-item"><a class="nav-link" href="../bservices.html">Services</a></li>
             <li class="nav-item"><a class="nav-link" href="../experiences.html">Experiences</a></li>
             <li class="nav-item"><a class="nav-link" href="../about-us.html">About us</a></li>
@@ -181,56 +186,55 @@
     <!-- END nav -->
 
     
-    <div class="container mt-4 probootstrap-animate">
+    <div class="container pt-5 probootstrap-animate">
         
           <form name="formcheckout" action="/action_page.php" method="post" class="was.validated">
             
+         
             <i class="fas fa-shopping-basket fa-3x pt-5"></i>
+          
+            
 
             <div class="col-md-12 pt-4 pb-5">
                 <h2 class="text-uppercase mb-4">Data billing</h2>
-                <div class="row mb-3">
-                  <div class="col-md-6">
+                <div class="row mb-3 mt-5">
+                  <div class="col-md-6 center">
                     <label for="name">Name</label>
-                  </div>
-                  <div class="col-md-6">
-                    <input type="text" id="name" maxlength="20" name="firstandlastname" placeholder="Maria Oliveira" style="width: 400px;" required>
+                    <input type="text" id="name" maxlength="20" name="firstandlastname" placeholder="Maria Oliveira" style="width: 100%;" required>
                   </div>
                 </div>
 
                 <div class="row mb-3">
-                  <div class="col-md-6">
+                  <div class="col-md-6 center">
                     <label for="nif">NIF</label>
-                  </div>
-                  <div class="col-md-6">
-                    <input type="nif" name="NIF" maxlength="9" placeholder="123456789" style="width: 400px;" required>
+                    <input type="nif" name="NIF" maxlength="9" placeholder="123456789" style="width: 100%;" required>
                   </div>
                 </div>
 
                 <div class="row mb-3">
-                  <div class="col-md-6">
+                  <div class="col-md-6 center">
                     <label class="label" for="email">Email</label>
-                  </div>
-                  <div class="col-md-6">
-                    <input type="email" id="email" name="email" placeholder="maria@email.com" style="width: 400px;" required>
+                    <input type="email" id="email" name="email" placeholder="maria@email.com" style="width: 100%;" required>
                   </div>
                 </div>
 
                 <div class="row mb-5">
-                  <div class="col-md-6">
+                  <div class="col-md-6 center">
                     <label for="phone">Phone number</label>
-                  </div>
-                  <div class="col-md-6">
-                    <input type="tel" id="phone" name="phone" placeholder="963256357" maxlength="9" style="width: 400px;" required>
+                    <input type="tel" id="phone" name="phone" placeholder="963256357" maxlength="9" style="width: 100%;" required>
                   </div>
                 </div>
             </div>  
-
-            <strong>Your bill will be send to your mailbox, as well as the payment methods available.</strong>
             
-            <hr>
+            
+            <strong>Your bill will be send to your mailbox,</br> as well as the payment methods available.</strong>
+            <div class="col-6 center">
+              <hr>
+            </div>
+           
+   
 
-            <h5 class="text-uppercase mb-4 mt-5">Conditions</h5>
+            <h5 class="text-uppercase mb-4 mt-5" ">Conditions</h5>
 
             <div class="row mb-3">
               <input type="radio" id="conditions" name="conditions" value="agree" required>
