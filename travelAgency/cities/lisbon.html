@@ -8,7 +8,7 @@
 		<meta name="description" content="presentation of the various cities">
 		<meta name="keywords" content="cities travel agency paris london stockholm lisbon">
     
-    <link rel="shortcut icon" href="assets\images\logo_browser.png">
+    <link rel="shortcut icon" href="../assets\images\logo_browser.png">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
 
 		<link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.css">
@@ -149,22 +149,28 @@
     </nav>
     <!-- END nav -->
 
-    <section class="probootstrap_section_cidades" id="section-intro">
+    <section class="probootstrap_section_cidades mb-5" id="section-intro">
       <div class="container">
         <div class="row">
           <div class="col-lg-4 mt-2">
-            <div class="carousel slide carousel-cidade probootstrap-animate" data-bs-ride="carousel">
+            <div class="carousel slide probootstrap-animate" data-bs-ride="carousel" id="carouselExampleIndicators">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
               <div class="carousel-inner">
-                <div class="carousel-item active carousel-cidade">
+                <div class="carousel-item active">
                   <img src="../assets/images/pagina-lisboa-1.jpg" class="d-block w-100" alt="...">
                </div>
-                <div class="carousel-item carousel-cidade">
+                <div class="carousel-item">
                   <img src="../assets/images/pagina-lisboa-2.jpg" class="d-block w-100" alt="...">
                </div>
-                <div class="carousel-item carousel-cidade">
+                <div class="carousel-item">
                  <img src="../assets/images/pagina-lisboa-3.jpg" class="d-block w-100" alt="...">
                </div>
-                <div class="carousel-item carousel-cidade">
+                <div class="carousel-item">
                  <img src="../assets/images/pagina-lisboa-4.jpg" class="d-block w-100" alt="...">
                 </div>
               </div>
@@ -179,7 +185,9 @@
 
               Rich in monuments, typical neighborhoods (Baixa Pombalina, Belém, Bairro Alto, Chiado, Bica, Alfama and Mouraria), riverside area, Fado houses, parks, gardens and viewpoints, Lisbon offers several possibilities to discover, visit and enjoy its vast heritage natural, historical and cultural city. Furthermore, Lisbon is known for its connection to the sea and that is why fish dishes are very popular.</p>
             <p>Come with us on this trip and enjoy your package of experiences thought to detail for you! You don't have to worry about anything. You just have to enjoy your trip calmly.
-            <button class="experiencias-cidades"><a class="experiences-button" href="../experiences.html">Experiences packs</a></button>
+            <div class="d-flex justify-content-center probootstrap-animate">
+              <a class="btn my-btn mt-4" href="../experiences.html">Experiences packs</a>
+            </div>
           </div>
   
         </div>
