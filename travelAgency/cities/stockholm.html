@@ -138,10 +138,10 @@
             
           </ul>
           <form class="d-flex navbar-nav nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="nav-link login-text">Account</span><i class="navbar-user fas fa-user fa-2x footer-brand-icon"></i></a>
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="nav-link login-text">Account</span><i class="navbar-user fas fa-user fa-2x footer-brand-icon"></i></a>
             <ul class="dropdown-menu user-actions" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modal-login">Login</a></li>
-              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modal-registration">Sign Up</a></li>
+              <li><button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modal-login">Login</button></li>
+              <li><button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modal-registration">Sign Up</button></li>
             </ul>
           </form>
         </div>
@@ -252,32 +252,69 @@
     
   
 
-
-
-
-
     <section class="probootstrap_section" id="section-feature-testimonial">
-      <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-12 text-center mb-5 probootstrap-animate">
-            <h2 class="display-4 border-bottom probootstrap-section-heading">Why we Love Places</h2>
-            <blockquote class="">
-              <p class="lead mb-4"><em>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</em></p>
-              <p class="probootstrap-author">
-                <a href="https://probootstrap.com/" target="_blank">
-                  <img src="../assets/images/person_1.jpg" alt="Free Template by ProBootstrap.com" class="rounded-circle">
-                  <span class="probootstrap-name">James Smith</span>
-                  <span class="probootstrap-title">Chief Executive Officer</span>
-                </a>
-              </p>
-            </blockquote>
-
+      <div class="container probootstrap-animate">
+        <div class="col-md-12 text-center">
+          <h2 class="display-4 border-bottom probootstrap-section-heading ">What clients say</h2>
+        </div>
+        <div class="accordion align-items-center" id="accordionExample">
+          <div class="row probootstrap-animate">
+            <div class="col-md-6">
+              <div class="p-3">
+                <ul class="testimonial-list">
+                  <li>
+                    <div class="card p-3" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <div class="d-flex flex-row align-items-center"> <img src="../assets/images/person_1.jpg" width="50" class="rounded-circle">
+                            <div class="d-flex flex-column ml-3"> <span class="font-weight-normal">João Soares</span> <span>25 years, Paris Experience</span> </div>
+                        </div>
+                    </div>
+                  </li>
+                  <li>
+                      <div class="card p-3" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          <div class="d-flex flex-row align-items-center"> <img src="../assets/images/person_2.jpg" width="50" class="rounded-circle">
+                              <div class="d-flex flex-column ml-3"> <span class="font-weight-normal">Malena Tudi</span> <span>30 years, London Experience</span> </div>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="card p-3" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          <div class="d-flex flex-row align-items-center"> <img src="../assets/images/person_3.jpg" width="50" class="rounded-circle">
+                              <div class="d-flex flex-column ml-3"> <span class="font-weight-normal">Felix Pollom</span> <span>35 years, Aveiro Experience</span> </div>
+                          </div>
+                      </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="p-3 testimonials-margin">
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="card-body">
+                        <h4>Best experience ever!!!</h4>
+                        <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>  <i class="fa fa-star"></i> </div>
+                        <p>I can't believe I'm finally getting to write this. My experience with Bumblebee all the way from the beginning was amazing. From the cheerful people in customer service to the awesome team of guides that took me through this journey - it has incredible. Nothing would change, not one thing. I am so glad that I decided to go with Bumblebee and will.</p>
+                    </div>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="card-body">
+                        <h4>Thanks for this great service</h4>
+                        <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                        <p>Traveling has always been a dream of mine. I love the idea of seeing and doing new things and experiencing different cultures, but it can be hard to find someone who shares that same ambition. I was thrilled when my sister introduced me to Bumblebee – the site offers an easy way for me to plan not only my next vacation, but also any other travel plans</p>
+                    </div>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="card-body">
+                        <h4>You all are awesome thanks alot</h4>
+                        <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                        <p>I would not be able to plan my trips without Bumblebee. I'm a big traveler, and it's hard to find time to research all the hotels, flight, restaurants, etc. Not only does Bumblebee do this for me, but it's also affordable! I can't recommend this site enough.</p>
+                    </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        
       </div>
     </section>
-    <!-- END section -->
 
     <footer class="probootstrap_footer text-white bg-dark">
       <div class="container">
