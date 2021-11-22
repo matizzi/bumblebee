@@ -40,7 +40,9 @@ h1, h2, h3, h4, h5, h6 {
 a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
-  transition: .3s all ease; }
+  transition: .3s all ease; 
+  text-decoration: none
+}
 
 .probootstrap-cover {
   background-repeat: no-repeat;
@@ -633,6 +635,11 @@ a {
   box-shadow:2px 4px 6px rgba(0, 0, 0, 0.733);
 }
   
+.cidades-ver-mais:hover {
+  text-decoration:none;
+  color: #000;
+}
+
   .cidades-ver-mais:hover{
     background-color: rgba(255, 238, 0, 0.95); 
   }
@@ -713,7 +720,7 @@ a {
     padding: 7em 0; }
 
   .title-row {
-    background-color: rgba(255, 238, 0, 0.24);
+    background-color: #ffffeb;
     padding: 100px;
   }
 
@@ -843,6 +850,8 @@ a {
   background-color: rgb(255, 255, 255);
   padding: 30px;
   border-radius: 50px;
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.05);
 }
 
 .about-us-titles {
