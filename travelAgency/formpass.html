@@ -91,7 +91,7 @@
         }
 
         input[type=email]{
-          width: 72%;
+          width: 41%;
         }
       </style>
 
@@ -237,14 +237,14 @@
           </div>
 
           <div class="row mb-3">
-            <div class="col-md-6 d-flex justify-content-md-end justify-content-center">
+            <div class="col-md-6 d-flex justify-content-md-end justify-content-center" style="background-color: rgb(43, 226, 52);">
               <label for="idnumber">ID number</label>
               <input type="text" name="idnumber" placeholder="Your ID number">
             </div>
           </div>
 
           <div class="row mb-3">
-            <div class="col-sm-6">
+            <div class="col-md-6 d-flex justify-content-md-end justify-content-center" style="background-color: blueviolet;">
               <label for="radio">Gender</label>
               <input type="radio" id="fem" name="gender" value="feminine">
               <label for="fem">Feminine</label>
@@ -254,18 +254,18 @@
           </div>
 
           <div class="row mb-3">
-            <div class="col">
+            <div class="d-flex justify-content-md-center" style="background-color: rgb(43, 226, 52);">
               <label for="email">Email</label>
               <input type="email" id="email" name="email" placeholder="Your email">
             </div>
           </div>
 
           <div class="row mb-5">
-            <div class="col">
+            <div class="col-md-6 d-flex justify-content-md-end justify-content-center">
               <label for="phone">Phone number</label>
               <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Your phone number">
             </div>
-            <div class="col">
+            <div class="col-md-6 d-flex justify-content-md-start justify-content-center">
               <label for="birthday">Birthday</label>
               <input type="date" id="birthday" name="birthdaydate">
             </div>
@@ -281,18 +281,18 @@
           <div id="persona">        
             <h3 style="text-align: center;">Person A</h3>
             <div class="row mb-3">
-              <div class="col">
+              <div class="col-md-6 d-flex justify-content-md-end justify-content-center">
                 <label for="fname">First Name</label>
                 <input type="text" id="fname" name="firstname">
               </div>
-              <div class="col">
+              <div class="col-md-6 d-flex justify-content-md-start justify-content-center">
                 <label for="lname">Last Name</label>
                 <input type="text" id="lname" name="lastname">
               </div>
             </div>
 
             <div class="row mb-3">
-              <div class="col">
+              <div class="col-md-6 d-flex justify-content-md-end justify-content-center">
                 <label for="idnumber">ID number</label>
                 <input type="text" name="idnumber">
               </div>
@@ -316,11 +316,11 @@
             </div>
 
             <div class="row mb-5">
-              <div class="col">
+              <div class="col-md-6 d-flex justify-content-md-end justify-content-center">
                 <label for="phone">Phone number</label>
                 <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
               </div>
-              <div class="col">
+              <div class="col-md-6 d-flex justify-content-md-start justify-content-center">
                 <label for="birthday">Birthday</label>
                 <input type="date" id="birthday" name="birthdaydate">
               </div>
@@ -332,18 +332,18 @@
           <div id="personb">
             <h3 style="text-align: center;">Person B</h3>
             <div class="row">
-              <div class="col">
+              <div class="col-md-6 d-flex justify-content-md-end justify-content-center">
                 <label for="fname">First Name</label>
                 <input type="text" id="fname" name="firstname">
               </div>
-              <div class="col">
+              <div class="col-md-6 d-flex justify-content-md-start justify-content-center">
                 <label for="lname">Last Name</label>
                 <input type="text" id="lname" name="lastname">
               </div>
             </div>
 
             <div class="row">
-              <div class="col">
+              <div class="col-md-6 d-flex justify-content-md-end justify-content-center">
                 <label for="idnumber">ID number</label>
                 <input type="text" name="idnumber">
               </div>
@@ -367,64 +367,13 @@
             </div>
 
             <div class="row">
-              <div class="col">
+              <div class="col-md-6 d-flex justify-content-md-end justify-content-center">
                 <label for="phone">Phone number</label>
                 <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
               </div>
-              <div class="col">
+              <div class="col-md-6 d-flex justify-content-md-start justify-content-center">
                 <label for="birthday">Birthday</label>
                 <input type="date" id="birthday" name="birthdaydate">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="container mt-4 probootstrap-animate">
-          <div id="personc">
-            <h3 style="text-align: center;">Person C</h3>
-            <div class="row">
-              <div class="col">
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname">
-              </div>
-              <div class="col">
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname">
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col">
-                <label for="idnumber">ID number</label>
-                <input type="text" name="idnumber">
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col">
-                <label for="radio">Gender</label>
-                <input type="radio" id="fem" name="gender" value="feminine">
-                <label for="fem">Feminine</label>
-                <input type="radio" id="masc" name="gender" value="masculine">
-                <label for="masc">Masculine</label>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col">
-                <label for="phone">Phone number</label>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
-              </div>
-              <div class="col">
-                <label for="birthday">Birthday</label>
-                <input type="date" id="birthday" name="birthdaydate">   
               </div>
             </div>
           </div>
@@ -437,7 +386,7 @@
             </div>
           </div>
           <div class="row pb-4">
-            <div class="col-6 d-flex justify-content-center">
+            <div class="col-6 d-flex justify-content-center" style="background-color: blueviolet;">
               <p><a href="formdest.html" class="btn btn-primary">&laquo; Previous</a></p>
             </div>
             <div class="col-6 d-flex justify-content-center">
