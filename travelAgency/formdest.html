@@ -79,12 +79,12 @@
         
         form {
           border-radius: 5px;
-          background-color: rgb(248, 248, 239);
+          background-color: #ffffed;
           text-align: center;
-          padding-right: 200px;
+          /**padding-right: 200px;
           padding-left: 200px;
           margin-left: auto;
-          margin-right: auto;
+          margin-right: auto;**/
         }
 
         .center{
@@ -222,10 +222,8 @@
         <div class="col-md-12 pt-4">
           <h3 class="text-uppercase mb-4">Destination</h3>
 
-          <div class="row">
+          <div class="row mb-4 col-6 center">
             <label for="depcity">Select the departure city</label>
-          </div>  
-          <div class="row mb-4">
             <select id="depcity" name="depcity">
               <option value="porto">Porto</option>
               <option value="lisboa">Lisbon</option>
@@ -237,15 +235,15 @@
             </select>
           </div>
 
-          <div class="row mb-4">
+          <div class="row mb-4 col-6 center">
             <label for="packchoice">Select the experience pack</label>
             <select id="packchoice" name="packchoice">
-              <option value="paris">Paris</option>
-              <option value="lisboa">Lisbon</option>
-              <option value="stockholm">Stockholm</option>
-              <option value="london">London</option>
-              <option value="dublin">Dublin</option>
-              <option value="aveiro">Aveiro</option>
+              <option value="paris">Romantic Pack</option>
+              <option value="lisboa">Cultural Pack</option>
+              <option value="stockholm">Adventurer Pack</option>
+              <option value="london">Leisure Pack</option>
+              <option value="dublin">Fauna & Flora Pack</option>
+              <option value="aveiro">Party Pack</option>
             </select>
           </div>
         
@@ -266,48 +264,48 @@
                   <td>Paris</td>
                   <td>2</td>
                   <td>2</td>
-                  <td>euros</td>
+                  <td>2500 &euro;</td>
                 </tr>
                 <tr>
                   <td>Cultural Pack</td>
                   <td>Lisbon</td>
                   <td>2</td>
                   <td>3</td>
-                  <td>euros</td>
+                  <td>1200 &euro;</td>
                 </tr>
                 <tr>
                   <td>Adventurer Pack</td>
                   <td>Stockholm</td>
-                  <td>?</td>
-                  <td>?</td>
-                  <td>euros</td>
+                  <td>2</td>
+                  <td>1</td>
+                  <td>1100 &euro;</td>
                 </tr>
                 <tr>
                   <td>Leisure Pack</td>
                   <td>London</td>
                   <td>3</td>
                   <td>1</td>
-                  <td>euros</td>
+                  <td>1700 &euro;</td>
                 </tr>
                 <tr>
-                  <td>? Pack</td>
-                  <td>Dublin</td>
-                  <td>?</td>
-                  <td>?</td>
-                  <td>euros</td>
-                </tr>
-                <tr>
-                  <td>? Pack</td>
+                  <td>Fauna & Flora Pack</td>
                   <td>Aveiro</td>
-                  <td>?</td>
-                  <td>?</td>
-                  <td>euros</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>1900 &euro;</td>
+                </tr>
+                <tr>
+                  <td>Party Pack</td>
+                  <td>Dublin</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>900 &euro;</td>
                 </tr>
               </tbody>
             </table>
           </div>
         
-          <div class="row mt-5 mb-4">
+          <div class="row mt-5 mb-4 col-6 center">
             <label for="departure">Select departure day</label>
             <input type="date" id="departure" name="departure">
           </div>
