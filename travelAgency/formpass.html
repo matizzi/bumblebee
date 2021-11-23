@@ -70,7 +70,7 @@
       </style>-->
       
       <style>
-        input{
+        input, select {
           width: auto;
           margin: 3px 0;
           display: inline-block;
@@ -196,7 +196,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark probootstrap_navbar navbar-simple" id="probootstrap-navbar-cidades">
       <div class="container">
         <a id="navbar-brand" class="navbar-brand" href="../index.html">
-          <img src="../assets/images/logo_1.png" alt="" width="80" class="d-inline-block align-text-center">
+          <img src="assets/images/logo_1.png" alt="" width="80" class="d-inline-block align-text-center">
           BUMBLEBEE
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#probootstrap-menu" aria-controls="probootstrap-menu" aria-expanded="false" aria-label="Toggle navigation">
@@ -214,8 +214,8 @@
           <form class="d-flex navbar-nav nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="nav-link login-text">Account</span><i class="navbar-user fas fa-user fa-2x footer-brand-icon"></i></a>
             <ul class="dropdown-menu user-actions" aria-labelledby="navbarDropdownMenuLink">
-              <li><button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modal-login">Login</button></li>
-              <li><button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modal-registration">Sign Up</button></li>
+              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modal-login">Login</a></li>
+              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modal-registration">Sign Up</a></li>
             </ul>
           </form>
         </div>
@@ -248,15 +248,13 @@
               <label for="idnumber">ID number</label>
               <input type="text" name="idnumber" placeholder="Your ID number">
             </div>
-          </div>
-
-          <div class="row mb-3">
-            <div class="col-md-6 d-flex justify-content-md-end justify-content-center" style="background-color: blueviolet;">
-              <label for="radio">Gender</label>
-              <input type="radio" id="fem" name="gender" value="feminine">
-              <label for="fem">Feminine</label>
-              <input type="radio" id="masc" name="gender" value="masculine">
-              <label for="masc">Masculine</label>
+            <div class="col-md-6 d-flex justify-content-md-start justify-content-center">
+              <label for="gender">Gender</label>
+              <select id="gender" class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+              </select>
             </div>
           </div>
 

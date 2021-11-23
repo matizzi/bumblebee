@@ -803,6 +803,10 @@ a {
   display: none;
 }
 
+.user-actions a{
+  cursor:pointer;
+}
+
 @media (max-width: 977px) {
   .navbar-user{
     display: none;
@@ -818,7 +822,6 @@ a {
 
   .user-actions a{
     color: white;
-    cursor: pointer;
   }
 
   .probootstrap_navbar.scrolled .user-actions a{
