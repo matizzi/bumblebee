@@ -35,7 +35,6 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/form.css">
 
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
    
     <style>
@@ -48,7 +47,7 @@
         box-sizing: border-box;
       }
       
-      form {
+      .container1 {
         border-radius: 5px;
         background-color: #ffffed;
         /**padding-right: 200px;
@@ -61,6 +60,25 @@
       .center{
         margin-left: auto;
         margin-right: auto;
+      }
+
+      .prevbutton {
+        text-decoration: none;
+        padding: 15px 15px;
+        font-size: 14px;
+        letter-spacing: .15em;
+        font-weight: 400;
+        background-color: rgba(255, 238, 0, 0.541);
+        margin:auto;
+        border-radius:5px;
+        color:black;
+        border-style:none;
+      }
+        
+      .prevbutton:hover {
+        text-decoration:none;
+        color: #000;
+        background-color: rgba(255, 238, 0, 0.95);
       }
 
       </style>
@@ -186,12 +204,12 @@
     <!-- END nav -->
 
     
-    <div class="container pt-5 probootstrap-animate">
+    <div class="container container1 pt-5 probootstrap-animate">
         
           <form name="formcheckout" action="/action_page.php" method="post" class="was.validated">
             
          
-            <i class="fas fa-shopping-basket fa-3x pt-5"></i>
+            <i class="fas fa-shopping-basket fa-3x" style="padding-top: 70px;"></i>
           
             
 
@@ -236,13 +254,18 @@
 
             <h5 class="text-uppercase mb-4 mt-5">Conditions</h5>
 
-            <div class="row mb-3 form-check form-switch d-flex justify-content-center">
+            <div class="row pb-5 form-check form-switch d-flex justify-content-center">
               <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-              <label class="form-check-label" for="flexSwitchCheckDefault">I agree with all <a href="#!">terms and conditions</a>.</label>
+              <label class="form-check-label" for="flexSwitchCheckDefault">I agree with all <a class="contact-link" href="#!">terms and conditions</a>.</label>
             </div>
             
-            <p><a href="formextras.html" class="btn btn-primary">Previous</a></p>
-            <button type="submit" class="btn btn-primary" value="Submit">Submit</button>
+            <div class="row pb-3" >
+              <div class="col-md-6 d-flex justify-content-center">
+                <a href="formextras.html" class="prevbutton" role="button">&laquo; Previous</a>
+              </div>
+            </div>
+
+            <button class="cidades-ver-mais mb-5" type="submit" value="Submit">Submit</button>
             
           </form>
       </div>
