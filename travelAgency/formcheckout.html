@@ -33,14 +33,13 @@
 
     <link rel="stylesheet" href="assets/css/helpers.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/form.css">
+    <link rel="stylesheet" href="assets/css/formcompra.css">
 
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
    
     <style>
       input{
         width: 100%;
-        /**margin: 3px 0;**/
         display: block;
         border: 1px solid rgb(255, 255, 255);
         border-radius: 4px;
@@ -50,38 +49,10 @@
       .container1 {
         border-radius: 5px;
         background-color: #ffffed;
-        /**padding-right: 200px;
-        padding-left: 200px;**/
         margin-top: 2,5cm;
         margin-bottom: 2,5cm;
-        /**text-align: center;**/
       }
-
-      .center{
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .prevbutton {
-        text-decoration: none;
-        padding: 15px 15px;
-        font-size: 14px;
-        letter-spacing: .15em;
-        font-weight: 400;
-        background-color: rgba(255, 238, 0, 0.541);
-        margin:auto;
-        border-radius:5px;
-        color:black;
-        border-style:none;
-      }
-        
-      .prevbutton:hover {
-        text-decoration:none;
-        color: #000;
-        background-color: rgba(255, 238, 0, 0.95);
-      }
-
-      </style>
+    </style>
 
 	</head>
 	<body>
@@ -206,7 +177,7 @@
     
     <div class="container container1 pt-5 probootstrap-animate">
         
-          <form name="formcheckout" action="/action_page.php" method="post" class="was.validated">
+          <form name="formcheckout" action="#" method="post" class="was.validated">
             <div class="row" style="text-align: center;">
               <i class="fas fa-shopping-basket fa-3x" style="padding-top: 70px;"></i>
               <h2 class="text-uppercase pt-4 mb-4">Data billing</h2>
@@ -218,14 +189,14 @@
                 <div class="row mb-3 mt-5">
                   <div class="col-md-6 center">
                     <label for="name">Name</label>
-                    <input type="text" id="name" maxlength="20" name="firstandlastname" placeholder="Maria Oliveira" style="width: 100%; text-align: center;" required>
+                    <input type="text" id="name" maxlength="50" name="firstandlastname" placeholder="Maria Oliveira Santos" style="width: 100%; text-align: center;" required>
                   </div>
                 </div>
 
                 <div class="row mb-3">
                   <div class="col-md-6 center">
                     <label for="nif">NIF</label>
-                    <input type="nif" name="NIF" maxlength="9" placeholder="123456789" style="width: 100%; text-align: center;" required>
+                    <input type="nif" name="NIF" maxlength="9" placeholder="123456789" pattern="[0-9]{9}" style="width: 100%; text-align: center;" required>
                   </div>
                 </div>
 
@@ -239,7 +210,7 @@
                 <div class="row mb-5">
                   <div class="col-md-6 center">
                     <label for="phone">Phone number</label>
-                    <input type="tel" id="phone" name="phone" placeholder="963256357" maxlength="9" style="width: 100%; text-align: center;" required>
+                    <input type="tel" id="phone" name="phone" placeholder="963256357" pattern="[0-9]{9}" maxlength="9" style="width: 100%; text-align: center;" required>
                   </div>
                 </div>
             </div>  
@@ -256,7 +227,7 @@
 
             <div class="row pb-5 form-check form-switch">
               <div class="d-flex justify-content-center">
-                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" required>
                 <label class="form-check-label" style="padding-left: 0.5cm" for="flexSwitchCheckDefault">I agree with all <a class="contact-link" href="#!">terms and conditions</a>.</label>
               </div>
             </div>
@@ -270,6 +241,7 @@
             <div class="row pb-5" style="text-align: center;">
               <div class="col">
                 <button class="cidades-ver-mais" type="submit" value="Submit">Submit</button>
+                <img style="width:100px" src="assets\images\logo_1.png" alt="Bumblebee - Experience Agency"></img>
               </div>
             </div>
           </form>
@@ -330,7 +302,6 @@
     <script src="assets/js/select2.min.js"></script>
 
     <script src="assets/js/main.js"></script>
-   
 
 	</body>
 </html>
