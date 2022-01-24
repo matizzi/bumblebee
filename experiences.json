@@ -1,0 +1,85 @@
+[
+    {
+        "experienceName":"<b>Leisure Pack</b> | London",
+        "experienceImage":"assets/images/xmas_market.jpg",
+        "experienceDetails":
+            [
+                "Christmas is coming and so do christmas markets! We have a pack full of activities prepared just for you to get into the holidays spirit. It includes, for 1 person:",
+                "3 nights in a 4 stars hotel (breakfast included)",
+                "Round trip flight to London",
+                "1 Ticket for the Hyde Park Winter Wonderland",
+                "1 Ticket for the London Eye",
+                "1 Ticket for the Selfridges Christmas Market ",
+                "1 Ticket for the Greenwich Christmas market",
+                "1 Ticket for a night bus tour to see the Christmas Lights of London",
+                "All you need for your next Christmas it's just a click away. Don't miss this opportunity!"
+              ]
+    },
+    {
+        "experienceName":"<b>Cultural Pack</b> | Lisbon",
+        "experienceImage":"assets/images/cultural.jpg",
+        "experienceDetails":
+            [
+                "In every single corner of Lisbon you have a world to explore, since Fado Houses, overwhelming views, typical cafés, amazing museums, to beautiful squares.",
+                "We gather a bunch of activities so you can have the greatest time in this sunny city. It includes, for 3 people:",
+                "2 nights in a 4 stars hotel (breakfast included)",
+                "Round trip flight to Lisbon",
+                "3 Tickets for the MAAT museum - Art, Architecture & Technology",
+                "3 Tickets for the Calouste Gulbenkian Museum",
+                "3 Tickets for the National Tile Museum",
+                "3 Tickets for a tour in Lisbon's historic quarters (includes 3 one-way tram trips)",
+                "3 Tickets for Cristo Rei National Sanctuary",
+                "Don't miss out this amazing oportunity to have a family vacation with your loved ones. Remember, great memories comes with what and who surrounds you."
+            ]
+    },
+    {
+        "experienceName":"<b>Romantic Pack</b> | Paris",
+        "experienceImage":"assets/images/paris_romance.jpg",
+        "experienceDetails":
+            [
+                "Love is what moves and rules de world! So Bumblebee wants to give its lovebirds an extraordinary experience, at the most romantic city: Paris!",
+                "From sunset concerts for just the two of you to romantic pik-nik, one thing is garantied: you will be even more in love! It includes, for 2 people:",
+                "2 nights in a 5 stars hotel (breakfast included)",
+                "Round trip flight to Paris",
+                "Romantic pik-nik at Champs-Élysées",
+                "Tickets to the Eiffel Tower",
+                "Tickets for the Louvre Museum",
+                "City visit to the most romantic spots",
+                "Exclusive visit to Pallace of Versailles",
+                "Be in love and leave the rest with Bumblebee!"
+            ]
+    },
+    {
+        "experienceName":"<b>Adventurer Pack</b> | Stockholm",
+        "experienceImage":"assets/images/adventure.jpg",
+        "experienceDetails":
+            [
+                "Are you an adventurer by nature? Do you like to explore things by yourserlf? Then this pack is for you!",
+                "2 nights camping, in contact with nature",
+                "Game meat tasting",
+                "Private bike tour to the city",
+                "Exploring the Archipelago",
+                "Swimming at Saltsjobadens Friluftsbad",
+                "Wildlife Safari",
+                "Be wild and free!"
+            ]
+    },
+    {
+        "experienceName":"<b>Fauna & Flora Pack</b> | Aveiro",
+        "experienceImage":"assets/images/aveiro_experiences.jpg",
+        "experienceDetails":
+            [
+                "Aveiro is a special city to Bumblebee: it is the city of birth!",
+                "So all the experiences were specially design to provide you an emersive experience to what Aveiro has best: its Fauna and Flora! This experience includes, for 3 people:",
+         
+
+                "<i>Moliceiro</i> trip thought the Canals",
+                "Visit to the emblematic beaches (<i>Barra, Costa Nova</i>)",
+                "Degustation menu for tradicional pastry",
+                "All meals included, of tradicional gastronomy",
+                "Visit to Natural Reserve of São Jacinto Dunes",
+                "Private tour in the city",
+                "A family vacation you will never forget!"
+            ]
+    }
+]
