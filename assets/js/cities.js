@@ -18,5 +18,7 @@ async function adicionarCidades(){
 adicionarCidades()
 
 function loadCity(nomecidade){
-    window.location.href = "city.html?"+nomecidade
+    // window.location.href = "city.html?"+nomecidade
+    window.location.href="city.html"
+    localStorage.setItem("cidade_para_carregar", nomecidade)
 }
