@@ -71,7 +71,8 @@
             [
                 "Aveiro is a special city to Bumblebee: it is the city of birth!",
                 "So all the experiences were specially design to provide you an emersive experience to what Aveiro has best: its Fauna and Flora! This experience includes, for 3 people:",
-         
+                
+
 
                 "<i>Moliceiro</i> trip thought the Canals",
                 "Visit to the emblematic beaches (<i>Barra, Costa Nova</i>)",
@@ -80,6 +81,20 @@
                 "Visit to Natural Reserve of São Jacinto Dunes",
                 "Private tour in the city",
                 "A family vacation you will never forget!"
+            ]
+    },
+    {
+        "experienceName":"<b>Party Pack</b> | Dublin",
+        "experienceImage":"assets/images/dublin_experiences.jpg",
+        "experienceDetails":
+            [
+                "It's time to party! Bumblebee believe that everyone needs a time out from life.",
+                "So Dublin is the best destination for that! For 2 people (leave your responsabilities at home):",
+                "1 night in a 4 stars hotel (breakfast included)",
+                "Brief tour in the city",
+                "All drinks included!",
+                "Beer degustation",
+                "Just do it!"
             ]
     }
 ]
