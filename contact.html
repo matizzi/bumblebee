@@ -1,258 +1,88 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-    
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-		<title>Bumblebee &mdash; Contacts</title>
-		<meta name="description" content="infromation about the company's contacts">
-		<meta name="keywords" content="travel-agency experiences-packs travel experiences adventure contacts">
-
-    <link rel="shortcut icon" href="assets\images\logo_browser.png"> 
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
-		<link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/fonts/flaticon/font/flaticon.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/select2.css">
-    <link rel="stylesheet" href="assets/css/helpers.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-
-	</head>
-  
-	<body>
-    <div class="modal fade" id="modal-login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content gradient-custom">
-          <div class="card bg-dark text-white">
-            <div class="card-body text-center">
-              <i class="fas fa-times fa-2x login-close" data-bs-dismiss="modal" aria-label="Close"></i>
-              <div class="mb-md-5 mt-md-4 pb-5">
-                <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
-                <p class="text-white-50 mb-5">Please enter your login and password!</p>
-
-                <div class="form-outline form-white mb-4">
-                  <input type="email" id="typeEmailX" class="form-control form-control-lg" />
-                  <label class="form-label" for="typeEmailX">Email</label>
-                </div>
-  
-                <div class="form-outline form-white mb-4">
-                  <input type="password" id="typePasswordX" class="form-control form-control-lg" />
-                  <label class="form-label" for="typePasswordX">Password</label>
-                </div>
-  
-                <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p>
-                <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
-  
-                <div class="d-flex justify-content-center text-center mt-4 pt-1">
-                  <a href="#!" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
-                  <a href="#!" class="text-white"><i class="fab fa-twitter fa-lg mx-4 px-2"></i></a>
-                  <a href="#!" class="text-white"><i class="fab fa-google fa-lg"></i></a>
-                </div>
-              </div>
-              <div>
-                <p class="mb-0">Don't have an account? <a data-bs-toggle="modal" data-bs-target="#modal-registration" class="text-white-50 fw-bold cursor-pointer">Sign Up</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+<section class="probootstrap-cover overflow-hidden relative"  style="background-image: url('assets/images/contact.jpg');" data-stellar-background-ratio="0.5" id="section-home">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row align-items-center text-center">
+      <div class="col-md">
+        <h2 class="heading mb-2 display-4 font-light probootstrap-animate">Get In Touch</h2>
+        <p class="lead mb-5 probootstrap-animate">
+      </div> 
     </div>
+  </div>
+</section>
 
-    <div class="modal fade" id="modal-registration" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content gradient-custom">
-          <div class="card bg-dark text-white">
-            <div class="card-body text-center">
-              <i class="fas fa-times fa-2x login-close" data-bs-dismiss="modal" aria-label="Close"></i>
-              <div class="mb-md-5 mt-md-4 pb-5">
-                <h2 class="fw-bold mb-2 text-uppercase">Sign Up</h2>
-                <p class="text-white-50 mb-5">Please enter your data for registration</p>
-
-                <div class="form-outline form-white mb-4">
-                  <input type="text" id="text-name" class="form-control form-control-lg" />
-                  <label class="form-label" for="text-name">Name</label>
-                </div>
-  
-                <div class="form-outline form-white mb-4">
-                  <input type="email" id="typeEmailX" class="form-control form-control-lg" />
-                  <label class="form-label" for="typeEmailX">Email</label>
-                </div>
-  
-                <div class="form-outline form-white mb-4">
-                  <input type="password" id="typePasswordX" class="form-control form-control-lg" />
-                  <label class="form-label" for="typePasswordX">Password</label>
-                </div>
-
-                <button class="btn btn-outline-light btn-lg px-5" type="submit">Register</button>
-  
-                <div class="d-flex justify-content-center text-center mt-4 pt-1">
-                  <a href="#!" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
-                  <a href="#!" class="text-white"><i class="fab fa-twitter fa-lg mx-4 px-2"></i></a>
-                  <a href="#!" class="text-white"><i class="fab fa-google fa-lg"></i></a>
-                </div>
-              </div>
-              <div>
-                <p class="mb-0">Do you have an account? <a data-bs-toggle="modal" data-bs-target="#modal-login" class="text-white-50 fw-bold cursor-pointer">Login</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <nav class="navbar navbar-expand-lg navbar-dark probootstrap_navbar" id="probootstrap-navbar">
-      <div class="container">
-        <a id="navbar-brand" class="navbar-brand" href="index.html">
-          <img src="assets/images/logo_1.png" alt="" width="80" class="d-inline-block align-text-center"> BUMBLEBEE
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#probootstrap-menu" aria-controls="probootstrap-menu" aria-expanded="false" aria-label="Toggle navigation">
-          <span><i class="ion-navicon"></i></span>
-        </button>
-        <div class="collapse navbar-collapse" id="probootstrap-menu">
-          <ul class="navbar-nav ml-auto me-auto">
-            <li class="nav-item"><a class="nav-link" href="experiences.html">Experiences</a></li>
-            <li class="nav-item"><a class="nav-link" href="cities/cities.html">Cities</a></li>
-            <li class="nav-item"><a class="nav-link" href="bservices.html">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="about-us.html">About us</a></li>
-            <li class="nav-item"><a class="nav-link active" href="contact.html">Contacts</a></li>
-          </ul>
-          <form class="d-flex navbar-nav nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="nav-link login-text">Account</span><i class="navbar-user fas fa-user fa-2x footer-brand-icon"></i></a>
-            <ul class="dropdown-menu user-actions" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modal-login">Login</a></li>
-              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modal-registration">Sign Up</a></li>
-            </ul>
-          </form>
-        </div>
-      </div>
-    </nav>    
-
-    <section class="probootstrap-cover overflow-hidden relative"  style="background-image: url('assets/images/contact.jpg');" data-stellar-background-ratio="0.5" id="section-home">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row align-items-center text-center">
-          <div class="col-md">
-            <h2 class="heading mb-2 display-4 font-light probootstrap-animate">Get In Touch</h2>
-            <p class="lead mb-5 probootstrap-animate">
-          </div> 
-        </div>
-      </div>
-    </section>
-    
-    <section class="probootstrap_section bg-light" id="section-contact">
-      <div class="container">
+<section class="probootstrap_section bg-light" id="section-contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 probootstrap-animate">
+        <p class="mb-5">If you have any questions you would like clarified, please <b>don't hesitate to contact us!</b> We will be happy to help you. Also, use this space to <b>let us know your opinion about us.</b> All feeback is welcome! That's the only way we can improve to offer you the best experience possible.</p>
         <div class="row">
-          <div class="col-md-6 probootstrap-animate">
-            <p class="mb-5">If you have any questions you would like clarified, please <b>don't hesitate to contact us!</b> We will be happy to help you. Also, use this space to <b>let us know your opinion about us.</b> All feeback is welcome! That's the only way we can improve to offer you the best experience possible.</p>
-            <div class="row">
-              <div class="col-md-6">
-                <ul class="probootstrap-contact-details">
-                  <li>
-                    <span class="text-uppercase"><span class="ion-paper-airplane"></span> Email</span>
-                    bumblebee@bumblebee.com
-                  </li>
-                  <li>
-                    <span class="text-uppercase"><span class="ion-ios-telephone"></span> Phone</span>
-                    + 351 93 456 34 34
-                </ul>
-              </div>
-              <div class="col-md-6">
-                <ul class="probootstrap-contact-details">
-                  <li>
-                    <span class="text-uppercase"><span class="ion-location"></span> Address</span>
-                    Avenida Lourenço Peixinho nº34 <br>
-                    3800-164 Aveiro, Portugal
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6  probootstrap-animate">
-            <form action="#" method="post" class="probootstrap-form">
-              <div class="row mb-3">
-                <div class="col-md-6">
-                  <div class="input-group">
-                    <label for="fname" class="sr-only sr-only-focusable">First Name</label>
-                    <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="input-group">
-                    <label for="lname" class="sr-only sr-only-focusable">Last Name</label>
-                    <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name">
-                  </div>
-                </div>
-              </div>
-              <div class="row mb-3">
-                <div class="input-group">
-                  <label for="email" class="sr-only sr-only-focusable">Email</label>
-                  <input type="email" class="form-control" id="email" name="email" placeholder="Email">
-                </div>
-              </div>
-              <div class="row mb-3">
-                <div class="input-group">
-                  <label for="message" class="sr-only sr-only-focusable">Message</label>
-                  <textarea cols="30" rows="10" class="form-control" id="message" name="message" placeholder="Write your message"></textarea>
-                </div>
-              </div>
-              <div class="row">
-                <div>
-                  <input type="submit" class="btn btn-primary" id="submit" name="submit" value="Send Message">
-                  <img style="width:80px" src="assets\images\logo_1.png" alt="Bumblebee - Experience Agency"></img>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-  
-    <footer class="probootstrap_footer text-white bg-dark">
-      <div class="container">
-        <div class="row mt-4">
-          <div class="col-lg-4">
-            <h5 class="text-uppercase mb-4">About Bumblebee</h5>
-            <p>Bumblebee is a travel agency focused on giving its customers the best travel experiences.</p>
-            <div class="mt-4">
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="fab fa-facebook footer-brand-icon fa-2x"></a>
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="fab fa-instagram footer-brand-icon fa-2x"></a>
-              <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="fab fa-youtube footer-brand-icon fa-2x"></a>
-              <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer" class="fab fa-whatsapp footer-brand-icon fa-2x"></a>
-            </div>
-          </div>
-          <div class="col-lg-4 paddingup">
-            <h5 class="text-uppercase">Contacts</h5>
-            <ul class="fa-ul" style="margin-left: 1.65em;">
-              <li class="mb-3">
-                <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Aveiro, 3800-164 Portugal</span>
+          <div class="col-md-6">
+            <ul class="probootstrap-contact-details">
+              <li>
+                <span class="text-uppercase"><span class="ion-paper-airplane"></span> Email</span>
+                bumblebee@bumblebee.com
               </li>
-              <li class="mb-3">
-                <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">bumblebee@bumblebee.com</span>
-              </li>
-              <li class="mb-3">
-                <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 351 93 456 34 34</span>
+              <li>
+                <span class="text-uppercase"><span class="ion-ios-telephone"></span> Phone</span>
+                + 351 93 456 34 34
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="probootstrap-contact-details">
+              <li>
+                <span class="text-uppercase"><span class="ion-location"></span> Address</span>
+                Avenida Lourenço Peixinho nº34 <br>
+                3800-164 Aveiro, Portugal
               </li>
             </ul>
           </div>
-          <div class="col-lg-4 paddingup">
-            <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
-            <div class="search"> <i class="fas fa-search"></i> <input type="text" class="form-control" placeholder="Have a question?"> <button class="btn btn-secondary btn-sm">Search</button> </div>
-          </div>
         </div>
       </div>
-    </footer>
-    
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/jquery.waypoints.min.js"></script>
-    <script src="assets/js/jquery.easing.1.3.js"></script>
-    <script src="assets/js/select2.min.js"></script>
-    <script src="assets/js/main.js"></script>
-	</body>
-</html>
+      <div class="col-md-6  probootstrap-animate">
+        <form action="#" method="post" class="probootstrap-form">
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <div class="input-group">
+                <label for="fname" class="sr-only sr-only-focusable">First Name</label>
+                <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="input-group">
+                <label for="lname" class="sr-only sr-only-focusable">Last Name</label>
+                <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name">
+              </div>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="input-group">
+              <label for="email" class="sr-only sr-only-focusable">Email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="input-group">
+              <label for="message" class="sr-only sr-only-focusable">Message</label>
+              <textarea cols="30" rows="10" class="form-control" id="message" name="message" placeholder="Write your message"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <input type="submit" class="btn btn-primary" id="submit" name="submit" value="Send Message">
+              <img style="width:80px" src="assets\images\logo_1.png" alt="Bumblebee - Experience Agency"></img>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/jquery.waypoints.min.js"></script>
+<script src="assets/js/jquery.easing.1.3.js"></script>
+<script src="assets/js/select2.min.js"></script>
+<script src="assets/js/main.js"></script> -->
