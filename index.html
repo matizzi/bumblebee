@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Bumblebee &mdash; Home</title>
     <meta name="description" content="home page of the bumblebee's experience agency">
     <meta name="keywords" content="travel experiences adventure lisbon aveiro stockholm london paris dublin experience-pack">
     
@@ -107,7 +106,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark probootstrap_navbar" id="probootstrap-navbar">
       <div class="container">
-        <a id="navbar-brand" class="navbar-brand" href="index.html">
+        <a id="navbar-brand" class="navbar-brand" href="javascript:void(0)" onClick="goToIndex(this)">
           <img src="assets/images/logo_1.png" width="80" class="d-inline-block align-text-center"> BUMBLEBEE
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#probootstrap-menu" aria-controls="probootstrap-menu" aria-expanded="false" aria-label="Toggle navigation">
@@ -118,8 +117,8 @@
             <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
             <li class="nav-item"><a class="nav-link" href="#section-top-cities">Cities</a></li>
             <li class="nav-item"><a class="nav-link" href="#bservices">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="about-us.html">About us</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contacts</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void(0)" onClick="goToAboutUs(this)">About us</a></li>
+            <li class="nav-item"><a class="nav-link"href="javascript:void(0)" onClick="goToContacts(this)">Contacts</a></li>
           </ul>
           <form class="d-flex navbar-nav nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="nav-link login-text">Account</span><i class="navbar-user fas fa-user fa-2x footer-brand-icon"></i></a>
@@ -131,326 +130,12 @@
         </div>
       </div>
     </nav>
-
-    <section class="probootstrap-cover-index overflow-hidden relative" id="section-home">
-      <div class="overlay">
-        <div id="carouselExampleSlidesOnly" class="carousel slide index-carousel" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="assets/images/parisheader.jpeg" class="d-block header-image" alt="paris">
-            </div>
-            <div class="carousel-item">
-              <img src="assets/images/londonheader.jpeg" class="d-block header-image" alt="london">
-            </div>
-            <div class="carousel-item">
-              <img src="assets/images/lisbonheader.jpg" class="d-block header-image" alt="lisbon">
-            </div>
-            <div class="carousel-item">
-              <img src="assets/images/stockholmheader.jpeg" class="d-block header-image" alt="stockholm">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md">
-            <h2 class="heading mb-2 display-4 font-light probootstrap-animate">Live your Travel Experiences to the Fullest!</h2>              
-          </div> 
-          <div class="col probootstrap-animate">
-            <form action="#" class="probootstrap-form">
-              <div class="form-group">
-                <div class="row mb-3">
-                  <div class="col">
-                    <div class="form-group">
-                      <label for="id_label_single">From</label>
-                      <label for="id_label_single" style="width: 100%;">
-                        <select class="js-example-basic-single js-states form-control" id="id_label_single" style="width: 100%;">
-                          <option value="Oporto">Oporto</option>
-                          <option value="Faro">Faro</option>
-                          <option value="Lisbon">Lisbon</option>
-                          <option value="Barcelona">Barcelona</option>
-                          <option value="Palma de Mallorca">Palma de Mallorca</option>
-                          <option value="Malaga">Malaga</option>
-                          <option value="Alicante">Alicante</option>
-                        </select>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="form-group">
-                      <label for="id_label_single2">Experience in</label>
-                      <div class="probootstrap_select-wrap">
-                        <label for="id_label_single2" style="width: 100%;">
-                        <select class="js-example-basic-single js-states form-control" id="id_label_single2" style="width: 100%;">
-                          <option value="Aveiro">Aveiro</option>
-                          <option value="Dublin">Dublin</option>
-                          <option value="Lisbon">Lisbon</option>
-                          <option value="London">London</option>
-                          <option value="Paris">Paris</option>
-                          <option value="Stockholm">Stockholm</option>
-                        </select>
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row mb-4">
-                  <div class="col">
-                    <div class="form-group">
-                      <label for="probootstrap-date-departure">Departure</label>
-                      <div class="probootstrap-date-wrap">
-                        <span class="icon ion-calendar"></span> 
-                        <input type="text" id="probootstrap-date-departure" class="form-control" placeholder=""></input>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="form-group">
-                      <label for="probootstrap-date-arrival">Arrival</label>
-                      <div class="probootstrap-date-wrap">
-                        <span class="icon ion-calendar"></span> 
-                        <input type="text" id="probootstrap-date-arrival" class="form-control" placeholder=""></input>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col">
-                    <label for="round"><input type="radio" id="round" name="direction">  Round</label>
-                    <label for="oneway"><input type="radio" id="oneway" name="direction">  Oneway</label>
-                  </div>
-                  <div class="col">
-                    <button type="button" class="cidades-ver-mais" data-bs-toggle="modal" data-bs-target="#modal-login">Buy experience</button>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="probootstrap_section mt-5">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-12 text-center probootstrap-animate">
-            <h2 class="display-5 border-bottom">Bumblebee, a Travel Agency focused on Experiences</h2>
-            <p class="lead"><em>Founded in 2021, Bumblebee wants to give you the best travel experiences you have ever had! With a bunch of cities and different services, you can for sure live your life to the fullest!</em></p>
-            <div>
-              <a class="cidades-ver-mais" href="about-us.html" role="button" >Know more about us</a>
-              <img style="width:100px" src="assets\images\logo_1.png" alt="Bumblebee - Experience Agency">
-            </div>
-          </div>
-        </div>  
-      </div>
-    </section>
-
-    <section class="probootstrap_section bg-light" id="experiences">
-      <div class="container">
-        <div class="row text-center mb-5 probootstrap-animate">
-          <div class="col-md-12">
-            <h2 class="display-4 border-bottom probootstrap-section-heading">Most Wanted Experiences</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-
-            <div class="media probootstrap-media d-flex align-items-stretch mb-4 probootstrap-animate">
-              <div class="probootstrap-media-image" style="background-image: url(assets/images/pagina-londres-4.jpg)"></div>
-              <div class="col-9 media-body">
-                <h5 class="mb-3">Leisure Pack - London</h5>
-                <p>3 nights in a 4 stars hotel, 1 ticket for the Hyde Park Winter Wonderland and the London Eye and more!</p>
-                <div>
-                  <a href="experiences.html#london" class="cidades-ver-mais" role="button">See Pack</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="media probootstrap-media d-flex align-items-stretch mb-4 probootstrap-animate">
-              <div class="probootstrap-media-image" style="background-image: url(assets/images/pagina-paris-3.jpg)"></div>
-              <div class="col-9 media-body">
-                <h5 class="mb-3">Romantic Pack - Paris</h5>
-                <p>1 ticket for the Eiffel Tower, city visit with a violin interpreter, pik-nik in Champs-Élysées and more!</p>
-                <div>
-                  <a href="experiences.html#paris" class="cidades-ver-mais" role="button">See Pack</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            
-            <div class="media probootstrap-media d-flex align-items-stretch mb-4 probootstrap-animate">
-              <div class="probootstrap-media-image" style="background-image: url(assets/images/pagina-estocolmo-3.jpg)"></div>
-              <div class="col-9 media-body">
-                <h5 class="mb-3">Adventurer Pack - Stockholm</h5>
-                <p>Private bike tour, Camping trip, game meat tasting and more</p>
-                <div>
-                  <a href="experiences.html#stockholm" class="cidades-ver-mais" role="button">See Pack</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="media probootstrap-media d-flex align-items-stretch mb-4 probootstrap-animate">
-              <div class="probootstrap-media-image" style="background-image: url(assets/images/pagina-aveiro-4.jpg)"></div>
-              <div class="col-9 media-body">
-                <h5 class="mb-3">Fauna & Flora Pack - Aveiro</h5>
-                <p><i>Moliceiro</i> trip, conventional bakery (with <i>Ovos Moles</i>), <i>Costa Nova</i> visit and more!</p>
-                <div>
-                  <a href="experiences.html#aveiro" class="cidades-ver-mais" role="button">See Pack</a>
-                </div>              
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row text-center mt-5 probootstrap-animate">
-          <div>
-            <a href="experiences.html" class="cidades-ver-mais" role="button">And much more!</a>
-            <img style="width:80px" src="assets\images\logo_1.png" alt="Bumblebee - Experience Agency">
-          </div>    
-        </div>
-      </div>
-    </section>
     
-    <section class="probootstrap_section mt-2" id="section-top-cities">
-      <div class="container">
-        <div class="row text-center mb-5 probootstrap-animate">
-          <div class="col-md-12">
-            <h2 class="display-5 border-bottom probootstrap-section-heading">Top Visited Cities With Bumblebee</h2>
-          </div>
-        </div>
-        <div class="row content probootstrap-animate">
-          <div class="col-md-12">
-            <div class="owl-carousel js-owl-carousel-2">
-              <div class="card probootstrap-slide">
-                <a href="cities/aveiro.html"><img class="card-img-top" src="assets\images\bservices.aveiro.jpg" alt="Aveiro"></a>
-                <em class="overlay-monumentos" id="head1">Aveiro</em>
-              </div>
-            <div class="card probootstrap-slide">
-              <a href="cities/london.html"><img class="card-img-top" src="assets\images\bservices.london.jpg" alt="London"></a>
-              <em class="overlay-monumentos" id="head1">London</em>
-            </div>
-            <div class="card probootstrap-slide">
-              <a href="cities/lisbon.html"><img class="card-img-top" src="assets\images\bservices.lisbon.jpg" alt="Lisbon"></a>
-              <em class="overlay-monumentos" id="head1">Lisbon</em>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col text-center probootstrap-animate">
-            <div class="mt-5">
-              <a href="cities/cities.html" class="cidades-ver-mais" role="button">Know All Bumblebee's Cities</a>
-              <img style="width:100px" src="assets\images\logo_1.png" alt="Bumblebee - Experience Agency">
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-    </section>
-
-    <section class="probootstrap-section-half d-md-flex" id="bservices">
-      <div class="probootstrap-image probootstrap-animate" data-animate-effect="fadeIn" style="background-image: url(assets/images/tourist_guide_1.jpg)"></div>
-      <div class="probootstrap-text">
-        <div class="probootstrap-inner probootstrap-animate" data-animate-effect="fadeInRight">
-          <h2 class="heading mb-4">Addicional Services</h2>
-          <p>Any Bumblebee's experience needs to be special... And with addicional services, you can personalize your experience and make it one of a kind!
-            <div>
-              <a href="bservices.html" class="cidades-ver-mais" role="button">Know more</a>
-              <img style="width:100px" src="assets\images\logo_1.png" alt="Bumblebee - Experience Agency">
-            </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="probootstrap-section-half d-md-flex">
-      <div class="probootstrap-image order-2 probootstrap-animate" data-animate-effect="fadeIn" style="background-image: url(assets/images/pagar-cartao.jpg)"></div>
-      <div class="probootstrap-text order-1">
-        <div class="probootstrap-inner probootstrap-animate" data-animate-effect="fadeInLeft">
-          <h2 class="heading mb-4">Payment Options</h2>
-          <p>Fast, easy and at your service! Bumblebee uses all different tipes of payment, so you do not have to worry about it!</p>
-          <div>
-            <div class="mb-3">
-              <i class="fab fa-paypal fa-2x"></i>
-              <i class="fab fa-cc-visa fa-2x"></i>
-              <i class="fab fa-cc-amazon-pay fa-2x"></i>
-              <i class="fab fa-cc-mastercard fa-2x"></i>
-            </div>
-          </div>
-          <div>
-            <button type="button" class="cidades-ver-mais" data-bs-toggle="modal" data-bs-target="#modal-login">Buy my experience</button>
-            <img style="width:100px" src="assets\images\logo_1.png" alt="Bumblebee - Experience Agency">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="probootstrap_section" id="section-feature-testimonial">
-      <div class="container">
-        <div class="col-md-12 text-center probootstrap-animate">
-          <h2 class="display-4 border-bottom probootstrap-section-heading ">What clients say</h2>
-        </div>
-        <div class="accordion align-items-center" id="accordionExample">
-          <div class="row probootstrap-animate">
-            <div class="col-md-6">
-              <div class="p-3">
-                <ul class="testimonial-list">
-                  <li>
-                    <div class="card p-3" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      <div class="d-flex flex-row align-items-center"> <img src="assets/images/person_1.jpg" width="50" class="rounded-circle">
-                        <div class="d-flex flex-column ml-3"> <span class="font-weight-normal">João Soares</span> <span>25 years, Paris Experience</span> </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="card p-3" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      <div class="d-flex flex-row align-items-center"> <img src="assets/images/person_2.jpg" width="50" class="rounded-circle">
-                        <div class="d-flex flex-column ml-3"> <span class="font-weight-normal">Malena Tudi</span> <span>30 years, London Experience</span> </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="card p-3" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      <div class="d-flex flex-row align-items-center"> <img src="assets/images/person_3.jpg" width="50" class="rounded-circle">
-                        <div class="d-flex flex-column ml-3"> <span class="font-weight-normal">Felix Pollom</span> <span>35 years, Aveiro Experience</span> </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="p-3 testimonials-margin">
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="card-body">
-                    <h4>Best experience ever!!!</h4>
-                    <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>  <i class="fa fa-star"></i> </div>
-                    <p>I can't believe I'm finally getting to write this. My experience with Bumblebee all the way from the beginning was amazing. From the cheerful people in customer service to the awesome team of guides that took me through this journey - it has incredible. Nothing would change, not one thing. I am so glad that I decided to go with Bumblebee and will.</p>
-                  </div>
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                  <div class="card-body">
-                    <h4>Thanks for this great service</h4>
-                    <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
-                    <p>Traveling has always been a dream of mine. I love the idea of seeing and doing new things and experiencing different cultures, but it can be hard to find someone who shares that same ambition. I was thrilled when my sister introduced me to Bumblebee – the site offers an easy way for me to plan not only my next vacation, but also any other travel plans</p>
-                  </div>
-                </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                  <div class="card-body">
-                    <h4>You all are awesome thanks alot</h4>
-                    <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
-                    <p>I would not be able to plan my trips without Bumblebee. I'm a big traveler, and it's hard to find time to research all the hotels, flight, restaurants, etc. Not only does Bumblebee do this for me, but it's also affordable! I can't recommend this site enough.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="probootstrap_footer text-white bg-dark">
+    <!-- Main Content -->
+    <div id="content">
+    </div>
+    
+    <div class="probootstrap_footer text-white bg-dark">
       <div class="container">
         <div class="row mt-4">
           <div class="col-lg-4">
@@ -483,7 +168,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </div>
     
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
@@ -503,5 +188,6 @@
       };
       datePicker();
     </script>
+    <script src="assets/js/bbmain.js"></script>
   </body>
 </html>
