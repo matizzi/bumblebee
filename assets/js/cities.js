@@ -1,7 +1,7 @@
 
 async function adicionarCidades(){
     let generatedHtml="";
-    let url = "../cities.json";
+    let url = "json/cities.json";
     let jsonFile = await fetch(url);
     let cities = await jsonFile.json();
     for (let cidade of cities) {

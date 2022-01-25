@@ -1,7 +1,7 @@
 async function paginasCidades(){
     let generatedHtml="";
     let indicadores="";
-    let url = "../cities.json";
+    let url = "json/cities.json";
     let jsonFile = await fetch(url);
     let cities = await jsonFile.json();
     let cidadeParaCarregar = localStorage.getItem("cidade_para_carregar");
