@@ -2,48 +2,26 @@
 // Initialization
 
 var _page;
-goToIndex();
+changeContent();
 
 ////////////////////////////////////////////////////////////////////////////////
 // Functions to load Html
 
-function goToIndex(elem) {
-    // load html 
-    LoadTemplate("content", "home.html");
-
-    // set app page
-    _page = "home";
+function changeContent(pagina){
+    if(pagina == undefined){
+        LoadTemplate("content", "home.html")
+        pagina="home.html".replace(".html", "")
+        _page=pagina
+    }
+    else{
+    LoadTemplate("content", pagina)
+    pagina=pagina.replace(".html", "")
+    _page=pagina
+    }
 }
 
-function goToAboutUs(elem) {
-  
-    // load html 
-    LoadTemplate("content", "about-us.html");
 
-    // set app page
-    _page = "about_us";
-}
-
-function goToContacts(elem) {
-      
-    // load html 
-    LoadTemplate("content", "contacts.html");
-
-    // set app page
-    _page = "contacts";
-}
-
-function changeContent(adbkjasdk){
-    LoadTemplate("content", adbkjasdk)
-    adbkjasdk=adbkjasdk.replace(".html", "")
-    _page=adbkjasdk
-}
-
-if(!_page){
-    _page = "home.html";
-}
-
-let bnav = Array.from(document.getElementsByClassName('nav-item'));
+let bnav = Array.from(document.getElementsByClassName('navbartoogler'));
 
 function selectBnav (id) {
     bnav.forEach(b => {
@@ -54,7 +32,7 @@ function selectBnav (id) {
 bnav.forEach( b => {
     let id = b.id;
     b.addEventListener('click', e => {
-        history.pushState({id}, `Selected: ${id}`, `./selected=${id}`)
+        history.pushState({id}, `Selected: ${id}`, `./${id}`)
         selectBnav(id);
     });
 });
