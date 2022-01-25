@@ -16,6 +16,7 @@ function goToIndex(elem) {
 }
 
 function goToAboutUs(elem) {
+  
     // load html 
     LoadTemplate("content", "about-us.html");
 
@@ -24,6 +25,7 @@ function goToAboutUs(elem) {
 }
 
 function goToContacts(elem) {
+      
     // load html 
     LoadTemplate("content", "contacts.html");
 
@@ -40,6 +42,28 @@ function changeContent(adbkjasdk){
 if(!_page){
     _page = "home.html";
 }
+
+let bnav = Array.from(document.getElementsByClassName('nav-item'));
+
+function selectBnav (id) {
+    bnav.forEach(b => {
+        b.classList.toggle('selected', b.id === id);
+    });
+}
+
+bnav.forEach( b => {
+    let id = b.id;
+    b.addEventListener('click', e => {
+        history.pushState({id}, `Selected: ${id}`, `./selected=${id}`)
+        selectBnav(id);
+    });
+});
+
+window.addEventListener('popstate', e => {
+    selectBnav(e.state.id);
+});
+
+history.replaceState({id: null}, 'Default state', './');
 
 async function LoadTemplate(dest, file) {
     let url = "templates/" + file;
