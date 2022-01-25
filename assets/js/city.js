@@ -53,5 +53,3 @@ async function paginasCidades(url){
         }
     }
 }
-
-paginasCidades("../json/cities.json")
