@@ -42,30 +42,6 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 		});
 	};
 	scrollWindow();
-	
-	
-	// navigation
-	var OnePageNav = function() {
-		var navToggler = $('.navbar-toggler');
-		$(".smoothscroll[href^='#'], #probootstrap-navbar ul li a[href^='#']").on('click', function(e) {
-		 	e.preventDefault();
-		 	var hash = this.hash;
-		 		
-		 	$('html, body').animate({
-
-		    scrollTop: $(hash).offset().top
-		  }, 700, 'easeInOutExpo', function(){
-		    window.location.hash = hash;
-		  });
-		});
-		$("#probootstrap-navbar ul li a[href^='#']").on('click', function(e){
-			if ( navToggler.is(':visible') ) {
-		  	navToggler.click();
-		  }
-		});
-
-	};
-	OnePageNav();
 
 
 	var select2 = function() {
