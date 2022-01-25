@@ -1,7 +1,6 @@
-async function paginasCidades(){
+async function paginasCidades(url){
     let generatedHtml="";
     let indicadores="";
-    let url = "json/cities.json";
     let jsonFile = await fetch(url);
     let cities = await jsonFile.json();
     let cidadeParaCarregar = localStorage.getItem("cidade_para_carregar");
@@ -30,9 +29,7 @@ async function paginasCidades(){
 
             document.getElementById("carrosel-imagens-cidade").innerHTML = generatedHtml;
             document.getElementById("indicadores").innerHTML = indicadores;
-            console.log(generatedHtml)
             generatedHtml=""
-            console.log(generatedHtml)
             for (let atracao of cidade.atracoes){
                 generatedHtml+='<div class="card probootstrap-slide">',
                 generatedHtml+='<img class="card-img-top" src="'+atracao.atracaoimagem+'" alt="Card image cap">';
@@ -57,4 +54,4 @@ async function paginasCidades(){
     }
 }
 
-paginasCidades()
+paginasCidades("../json/cities.json")

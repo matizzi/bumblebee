@@ -1,7 +1,6 @@
 
-async function adicionarCidades(){
+async function adicionarCidades(url){
     let generatedHtml="";
-    let url = "json/cities.json";
     let jsonFile = await fetch(url);
     let cities = await jsonFile.json();
     for (let cidade of cities) {
@@ -15,7 +14,7 @@ async function adicionarCidades(){
     document.getElementById("cidades").innerHTML = generatedHtml;
 }
 
-adicionarCidades()
+adicionarCidades("../json/cities.json")
 
 function loadCity(nomecidade){
     // window.location.href = "city.html?"+nomecidade
