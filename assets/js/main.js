@@ -111,52 +111,50 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 		}
 	};
 	contentWayPoint();
+
+
+	var owlCarouselFunc = function() {
+		$('.js-owl-carousel').owlCarousel({
+		  loop : true,
+		  margin : 20,
+		  nav : true,
+		  stagePadding : 50,
+		  navText : ["<span class='ion-chevron-left'></span>","<span class='ion-chevron-right'></span>"],
+		  responsive : {
+			  0 : {
+				  items:1
+			  },
+			  600 : {
+				  items:2
+			  },
+			  1000 : {
+				  items:3
+			  }
+		  }
+		  });
 	
-
-
-  var owlCarouselFunc = function() {
-	  $('.js-owl-carousel').owlCarousel({
-	    loop : true,
-	    margin : 20,
-	    nav : true,
-	    stagePadding : 50,
-	    navText : ["<span class='ion-chevron-left'></span>","<span class='ion-chevron-right'></span>"],
-	    responsive : {
-	        0 : {
-	            items:1
-	        },
-	        600 : {
-	            items:2
-	        },
-	        1000 : {
-	            items:3
-	        }
-	    }
-		});
-
-		$('.js-owl-carousel-2').owlCarousel({
-	    loop : false,
-	    margin : 20,
-	    nav : true,
-	    stagePadding : 0,
-	    navText : ["<span class='ion-chevron-left'></span>","<span class='ion-chevron-right'></span>"],
-	    responsive : {
-	        0 : {
-	            items:1
-	        },
-	        600 : {
-	            items:1
-	        },
-	        800 : {
-	            items:2
-	        },
-	        1000 : {
-	            items:3
-	        }
-	    }
-		});
-  };
-  owlCarouselFunc();
+		  $('.js-owl-carousel-2').owlCarousel({
+		  loop : false,
+		  margin : 20,
+		  nav : true,
+		  stagePadding : 0,
+		  navText : ["<span class='ion-chevron-left'></span>","<span class='ion-chevron-right'></span>"],
+		  responsive : {
+			  0 : {
+				  items:1
+			  },
+			  600 : {
+				  items:1
+			  },
+			  800 : {
+				  items:2
+			  },
+			  1000 : {
+				  items:3
+			  }
+		  }
+		  });
+	};
 
   var ThumbnailOpacity = function() {
   	var t = $('.probootstrap-thumbnail');

@@ -33,7 +33,13 @@ function goToContacts(elem) {
     _page = "contacts";
 }
 
-  if(!_page){
+function changeContent(adbkjasdk){
+    LoadTemplate("content", adbkjasdk)
+    adbkjasdk=adbkjasdk.replace(".html", "")
+    _page=adbkjasdk
+}
+
+if(!_page){
     _page = "home.html";
 }
 
