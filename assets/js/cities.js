@@ -13,3 +13,18 @@ async function adicionarCidades(url){
     }
     document.getElementById("cidades").innerHTML = generatedHtml;
 }
+
+async function carrosselHome(url){
+    let generatedHtml="";
+    let jsonFile = await fetch(url);
+    let carrosel = await jsonFile.json();
+    for (let cidade of carrosel){
+        if(cidade.topvisited){
+            generatedHtml+='<div class="card probootstrap-slide">';
+            generatedHtml+='<a onclick="loadCity(\''+cidade.cityname+'\')"><img class="card-img-top" src="'+cidade.cityimg+'" alt="Aveiro"></a>';
+            generatedHtml+='<em class="overlay-monumentos" id="head1">'+cidade.cityname+'</em>';
+            generatedHtml+="</div>";
+        }
+    }
+    document.getElementById("carrosel-cidades-home").innerHTML = generatedHtml;
+}

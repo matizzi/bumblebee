@@ -6,14 +6,14 @@ async function carregarTestemunhos (divid,url){
     let testemunhos = await jsonFile.json();
     for(let testemunho of testemunhos){
         generatedHtmlinformacoes+="<li>";
-        generatedHtmlinformacoes+='<div class="card p-3" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">';
+        generatedHtmlinformacoes+='<div class="card p-3" data-bs-toggle="collapse" data-bs-target="#'+testemunho.nomecollapse+'" aria-expanded="true" aria-controls="collapseOne">';
         generatedHtmlinformacoes+='<div class="d-flex flex-row align-items-center"> <img src="'+testemunho.imagemtestemunho+'" width="50" class="rounded-circle">';
         generatedHtmlinformacoes+='<div class="d-flex flex-column ml-3"> <span class="font-weight-normal">'+testemunho.nometestemunho+'</span> <span>'+testemunho.idadetestemunho+','+testemunho.nomeexperiencia+'</span></div>';
         generatedHtmlinformacoes+="</div>";
         generatedHtmlinformacoes+="</div>";
         generatedHtmlinformacoes+="</li>";
     
-        generatedHtmltexto+='<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">';
+        generatedHtmltexto+='<div id="'+testemunho.nomecollapse+'" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">';
         generatedHtmltexto+='<div class="card-body">';
         generatedHtmltexto+='<h4>'+testemunho.titulotestemunho+'</h4>';
         generatedHtmltexto+='<div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>';
@@ -35,16 +35,16 @@ async function carregarTestemunhos (divid,url){
     generatedHtml+="</ul>";
     generatedHtml+="</div>";
     generatedHtml+="</div>";
-    generatedHtml+="</div>";
     generatedHtml+='<div class="col-md-6">';
     generatedHtml+='<div class="p-3 testimonials-margin" id="textos-testemunhos">'+generatedHtmltexto;
     generatedHtml+="</div>";
     generatedHtml+="</div>";
     generatedHtml+="</div>";
 
+
     document.getElementById(divid).innerHTML= generatedHtml
 
 }
-carregarTestemunhos("section-feature-testimonial","../json/testemunhos.json")
+
 
   
