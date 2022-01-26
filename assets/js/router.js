@@ -52,11 +52,11 @@ Router.prototype = {
             let text = await obj.text();
             scope.rootElem.innerHTML = text;
 
-            loadDynamicContent(htmlName);
+            await loadDynamicContent(htmlName);
 
             contentWayPoint();
 
-            if(! htmlName.includes("#")){
+            if(!htmlName.includes("#")){
                 window.scrollTo(0,0);
             }
             

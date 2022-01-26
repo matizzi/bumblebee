@@ -1,9 +1,9 @@
-function loadDynamicContent(htmlName){
+async function loadDynamicContent(htmlName){
     if(htmlName.includes("cities")){
-        adicionarCidades("json/cities.json");
+        await adicionarCidades("json/cities.json");
     }
     else if (htmlName.includes("city")){
-        paginasCidades("json/cities.json");
+        await paginasCidades("json/cities.json");
     }
     else if(htmlName.includes("experiences")){
         await addExperience()
@@ -29,7 +29,8 @@ function init() {
         new Route('experienceLondon', 'experiences.html#london'),
         new Route('experienceStockholm', 'experiences.html#stockholm'),
         new Route('experienceParis', 'experiences.html#paris'),
-        new Route('experienceAveiro', 'experiences.html#aveiro')
+        new Route('experienceAveiro', 'experiences.html#aveiro'),
+        new Route('cityAveiro', 'city.html#aveiro')
     ]);
 }
 init();
