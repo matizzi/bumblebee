@@ -52,14 +52,22 @@ Router.prototype = {
             let text = await obj.text();
             scope.rootElem.innerHTML = text;
 
+            if(htmlName.includes("experiences")){
+                await addExperience()
+            }
+
             contentWayPoint();
 
+            if(! htmlName.includes("#")){
+                window.scrollTo(0,0);
+            }
+            
         })(this);
 
-        htmlName=htmlName.replace(".html","");
+        let title=htmlName.replace(".html","");
         //capitalize text
-        htmlName=htmlName[0].toUpperCase() + htmlName.substring(1);
-        document.title = htmlName + ' - Bumblebee';
+        title=htmlName[0].toUpperCase() + htmlName.substring(1);
+        document.title = title + ' - Bumblebee';
         
     }
 };
