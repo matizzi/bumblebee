@@ -100,10 +100,6 @@ a {
   letter-spacing: .3em;
 }
 
-.probootstrap_navbar.scrolled #navbar-brand  {
-  color: black;
-}
-
 .navbar-toggler span i {
   font-size: 30px; }
 
@@ -115,7 +111,7 @@ a {
   width: 100%; }
   @media (max-width: 991px) {
     .probootstrap_navbar {
-      background: rgba(0, 0, 0, 0.6); } }
+      background: rgb(51, 51, 51); } }
   .probootstrap_navbar .nav-item .nav-link {
     font-size: 12px;
     text-transform: uppercase;
@@ -127,7 +123,7 @@ a {
     .probootstrap_navbar .nav-item .nav-link.active {
       color: #fff; }
   .probootstrap_navbar.scrolled {
-    background: rgba(255, 238, 0, 0.95);
+    background: rgba(51, 51, 51, 0.9);
     position: fixed;
     right: 0;
     left: 0;
@@ -135,14 +131,13 @@ a {
     margin-top: -130px; }
     .probootstrap_navbar.scrolled .nav-item .nav-link {
       padding: .5em 1em;
-      color: rgb(87, 86, 86); }
+      color: rgba(255, 255, 255, 0.6);}
     .probootstrap_navbar.scrolled .nav-item .nav-link.active {
       font-weight: bold;
-      color: rgb(19, 19, 19);
+      color: #fff;;
     }
     .probootstrap_navbar.scrolled .nav-item .nav-link:hover:not(.active) {
-      /* color: black; */
-      text-shadow: 0 0 1px #000000;
+      color: rgba(255, 255, 255);;
     }
     .probootstrap_navbar.scrolled.awake {
       margin-top: 0px;
