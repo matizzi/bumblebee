@@ -1,12 +1,19 @@
 async function loadDynamicContent(htmlName){
     if(htmlName.includes("cities")){
         await adicionarCidades("json/cities.json");
+        await carregarTestemunhos("section-feature-testimonial","json/testemunhos.json");
     }
     else if (htmlName.includes("city")){
         await paginasCidades("json/cities.json");
+        await carregarTestemunhos("section-feature-testimonial","json/testemunhos.json");
     }
     else if(htmlName.includes("experiences")){
         await addExperience()
+    }
+    else if(htmlName.includes("home")){
+        await carrosselHome("json/cities.json")
+        owlCarouselFunc()
+        await carregarTestemunhos("section-feature-testimonial","json/testemunhos.json");
     } 
     else if (htmlName.includes("services")){
         await adicionarServicos("json/services.json");
@@ -19,8 +26,6 @@ function loadCity(nomecidade){
 }
 
 
-/////////////////////
-// second approach
 function init() {
     var router = new Router([
         new Route('home', 'home.html', true),            
@@ -37,4 +42,8 @@ function init() {
         new Route('cityAveiro', 'city.html#aveiro')
     ]);
 }
+
+
 init();
+
+
