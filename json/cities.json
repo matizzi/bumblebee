@@ -2,87 +2,87 @@
     {
         "cityname":"Paris", 
         "coordenadascidade": {"latitude":48.86, "longitude": 2.34},
-        "cityimg":"../assets/images/paris.jpeg",
+        "cityimg":"assets/images/paris.jpeg",
         "subtitulo":"<b>The city of lights and love</b>\t&#10084;", 
         "descricao":"The <b>‘City of Light’</b> has long been the preferred city break destination for doe-eyed couples who come for the <b>unrivalled architecture</b>, the <b>quality of its restaurants</b> and <b>romantic night cruises</b> down the River Seine. But there is more to Paris than just the language of love. This place is also the <b>capital of fashion</b>, haute cuisine and is one of the most culturally rich cities in the world. Paris is full of galleries dripping with artistic masterpieces and streets filled with some of the <b>most iconic buildings in the world.</b>",
         "atracoes":[
-            {"atracaonome":"Eiffel Tower","atracaoimagem":"../assets/images/monumentos-paris.jpg"},
-            {"atracaonome":"Arch of Triumph","atracaoimagem":"../assets/images/monumentos-paris-2.jpg"},
-            {"atracaonome":"Notre Dame Cathedral","atracaoimagem":"../assets/images/monumentos-paris-3.jpg"},
-            {"atracaonome":"The Louvre Museum","atracaoimagem":"../assets/images/monumentos-paris-4.jpg"},
-            {"atracaonome":"Pont Alexandre III","atracaoimagem":"../assets/images/monumentos-paris-5.jpg"}
+            {"atracaonome":"Eiffel Tower","atracaoimagem":"assets/images/monumentos-paris.jpg"},
+            {"atracaonome":"Arch of Triumph","atracaoimagem":"assets/images/monumentos-paris-2.jpg"},
+            {"atracaonome":"Notre Dame Cathedral","atracaoimagem":"assets/images/monumentos-paris-3.jpg"},
+            {"atracaonome":"The Louvre Museum","atracaoimagem":"assets/images/monumentos-paris-4.jpg"},
+            {"atracaonome":"Pont Alexandre III","atracaoimagem":"assets/images/monumentos-paris-5.jpg"}
         ],
-        "imagenscidade": ["../assets/images/pagina-paris-1.jpg", "../assets/images/pagina-paris-2.jpg", "../assets/images/pagina-paris-3.jpg", "../assets/images/pagina-paris-4.jpg"]
+        "imagenscidade": ["assets/images/pagina-paris-1.jpg", "assets/images/pagina-paris-2.jpg", "assets/images/pagina-paris-3.jpg", "assets/images/pagina-paris-4.jpg"]
     },
     {   "cityname":"London",
         "coordenadascidade": {"latitude": 51.50, "longitude": -0.12},
-        "cityimg":"../assets/images/london.jpeg",
+        "cityimg":"assets/images/london.jpeg",
         "subtitulo":"<b>The square mile city</b>\t&#10084;", 
         "descricao":"London is the <b>capital of the United Kingdom and England</b> and is located on the besides the River Thames. It is the <b>largest city in the country</b> and an important cultural, business and financial center. The city is quite popular for international tourism because its <b>home to one of the oldest-standing monarchies in the western hemisphere.</b> Famous for its red double-decker buses and phone booths, London is also popular in the holiday season for its Christmas markets.",
         "atracoes":[
-            {"atracaonome":"The Big Ben","atracaoimagem":"../assets/images/monumentos-londres-1.jpg"},
-            {"atracaonome":"London Eye","atracaoimagem":"../assets/images/monumentos-londres-2.jpg"},
-            {"atracaonome":"Buckingham Palace","atracaoimagem":"../assets/images/monumentos-londres-3.jpg"},
-            {"atracaonome":"Westminster Abbey","atracaoimagem":"../assets/images/monumentos-londres-4.jpg"},
-            {"atracaonome":"Hyde Park","atracaoimagem":"../assets/images/monumentos-londres-5.jpg"}
+            {"atracaonome":"The Big Ben","atracaoimagem":"assets/images/monumentos-londres-1.jpg"},
+            {"atracaonome":"London Eye","atracaoimagem":"assets/images/monumentos-londres-2.jpg"},
+            {"atracaonome":"Buckingham Palace","atracaoimagem":"assets/images/monumentos-londres-3.jpg"},
+            {"atracaonome":"Westminster Abbey","atracaoimagem":"assets/images/monumentos-londres-4.jpg"},
+            {"atracaonome":"Hyde Park","atracaoimagem":"assets/images/monumentos-londres-5.jpg"}
         ],
-        "imagenscidade": ["../assets/images/pagina-londres-1.jpg", "../assets/images/pagina-londres-2.jpg", "../assets/images/pagina-londres-3.jpg", "../assets/images/pagina-londres-4.jpg"]
+        "imagenscidade": ["assets/images/pagina-londres-1.jpg", "assets/images/pagina-londres-2.jpg", "assets/images/pagina-londres-3.jpg", "assets/images/pagina-londres-4.jpg"]
     },
     {   "cityname":"Lisbon",
         "coordenadascidade": {"latitude": 38.73, "longitude": -9.14},
-        "cityimg":"../assets/images/lisbon.jpeg",
+        "cityimg":"assets/images/lisbon.jpeg",
         "subtitulo":"<b>The city of seven hills</b>\t&#10084;", 
         "descricao":"With more than 20 centuries of history, the <b>Portuguese capital</b> is located next to the Tagus River. With the <b>sun almost always present</b>, its unique beauty and architectural uniqueness are acclaimed beyond borders. Rich in monuments, typical neighborhoods (Baixa Pombalina, Belém, Bairro Alto, Chiado, Bica, Alfama and Mouraria), riverside area, Fado houses, parks, gardens and viewpoints, <b>Lisbon offers several possibilities to discover</b>, visit and enjoy its <b>vast heritage natural, historical and cultural city.</b> Furthermore, Lisbon is known for its <b>connection to the sea</b> and that is why fish dishes are very popular.",
         "atracoes":[
-            {"atracaonome":"Commerce Square","atracaoimagem":"../assets/images/monumentos-lisboa-1.jpg"},
-            {"atracaonome":"Belém Tower","atracaoimagem":"../assets/images/monumentos-lisboa-2.jpeg"},
-            {"atracaonome":"MAAT","atracaoimagem":"../assets/images/monumentos-lisboa-3.jpg"},
-            {"atracaonome":"Palace of Pena","atracaoimagem":"../assets/images/monumentos-lisboa-4.jpg"},
-            {"atracaonome":"Monument to the discoveries","atracaoimagem":"../assets/images/monumentos-lisboa-5.jpg"}
+            {"atracaonome":"Commerce Square","atracaoimagem":"assets/images/monumentos-lisboa-1.jpg"},
+            {"atracaonome":"Belém Tower","atracaoimagem":"assets/images/monumentos-lisboa-2.jpeg"},
+            {"atracaonome":"MAAT","atracaoimagem":"assets/images/monumentos-lisboa-3.jpg"},
+            {"atracaonome":"Palace of Pena","atracaoimagem":"assets/images/monumentos-lisboa-4.jpg"},
+            {"atracaonome":"Monument to the discoveries","atracaoimagem":"assets/images/monumentos-lisboa-5.jpg"}
         ],
-        "imagenscidade": ["../assets/images/pagina-lisboa-1.jpg", "../assets/images/pagina-lisboa-2.jpg", "../assets/images/pagina-lisboa-3.jpg", "../assets/images/pagina-lisboa-4.jpg"]
+        "imagenscidade": ["assets/images/pagina-lisboa-1.jpg", "assets/images/pagina-lisboa-2.jpg", "assets/images/pagina-lisboa-3.jpg", "assets/images/pagina-lisboa-4.jpg"]
     },
     {   "cityname":"Stockholm",
         "coordenadascidade": {"latitude": 59.33, "longitude": 18.05},
-        "cityimg":"../assets/images/stockholm.jpg",
+        "cityimg":"assets/images/stockholm.jpg",
         "subtitulo":"<b>Venice of the north</b>\t&#10084;", 
         "descricao":"Stockholm is known as one of <b>the most inclusive and welcoming cities in the world.</b> Its contemporary, urban appeal is balanced with centuries-old history and closeness to nature. As for the things to do in Stockholm, the list is endless. <b>Built on 14 islands</b> around one of Europe’s largest and best-preserved mediaeval city centres, the city is stunningly located by the Baltic Sea. <b>The city is easy to get around on foot or public transport</b>, and its various districts have their own unique vibes.",
         "atracoes":[
-            {"atracaonome":"Stortorget","atracaoimagem":"../assets/images/monumentos-estocolmo-1.jpg"},
-            {"atracaonome":"Skeppsholmsbron","atracaoimagem":"../assets/images/monumentos-estocolmo-2.jpg"},
-            {"atracaonome":"Stockholms Domkyrka","atracaoimagem":"../assets/images/monumentos-estocolmo-3.jpg"},
-            {"atracaonome":"Kungliga Slottet","atracaoimagem":"../assets/images/monumentos-estocolmo-4.jpg"},
-            {"atracaonome":"Nordiska Museet","atracaoimagem":"../assets/images/monumentos-estocolmo-5.jpg"}
+            {"atracaonome":"Stortorget","atracaoimagem":"assets/images/monumentos-estocolmo-1.jpg"},
+            {"atracaonome":"Skeppsholmsbron","atracaoimagem":"assets/images/monumentos-estocolmo-2.jpg"},
+            {"atracaonome":"Stockholms Domkyrka","atracaoimagem":"assets/images/monumentos-estocolmo-3.jpg"},
+            {"atracaonome":"Kungliga Slottet","atracaoimagem":"assets/images/monumentos-estocolmo-4.jpg"},
+            {"atracaonome":"Nordiska Museet","atracaoimagem":"assets/images/monumentos-estocolmo-5.jpg"}
         ],
-        "imagenscidade": ["../assets/images/pagina-estocolmo-1.jpg", "../assets/images/pagina-estocolmo-2.jpg", "../assets/images/pagina-estocolmo-3.jpg", "../assets/images/pagina-estocolmo-4.jpg"]
+        "imagenscidade": ["assets/images/pagina-estocolmo-1.jpg", "assets/images/pagina-estocolmo-2.jpg", "assets/images/pagina-estocolmo-3.jpg", "assets/images/pagina-estocolmo-4.jpg"]
     },
     {   "cityname":"Aveiro",
         "coordenadascidade": {"latitude": 40.64, "longitude": -8.64},
-        "cityimg":"../assets/images/aveiro.jpg",
+        "cityimg":"assets/images/aveiro.jpg",
         "subtitulo":"<b>The portuguese venice</b>\t&#10084;", 
         "descricao":"Aveiro is a city on the Portuguese west coast next to a lagoon known as the Ria de Aveiro. It is distinguished by its <b>channels navigated by colorful boats</b> (moliceiros) and for its typical sweet, <b>Ovos Moles.</b> This city has always been linked to the <b>sea trade, fishing and salt production.</b> Near the center is <b>Costa Nova</b> with its colorful houses; <b>Barra Beach</b>, with the biggest lighthouse in Portugal, <b>Ílhavo</b>, the land of cod, among many other places worth visiting.",
         "atracoes":[
-            {"atracaonome":"City Park","atracaoimagem":"../assets/images/monumentos-aveiro-1.jpg"},
-            {"atracaonome":"Barra Beach lighthouse","atracaoimagem":"../assets/images/monumentos-aveiro-2.jpg"},
-            {"atracaonome":"Moliceiro rides","atracaoimagem":"../assets/images/monumentos-aveiro-3.jpg"},
-            {"atracaonome":"Santa Joana Museum","atracaoimagem":"../assets/images/monumentos-aveiro-4.jpg"},
-            {"atracaonome":"Costa Nova","atracaoimagem":"../assets/images/monumentos-aveiro-5.jpg"}
+            {"atracaonome":"City Park","atracaoimagem":"assets/images/monumentos-aveiro-1.jpg"},
+            {"atracaonome":"Barra Beach lighthouse","atracaoimagem":"assets/images/monumentos-aveiro-2.jpg"},
+            {"atracaonome":"Moliceiro rides","atracaoimagem":"assets/images/monumentos-aveiro-3.jpg"},
+            {"atracaonome":"Santa Joana Museum","atracaoimagem":"assets/images/monumentos-aveiro-4.jpg"},
+            {"atracaonome":"Costa Nova","atracaoimagem":"assets/images/monumentos-aveiro-5.jpg"}
         ],
-        "imagenscidade": ["../assets/images/pagina-aveiro-2.jpg", "../assets/images/pagina-aveiro-1.jpg", "../assets/images/pagina-aveiro-3.jpg", "../assets/images/pagina-aveiro-4.jpg"]
+        "imagenscidade": ["assets/images/pagina-aveiro-2.jpg", "assets/images/pagina-aveiro-1.jpg", "assets/images/pagina-aveiro-3.jpg", "assets/images/pagina-aveiro-4.jpg"]
     },
     {   "cityname":"Dublin",
         "coordenadascidade": {"latitude": 53.35, "longitude": -6.26},
-        "cityimg":"../assets/images/dublin.jpg",
+        "cityimg":"assets/images/dublin.jpg",
         "subtitulo":"<b>A warm, welcoming and fun city</b>\t&#10084;", 
         "descricao":"Dublin,<b>the capital of Ireland</b>, is located on the east coast of the country, at the mouth of the River Liffey, which divides the city into two parts. <b>More peaceful and hospitable than London</b>, its quiet streets and easy walking distance allow you to get to know it walking through buildings of <b>18th century Georgian architecture</b>. Whether you fancy Michelin-star dining, cosy cafés, tasty Irish classics, the best in world cuisine, bustling food markets, or fresh seafood straight from the coast, <b>Dublin's a place with something to suit all tastes.</b> Also, it is home to google's european headquarters, numerous pubs and the famous guinness beer.",
         "atracoes":[
-            {"atracaonome":"The Temple Bar","atracaoimagem":"../assets/images/monumentos-dublin-1.jpg"},
-            {"atracaonome":"Guinness Storehouse","atracaoimagem":"../assets/images/monumentos-dublin-2.jpg"},
-            {"atracaonome":"Dublin Castle","atracaoimagem":"../assets/images/monumentos-dublin-3.jpg"},
-            {"atracaonome":"St. Patricks Cathedral","atracaoimagem":"../assets/images/monumentos-dublin-4.jpg"},
-            {"atracaonome":"Phoenix Park","atracaoimagem":"../assets/images/monumentos-dublin-5.jpg"}
+            {"atracaonome":"The Temple Bar","atracaoimagem":"assets/images/monumentos-dublin-1.jpg"},
+            {"atracaonome":"Guinness Storehouse","atracaoimagem":"assets/images/monumentos-dublin-2.jpg"},
+            {"atracaonome":"Dublin Castle","atracaoimagem":"assets/images/monumentos-dublin-3.jpg"},
+            {"atracaonome":"St. Patricks Cathedral","atracaoimagem":"assets/images/monumentos-dublin-4.jpg"},
+            {"atracaonome":"Phoenix Park","atracaoimagem":"assets/images/monumentos-dublin-5.jpg"}
         ],
-        "imagenscidade": ["../assets/images/pagina-dublin-1.jpg", "../assets/images/pagina-dublin-2.jpg", "../assets/images/pagina-dublin-3.jpg", "../assets/images/pagina-dublin-4.jpg"]
+        "imagenscidade": ["assets/images/pagina-dublin-1.jpg", "assets/images/pagina-dublin-2.jpg", "assets/images/pagina-dublin-3.jpg", "assets/images/pagina-dublin-4.jpg"]
     }
 ]
 

@@ -79,6 +79,20 @@
 
 
 
+function loadDynamicContent(htmlName){
+    if(htmlName.includes("cities")){
+        adicionarCidades("json/cities.json");
+    }
+   
+    else if (htmlName.includes("city")){
+        paginasCidades("json/cities.json");
+    }   
+}
+
+function loadCity(nomecidade){
+    window.location.href = "#city";
+    localStorage.setItem("cidade_para_carregar", nomecidade);
+}
 
 
 /////////////////////

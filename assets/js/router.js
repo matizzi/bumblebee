@@ -52,14 +52,16 @@ Router.prototype = {
             let text = await obj.text();
             scope.rootElem.innerHTML = text;
 
+            loadDynamicContent(htmlName);
+
             contentWayPoint();
 
         })(this);
 
-        htmlName=htmlName.replace(".html","");
+        let title=htmlName.replace(".html","");
         //capitalize text
-        htmlName=htmlName[0].toUpperCase() + htmlName.substring(1);
-        document.title = htmlName + ' - Bumblebee';
+        title=title[0].toUpperCase() + title.substring(1);
+        document.title = title + ' - Bumblebee';
         
     }
 };
