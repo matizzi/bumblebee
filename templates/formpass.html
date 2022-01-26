@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 	<head>
-   
+     
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -22,18 +22,41 @@
     <link rel="stylesheet" href="assets/css/helpers.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/formcompra.css">
-
-
-    <style>  
-      input, select, textarea {
+      
+    <style>
+      input {
+        width: auto;
+        margin: 3px 0;
         display: inline-block;
         border: 1px solid rgb(255, 255, 255);
         border-radius: 4px;
-        box-sizing: border-box;
+        box-sizing: auto;
+      }
+
+      label{
+        display: inline-block;
+        width: 140px;
+        text-align: left;
       }
         
       .container1 {
-        background-color: #ffffed;
+        border-radius: 5px;
+        background-color: #ffffeb;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      input[type=email]{
+        width: 40.5%;
+      }
+
+      #gender{
+        width: auto;
+        margin: 3px 0;
+        display: inline-block;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 4px;
+        box-sizing: auto;
       }
     </style>
 
@@ -145,111 +168,184 @@
           </form>
         </div>
       </div>
-    </nav>
-    
-    <div class="container container1 pt-5 probootstrap-animate">
-      <form name="formextras" action="#" method="post" class="was.validated">
-        <div class="row" style="text-align: center;">
-          <i class="fas fa-cart-plus fa-3x" style="padding-top: 70px;"></i>
-          <h2 class="text-uppercase pt-4 mb-4">Extra services</h2>
-        </div>
-        <div class="row mb-4" style="text-align: center;">
-          <h5>We have a range of services to make your experience more confortable and pleasant.</h5>
-        </div>
-        <div class="row col-sm-6 center mb-5">
-          <P>Are you looking for a rent-a-car service, transfer service or a local guide?<br/> Don't worry, we've got you! (You can choose more than one service)</P>
-          <div class="form-check">
-            <label class="form-check-label" for="extra1">Rent-a-car service during the stay</label>
-            <input class="form-check-input" type="checkbox" id="extra1" name="extra1" value="rent-a-car">
+    </nav> -->
+
+    <div class="container container1">
+      <form name="formpass" action="#" method="post" class="was.validated">
+        <div class="container pt-5 probootstrap-animate">
+
+          <div class="text-center">
+            <i class="fas fa-user-plus fa-3x" style="padding-top: 70px;"></i>
+            <h2 class="text-uppercase pt-4 mb-5">Passengers</h2>
           </div>
-          <div class="form-check">
-            <label class="form-check-label" for="extra2">Transport to the Airport</label>
-            <input class="form-check-input" type="checkbox" id="extra2" name="extra2" value="toairport">
+
+          <div class="row mb-3">
+            <div class="col-md-6 d-flex justify-content-md-end justify-content-center">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your first name" required>
+            </div>
+            <div class="col-md-6 d-flex justify-content-md-start justify-content-center" required>
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name">
+            </div>
           </div>
-          <div class="form-check">
-            <label class="form-check-label" for="extra3">Transport from the Airport</label>
-            <input class="form-check-input" type="checkbox" id="extra3" name="extra3" value="fromairport">
+
+          <div class="row mb-3">
+            <div class="col-md-6 d-flex justify-content-md-end justify-content-center" required>
+              <label for="idnumber">ID number</label>
+              <input type="text" name="idnumber" placeholder="Your ID number">
+            </div>
+            <div class="col-md-6 d-flex justify-content-md-start justify-content-center" required>
+              <label for="gender">Gender</label>
+              <select id="gender" aria-label="Default select example">
+                <option value="fem">Feminine</option>
+                <option value="masc">Masculine</option>
+              </select>
+            </div>
           </div>
-          <div class="form-check">
-            <label class="form-check-label" for="extra4">Transport from and to the Airport</label>
-            <input class="form-check-input" type="checkbox" id="extra4" name="extra4" value="fromandtoairport">
+
+          <div class="row mb-3">
+            <div class="d-flex justify-content-md-center">
+              <label for="email">Email</label>
+              <input style="width:420px" type="email" id="email" name="email" placeholder="Your email" required>
+            </div>
           </div>
-          <div class="form-check">
-            <label class="form-check-label" for="extra5">Local tourist guide 24/7</label>
-            <input class="form-check-input" type="checkbox" id="extra5" name="extra5" value="localguide">
+
+          <div class="row mb-5">
+            <div class="col-md-6 d-flex justify-content-md-end justify-content-center">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Your phone number" required>
+            </div>
+            <div class="col-md-6 d-flex justify-content-md-start justify-content-center" required>
+              <label for="birthday">Birthday</label>
+              <input type="date" id="birthday" name="birthdaydate">
+            </div>
           </div>
-        </div>
-        
-        <div class="table-responsive mb-5">
-          <table class="table table-hover center" style="width: 650px;">
-            <tr>
-              <th>Extra services</th>
-              <th>Price per day</th>
-              <th>Price per service</th>
-            </tr>
-            <tr>
-              <td>Rent-a-car</td>
-              <td>60 &euro;</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>Transport to the Airport</td>
-              <td>-</td>
-              <td>40 &euro;</td>
-            </tr>
-            <tr>
-              <td>Transport from the Airport</td>
-              <td>-</td>
-              <td>30 &euro;</td>
-            </tr>
-            <tr>
-              <td>Transport from and to the Airport</td>
-              <td>-</td>
-              <td>50 &euro;</td>
-            </tr>
-            <tr>
-              <td>Local tourist guide 24/7</td>
-              <td>20 &euro;</td>
-              <td></td>
-            </tr>
-          </table>
         </div>
 
-        <div class="row col-sm-6 center mb-5">
-          <label for="extraservice">Specify what do you want</label>
-          <textarea id="extraservice" name="extraservice" rows="6" cols="50">Which days, airport...</textarea>
-        </div>
-
-        <div class="row col-sm-6 center mb-5">
-          <label for="request">Do you have some requests or observations for your reservation?</label>
-          <textarea id="request" name="request" rows="6" cols="50">Let us know! How can we improve your experience?</textarea>
-        </div>
-
-        <div class="row col-sm-6 center mb-5 pb-4">
-          <label for="brand">How did you hear about us?</label>
-          <select id="brand" name="brand" required>
-            <option value="friends">Friends</option>
-            <option value="onlineadvertisment">Online Advertisement</option>
-            <option value="searchengine">Search Engine</option>
-            <option value="socialmedia">Social Media</option>
-            <option value="magazine">Magazine</option>
-            <option value="television">Television</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
-
-        <div class="row mt-5 pb-5 mb-0">
-          <div class="col d-flex justify-content-center">
-            <p><a href="formpass.html" class="prevbutton" role="button">&laquo; Previous</a></p>
+        <div class="container pt-5 probootstrap-animate">
+          <h5 style="text-align: center;">If you are travelling with someone, fill in the fields below (<strong>according to your pack</strong>) </h5>
+          <div class="center" style="width: 50%;">
+            <hr>
           </div>
-          <div class="col d-flex justify-content-center">
-            <p><a href="formcheckout.html" class="nextbutton">Next &raquo;</a></p>
+        </div>
+
+        <div class="container pt-5 probootstrap-animate">
+          <div id="persona">        
+            <h3 style="text-align: center;">Person A</h3>
+            <div class="row mb-3 mt-5">
+              <div class="col-md-6 d-flex justify-content-md-end justify-content-center">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname">
+              </div>
+              <div class="col-md-6 d-flex justify-content-md-start justify-content-center">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-md-6 d-flex justify-content-md-end justify-content-center">
+                <label for="idnumber">ID number</label>
+                <input type="text" name="idnumber">
+              </div>
+              <div class="col-md-6 d-flex justify-content-md-start justify-content-center">
+                <label for="gender">Gender</label>
+                <select id="gender" aria-label="Default select example">
+                  <option value="fem">Feminine</option>
+                  <option value="masc">Masculine</option>
+                </select>
+              </div>
+            </div>
+      
+            <div class="row mb-3">
+              <div class="d-flex justify-content-md-center">            
+                <label for="email">Email</label>
+                <input style="width:420px" type="email" id="email" name="email">
+              </div>
+            </div>
+
+            <div class="row mb-5">
+              <div class="col-md-6 d-flex justify-content-md-end justify-content-center">
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+              </div>
+              <div class="col-md-6 d-flex justify-content-md-start justify-content-center">
+                <label for="birthday">Birthday</label>
+                <input type="date" id="birthday" name="birthdaydate">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container pt-5 probootstrap-animate">
+          <div id="personb">
+            <h3 style="text-align: center;">Person B</h3>
+            <div class="row mb-3 mt-5">
+              <div class="col-md-6 d-flex justify-content-md-end justify-content-center">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname">
+              </div>
+              <div class="col-md-6 d-flex justify-content-md-start justify-content-center">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-md-6 d-flex justify-content-md-end justify-content-center">
+                <label for="idnumber">ID number</label>
+                <input type="text" name="idnumber">
+              </div>
+              <div class="col-md-6 d-flex justify-content-md-start justify-content-center">
+                <label for="gender">Gender</label>
+                <select id="gender" aria-label="Default select example">
+                  <option value="fem">Feminine</option>
+                  <option value="masc">Masculine</option>
+                </select>
+              </div>
+            </div>
+
+      
+            <div class="row mb-3">
+              <div class="d-flex justify-content-md-center">
+                <label for="email">Email</label>
+                <input style="width:420px" type="email" id="email" name="email">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-md-6 d-flex justify-content-md-end justify-content-center">
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+              </div>
+              <div class="col-md-6 d-flex justify-content-md-start justify-content-center">
+                <label for="birthday">Birthday</label>
+                <input type="date" id="birthday" name="birthdaydate">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container pt-5 probootstrap-animate">
+          <div class="row mb-3" style="text-align: center;">
+            <div class="col">
+              <input type="reset" class="resetbutton" value="Reset">
+            </div>
+          </div>
+          <div class="row pb-5">
+            <div class="col-md-6 d-flex justify-content-center">
+              <p><a href="#formdest" class="prevbutton" role="button">&laquo; Previous</a></p>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center">
+              <p><a href="#formextras" class="nextbutton">Next &raquo;</a></p>
+            </div>
           </div>
         </div>
       </form>
     </div>
 
-    <footer class="probootstrap_footer text-white bg-dark">
+    <!-- <footer class="probootstrap_footer text-white bg-dark">
       <div class="container">
         <div class="row mt-4">
           <div class="col-lg-4">
@@ -294,4 +390,4 @@
     <script src="assets/js/select2.min.js"></script>
     <script src="assets/js/main.js"></script>
 	</body>
-</html>
+</html> -->

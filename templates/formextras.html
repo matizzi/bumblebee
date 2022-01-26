@@ -1,16 +1,16 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 	<head>
- 
+   
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 		<title>Bumblebee &mdash; Reservation</title>
 		<meta name="description" content="formulário de compra">
 		<meta name="keywords" content="compra travel-agency experiences-packs experiences adventure bumblebee">
-
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
+    
     <link rel="shortcut icon" href="assets\images\logo_browser.png"> 
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
 
 		<link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="assets/css/animate.css">
@@ -22,21 +22,18 @@
     <link rel="stylesheet" href="assets/css/helpers.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/formcompra.css">
-   
-    <style>
-      input{
-        width: 100%;
-        display: block;
+
+
+    <style>  
+      input, select, textarea {
+        display: inline-block;
         border: 1px solid rgb(255, 255, 255);
         border-radius: 4px;
         box-sizing: border-box;
       }
-      
+        
       .container1 {
-        border-radius: 5px;
         background-color: #ffffed;
-        margin-top: 2,5cm;
-        margin-bottom: 2,5cm;
       }
     </style>
 
@@ -148,74 +145,114 @@
           </form>
         </div>
       </div>
-    </nav>
+    </nav> -->
     
     <div class="container container1 pt-5 probootstrap-animate">
-      <form name="formcheckout" action="#" method="post" class="was.validated">
+      <form name="formextras" action="#" method="post" class="was.validated">
         <div class="row" style="text-align: center;">
-          <i class="fas fa-shopping-basket fa-3x" style="padding-top: 70px;"></i>
-          <h2 class="text-uppercase pt-4 mb-4">Data billing</h2>
+          <i class="fas fa-cart-plus fa-3x" style="padding-top: 70px;"></i>
+          <h2 class="text-uppercase pt-4 mb-4">Extra services</h2>
         </div>
-
-        <div class="col-md-12 pb-5" style="text-align: center;">
-          <div class="row mb-3 mt-5">
-            <div class="col-md-6 center">
-              <label for="name">Name</label>
-              <input type="text" id="name" maxlength="50" name="firstandlastname" placeholder="Maria Oliveira Santos" style="width: 100%; text-align: center;" required>
-            </div>
-          </div>
-          <div class="row mb-3">
-            <div class="col-md-6 center">
-              <label for="nif">NIF</label>
-              <input type="text" id="nif" name="nif" maxlength="9" placeholder="123456789" pattern="[0-9]{9}" style="width: 100%; text-align: center;" required>
-            </div>
-          </div>
-
-          <div class="row mb-3"> 
-            <div class="col-md-6 center">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="maria@email.com" style="width: 100%; text-align: center;" required>
-            </div>
-          </div>
-
-          <div class="row mb-5">
-            <div class="col-md-6 center">
-              <label for="phone">Phone number</label>
-              <input type="tel" id="phone" name="phone" placeholder="963256357" pattern="[0-9]{9}" maxlength="9" style="width: 100%; text-align: center;" required>
-            </div>
-          </div>
-        </div>  
-        
-        <h5 style="text-align: center;"><strong>Your bill will be send to your mailbox,</br> as well as the payment methods available.</strong></h5>
-        <div class="col-6 center">
-          <hr>
+        <div class="row mb-4" style="text-align: center;">
+          <h5>We have a range of services to make your experience more confortable and pleasant.</h5>
         </div>
-        
-        <h5 class="text-uppercase mb-4 mt-5" style="text-align: center;">Conditions</h5>
-
-        <div class="row pb-5 form-check form-switch">
-          <div class="d-flex justify-content-center">
-            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" required>
-            <label class="form-check-label" style="padding-left: 0.5cm" for="flexSwitchCheckDefault">I agree with all <a class="contact-link" href="#!">terms and conditions</a>.</label>
+        <div class="row col-sm-6 center mb-5" style="margin:auto; text-align: left;">
+          <P>Are you looking for a rent-a-car service, transfer service or a local guide?<br/> Don't worry, we've got you! (You can choose more than one service)</P>
+          <div class="form-check ta-left">
+            <label class="form-check-label" for="extra1">Rent-a-car service during the stay</label>
+            <input class="form-check-input" type="checkbox" id="extra1" name="extra1" value="rent-a-car">
+          </div>
+          <div class="form-check ta-left">
+            <label class="form-check-label" for="extra2">Transport to the Airport</label>
+            <input class="form-check-input" type="checkbox" id="extra2" name="extra2" value="toairport">
+          </div>
+          <div class="form-check ta-left">
+            <label class="form-check-label" for="extra3">Transport from the Airport</label>
+            <input class="form-check-input" type="checkbox" id="extra3" name="extra3" value="fromairport">
+          </div>
+          <div class="form-check ta-left">
+            <label class="form-check-label" for="extra4">Transport from and to the Airport</label>
+            <input class="form-check-input" type="checkbox" id="extra4" name="extra4" value="fromandtoairport">
+          </div>
+          <div class="form-check ta-left">
+            <label class="form-check-label" for="extra5">Local tourist guide 24/7</label>
+            <input class="form-check-input" type="checkbox" id="extra5" name="extra5" value="localguide">
           </div>
         </div>
         
-        <div class="row pb-3" >
-          <div class="col-md-6 d-flex justify-content-center">
-            <a href="formextras.html" class="prevbutton" role="button">&laquo; Previous</a>
+        <div style="overflow-x:auto;">
+          <div class="table-responsive mb-5 d-flex justify-content-center">
+            <table class="table table-hover center" style="width: 650px;">
+              <tr>
+                <th>Extra services</th>
+                <th>Price per day</th>
+                <th>Price per service</th>
+              </tr>
+              <tr>
+                <td>Rent-a-car</td>
+                <td>60 &euro;</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Transport to the Airport</td>
+                <td>-</td>
+                <td>40 &euro;</td>
+              </tr>
+              <tr>
+                <td>Transport from the Airport</td>
+                <td>-</td>
+                <td>30 &euro;</td>
+              </tr>
+              <tr>
+                <td>Transport from and to the Airport</td>
+                <td>-</td>
+                <td>50 &euro;</td>
+              </tr>
+              <tr>
+                <td>Local tourist guide 24/7</td>
+                <td>20 &euro;</td>
+                <td></td>
+              </tr>
+            </table>
           </div>
         </div>
 
-        <div class="row pb-5" style="text-align: center;">
-          <div class="col">
-            <button class="cidades-ver-mais" type="submit" value="Submit">Submit</button>
-            <img style="width:100px" src="assets\images\logo_1.png" alt="Bumblebee - Experience Agency">
+
+        <div class="row col-sm-6 center mb-5" style="margin:auto; text-align: left;">
+          <label for="extraservice">Specify what do you want</label>
+          <textarea id="extraservice" name="extraservice" rows="6" cols="50" placeholder="Which days, airport..."></textarea>
+        </div>
+
+        <div class="row col-sm-6 center mb-5" style="margin:auto; text-align: left;">
+          <label for="request">Do you have some requests or observations for your reservation?</label>
+          <textarea id="request" name="request" rows="6" cols="50" placeholder="Let us know! How can we improve your experience?"></textarea>
+        </div>
+
+        <div class="row col-sm-6 center mb-5 pb-4" style="margin:auto; text-align: left;">
+          <label for="brand">How did you hear about us?</label>
+          <select id="brand" name="brand" required>
+            <option value="friends">Friends</option>
+            <option value="onlineadvertisment">Online Advertisement</option>
+            <option value="searchengine">Search Engine</option>
+            <option value="socialmedia">Social Media</option>
+            <option value="magazine">Magazine</option>
+            <option value="television">Television</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="row mt-5 pb-5 mb-0">
+          <div class="col d-flex justify-content-center">
+            <p><a href="#formpass" class="prevbutton" role="button">&laquo; Previous</a></p>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <p><a href="#formcheckout" class="nextbutton">Next &raquo;</a></p>
           </div>
         </div>
       </form>
     </div>
-    
-    <footer class="probootstrap_footer text-white bg-dark">
+
+    <!-- <footer class="probootstrap_footer text-white bg-dark">
       <div class="container">
         <div class="row mt-4">
           <div class="col-lg-4">
@@ -259,6 +296,5 @@
     <script src="assets/js/jquery.easing.1.3.js"></script>
     <script src="assets/js/select2.min.js"></script>
     <script src="assets/js/main.js"></script>
-
 	</body>
-</html>
+</html> -->
