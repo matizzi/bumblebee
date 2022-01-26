@@ -56,6 +56,10 @@ Router.prototype = {
 
             contentWayPoint();
 
+            if(! htmlName.includes("#")){
+                window.scrollTo(0,0);
+            }
+            
         })(this);
 
         let title=htmlName.replace(".html","");

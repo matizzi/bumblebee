@@ -1,7 +1,7 @@
 [
     {
         "experienceName":"<b>Leisure Pack</b>",
-        "esxperienceCity": " | London",
+        "experienceCity": "London",
         "experienceImage":"assets/images/xmas_market.jpg",
         "experienceInitialDescription":"<p>Christmas is coming and so do christmas markets! We have a pack full of activities prepared just for you to get into the holidays spirit. It includes, for 1 person:<p/>",
         "experienceDetails":
@@ -19,7 +19,7 @@
 
     {
         "experienceName":"<b>Cultural Pack</b>",
-        "esxperienceCity": " | Lisbon",
+        "experienceCity": "Lisbon",
         "experienceImage":"assets/images/cultural.jpg",
         "experienceInitialDescription":"<p>In every single corner of Lisbon you have a world to explore, since Fado Houses, overwhelming views, typical cafés, amazing museums, to beautiful squares.<br/>We gather a bunch of activities so you can have the greatest time in this sunny city. It includes, for 3 people:</p>",
         "experienceDetails":
@@ -36,8 +36,8 @@
     },
 
     {
-        "experienceName":"<b>Romantic Pack</b> | Paris",
-        "esxperienceCity": " | Paris",
+        "experienceName":"<b>Romantic Pack</b>",
+        "experienceCity": "Paris",
         "experienceImage":"assets/images/paris_romance.jpg",
         "experienceInitialDescription":"<p>Love is what moves and rules de world! So Bumblebee wants to give its lovebirds an extraordinary experience, at the most romantic city: Paris!<br/>From sunset concerts for just the two of you to romantic pik-nik, one thing is garantied: you will be even more in love! It includes, for 2 people:</p>",
         "experienceDetails":
@@ -55,7 +55,7 @@
 
     {
         "experienceName":"<b>Adventurer Pack</b>",
-        "esxperienceCity": " | Stockholm",
+        "experienceCity": "Stockholm",
         "experienceImage":"assets/images/adventure.jpg",
         "experienceInitialDescription":"<p>Are you an adventurer by nature? Do you like to explore things by yourserlf? Then this pack is for you!<p/>",
         "experienceDetails":
@@ -72,7 +72,7 @@
 
     {
         "experienceName":"<b>Fauna & Flora Pack</b>",
-        "esxperienceCity": " | Aveiro",
+        "experienceCity": "Aveiro",
         "experienceImage":"assets/images/aveiro_experiences.jpg",
         "experienceInitialDescription":"<p>Aveiro is a special city to Bumblebee: it is the city of birth!<br/>So all the experiences were specially design to provide you an emersive experience to what Aveiro has best: its Fauna and Flora! This experience includes, for 3 people:</p>",              
         "experienceDetails":
@@ -89,7 +89,7 @@
     },
     {
         "experienceName":"<b>Party Pack</b>",
-        "esxperienceCity": " | Dublin",
+        "experienceCity": "Dublin",
         "experienceImage":"assets/images/dublin_experiences.jpg",
         "experienceInitialDescription":"<p>It's time to party! Bumblebee believe that everyone needs a time out from life.<br/>So Dublin is the best destination for that! For 2 people (leave your responsabilities at home):</p>",
         "experienceDetails":
