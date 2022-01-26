@@ -1,16 +1,16 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 	<head>
-     
+ 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 		<title>Bumblebee &mdash; Reservation</title>
 		<meta name="description" content="formulário de compra">
 		<meta name="keywords" content="compra travel-agency experiences-packs experiences adventure bumblebee">
-    
-    <link rel="shortcut icon" href="assets\images\logo_browser.png"> 
+
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
+    <link rel="shortcut icon" href="assets\images\logo_browser.png"> 
 
 		<link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="assets/css/animate.css">
@@ -22,21 +22,21 @@
     <link rel="stylesheet" href="assets/css/helpers.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/formcompra.css">
-
+   
     <style>
-      #departure, #depcity, #packchoice{
+      input{
         width: 100%;
-        margin: 3px 0;
-        display: inline-block;
+        display: block;
         border: 1px solid rgb(255, 255, 255);
         border-radius: 4px;
         box-sizing: border-box;
       }
-        
+      
       .container1 {
         border-radius: 5px;
         background-color: #ffffed;
-        text-align: center;
+        margin-top: 2,5cm;
+        margin-bottom: 2,5cm;
       }
     </style>
 
@@ -50,7 +50,6 @@
             <div class="card-body text-center">
               <i class="fas fa-times fa-2x login-close" data-bs-dismiss="modal" aria-label="Close"></i>
               <div class="mb-md-5 mt-md-4 pb-5">
-                
                 <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
                 <p class="text-white-50 mb-5">Please enter your login and password!</p>
   
@@ -65,7 +64,6 @@
                 </div>
   
                 <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p>
-  
                 <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
   
                 <div class="d-flex justify-content-center text-center mt-4 pt-1">
@@ -73,9 +71,7 @@
                   <a href="#!" class="text-white"><i class="fab fa-twitter fa-lg mx-4 px-2"></i></a>
                   <a href="#!" class="text-white"><i class="fab fa-google fa-lg"></i></a>
                 </div>
-  
               </div>
-  
               <div>
                 <p class="mb-0">Don't have an account? <a data-bs-toggle="modal" data-bs-target="#modal-registration" class="text-white-50 fw-bold cursor-pointer">Sign Up</a></p>
               </div>
@@ -92,7 +88,6 @@
             <div class="card-body text-center">
               <i class="fas fa-times fa-2x login-close" data-bs-dismiss="modal" aria-label="Close"></i>
               <div class="mb-md-5 mt-md-4 pb-5">
-                
                 <h2 class="fw-bold mb-2 text-uppercase">Sign Up</h2>
                 <p class="text-white-50 mb-5">Please enter your data for registration</p>
 
@@ -110,6 +105,7 @@
                   <input type="password" id="typePasswordX" class="form-control form-control-lg" />
                   <label class="form-label" for="typePasswordX">Password</label>
                 </div>
+
                 <button class="btn btn-outline-light btn-lg px-5" type="submit">Register</button>
   
                 <div class="d-flex justify-content-center text-center mt-4 pt-1">
@@ -152,112 +148,74 @@
           </form>
         </div>
       </div>
-    </nav>
-
+    </nav> -->
+    
     <div class="container container1 pt-5 probootstrap-animate">
-      <form name="formdest" action="#" method="post" class="was.validated">
-        <i class="fas fa-plane-departure fa-3x" style="padding-top: 70px;"></i>
-        <div class="col-md-12 pt-4">
-          <h3 class="text-uppercase mb-4">Destination</h3>
+      <form name="formcheckout" action="#" method="post" class="was.validated">
+        <div class="row" style="text-align: center;">
+          <i class="fas fa-shopping-basket fa-3x" style="padding-top: 70px;"></i>
+          <h2 class="text-uppercase pt-4 mb-4">Data billing</h2>
+        </div>
 
-          <div class="row mb-4 col-sm-6 center">
-            <label for="depcity">Select the departure city</label>
-            <select id="depcity" name="depcity" required>
-              <option value="porto">Porto</option>
-              <option value="lisboa">Lisbon</option>
-              <option value="faro">Faro</option>
-              <option value="barcelona">Barcelona</option>
-              <option value="palmademallorca">Palma de Mallorca</option>
-              <option value="malaga">Malaga</option>
-              <option value="alicante">Alicante</option>
-            </select>
-          </div>
-
-          <div class="row mb-4 col-sm-6 center">
-            <label for="packchoice">Select the experience pack</label>
-            <select id="packchoice" name="packchoice" required>
-              <option value="paris">Romantic Pack</option>
-              <option value="lisboa">Cultural Pack</option>
-              <option value="stockholm">Adventurer Pack</option>
-              <option value="london">Leisure Pack</option>
-              <option value="dublin">Fauna & Flora Pack</option>
-              <option value="aveiro">Party Pack</option>
-            </select>
-          </div>
-        
-          <div class="table-responsive">
-            <table class="table table-hover center" style="width: 700px;">
-              <thead>
-                <tr>
-                  <th>Pack Experience</th>
-                  <th>City</th>
-                  <th>Number of Days</th>
-                  <th>Number of Passengers</th>
-                  <th>Price</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Romantic Pack</td>
-                  <td>Paris</td>
-                  <td>2</td>
-                  <td>2</td>
-                  <td>2500 &euro;</td>
-                </tr>
-                <tr>
-                  <td>Cultural Pack</td>
-                  <td>Lisbon</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>1200 &euro;</td>
-                </tr>
-                <tr>
-                  <td>Adventurer Pack</td>
-                  <td>Stockholm</td>
-                  <td>2</td>
-                  <td>1</td>
-                  <td>1100 &euro;</td>
-                </tr>
-                <tr>
-                  <td>Leisure Pack</td>
-                  <td>London</td>
-                  <td>3</td>
-                  <td>1</td>
-                  <td>1700 &euro;</td>
-                </tr>
-                <tr>
-                  <td>Fauna & Flora Pack</td>
-                  <td>Aveiro</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>1900 &euro;</td>
-                </tr>
-                <tr>
-                  <td>Party Pack</td>
-                  <td>Dublin</td>
-                  <td>1</td>
-                  <td>2</td>
-                  <td>900 &euro;</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        
-          <div class="row mt-5 mb-4 col-sm-6 center">
-            <label for="departure">Select departure day</label>
-            <input type="date" id="departure" name="departure" required>
-          </div>
-
-          <div class="row mt-5 pb-5 justify-content-end">
-            <div class="col-md-6 d-flex justify-content-center">
-              <a href="formpass.html" class="nextbutton">Next &raquo;</a>
+        <div class="col-md-12 pb-5" style="text-align: center;">
+          <div class="row mb-3 mt-5 d-flex justify-content-center">
+            <div class="col-md-6 center">
+              <label for="name">Name</label>
+              <input type="text" id="name" maxlength="50" name="firstandlastname" placeholder="Maria Oliveira Santos" style="width: 100%; text-align: center;" required>
             </div>
+          </div>
+          <div class="row mb-3 d-flex justify-content-center">
+            <div class="col-md-6 center">
+              <label for="nif">NIF</label>
+              <input type="text" id="nif" name="nif" maxlength="9" placeholder="123456789" pattern="[0-9]{9}" style="width: 100%; text-align: center;" required>
+            </div>
+          </div>
+
+          <div class="row mb-3 d-flex justify-content-center"> 
+            <div class="col-md-6 center">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="maria@email.com" style="width: 100%; text-align: center;" required>
+            </div>
+          </div>
+
+          <div class="row mb-5 d-flex justify-content-center">
+            <div class="col-md-6 center">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" name="phone" placeholder="963256357" pattern="[0-9]{9}" maxlength="9" style="width: 100%; text-align: center;" required>
+            </div>
+          </div>
+        </div>  
+        
+        <h5 style="text-align: center;"><strong>Your bill will be send to your mailbox,</br> as well as the payment methods available.</strong></h5>
+        <div class="col-6 center">
+          <hr>
+        </div>
+        
+        <h5 class="text-uppercase mb-4 mt-5" style="text-align: center;">Conditions</h5>
+
+        <div class="row pb-5 form-check form-switch">
+          <div class="d-flex justify-content-center">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" required>
+            <label class="form-check-label" style="padding-left: 0.5cm" for="flexSwitchCheckDefault">I agree with all <a class="contact-link" href="#!">terms and conditions</a>.</label>
+          </div>
+        </div>
+        
+        <div class="row pb-3" >
+          <div class="col-md-6 d-flex justify-content-center">
+            <a href="#formextras" class="prevbutton" role="button">&laquo; Previous</a>
+          </div>
+        </div>
+
+        <div class="row pb-5" style="text-align: center;">
+          <div class="col">
+            <button class="cidades-ver-mais" type="submit" value="Submit">Submit</button>
+            <img style="width:100px" src="assets\images\logo_1.png" alt="Bumblebee - Experience Agency">
           </div>
         </div>
       </form>
     </div>
-
-    <footer class="probootstrap_footer text-white bg-dark">
+    
+    <!-- <footer class="probootstrap_footer text-white bg-dark">
       <div class="container">
         <div class="row mt-4">
           <div class="col-lg-4">
@@ -301,5 +259,6 @@
     <script src="assets/js/jquery.easing.1.3.js"></script>
     <script src="assets/js/select2.min.js"></script>
     <script src="assets/js/main.js"></script>
+
 	</body>
-</html>
+</html> -->

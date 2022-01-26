@@ -1,7 +1,9 @@
 [
     {
-        "experienceName":"<b>Leisure Pack</b>",
+        "experienceName":"Leisure Pack",
         "experienceCity": "London",
+        "experienceHomeDescription":"3 nights in a 4 stars hotel, 1 ticket for the Hyde Park Winter Wonderland and the London Eye and more!",
+        "experienceHomeImage":"assets/images/pagina-londres-4.jpg",
         "experienceImage":"assets/images/xmas_market.jpg",
         "experienceInitialDescription":"<p>Christmas is coming and so do christmas markets! We have a pack full of activities prepared just for you to get into the holidays spirit. It includes, for 1 person:<p/>",
         "experienceDetails":
@@ -14,12 +16,15 @@
                 "1 Ticket for the Greenwich Christmas market",
                 "1 Ticket for a night bus tour to see the Christmas Lights of London"
             ],
-        "experienceEndDescription":"All you need for your next Christmas it's just a click away. Don't miss this opportunity!"
+        "experienceEndDescription":"All you need for your next Christmas it's just a click away. Don't miss this opportunity!",
+        "mostWanted":true
     },
 
     {
-        "experienceName":"<b>Cultural Pack</b>",
+        "experienceName":"Cultural Pack",
         "experienceCity": "Lisbon",
+        "experienceHomeDescription":"",
+        "experienceHomeImage":"",
         "experienceImage":"assets/images/cultural.jpg",
         "experienceInitialDescription":"<p>In every single corner of Lisbon you have a world to explore, since Fado Houses, overwhelming views, typical cafés, amazing museums, to beautiful squares.<br/>We gather a bunch of activities so you can have the greatest time in this sunny city. It includes, for 3 people:</p>",
         "experienceDetails":
@@ -32,12 +37,15 @@
                 "3 Tickets for a tour in Lisbon's historic quarters (includes 3 one-way tram trips)",
                 "3 Tickets for Cristo Rei National Sanctuary"
             ],
-        "experienceEndDescription":"Don't miss out this amazing oportunity to have a family vacation with your loved ones. Remember, great memories comes with what and who surrounds you."
+        "experienceEndDescription":"Don't miss out this amazing oportunity to have a family vacation with your loved ones. Remember, great memories comes with what and who surrounds you.",
+        "mostWanted":false
     },
 
     {
-        "experienceName":"<b>Romantic Pack</b>",
+        "experienceName":"Romantic Pack",
         "experienceCity": "Paris",
+        "experienceHomeDescription":"1 ticket for the Eiffel Tower, city visit with a violin interpreter, pik-nik in Champs-Élysées and more!",
+        "experienceHomeImage":"assets/images/pagina-paris-3.jpg",
         "experienceImage":"assets/images/paris_romance.jpg",
         "experienceInitialDescription":"<p>Love is what moves and rules de world! So Bumblebee wants to give its lovebirds an extraordinary experience, at the most romantic city: Paris!<br/>From sunset concerts for just the two of you to romantic pik-nik, one thing is garantied: you will be even more in love! It includes, for 2 people:</p>",
         "experienceDetails":
@@ -50,12 +58,15 @@
                 "City visit to the most romantic spots",
                 "Exclusive visit to Pallace of Versailles"
             ],
-        "experienceEndDescription":"Be in love and leave the rest with Bumblebee!"
+        "experienceEndDescription":"Be in love and leave the rest with Bumblebee!",
+        "mostWanted":true
     },
 
     {
-        "experienceName":"<b>Adventurer Pack</b>",
+        "experienceName":"Adventurer Pack",
         "experienceCity": "Stockholm",
+        "experienceHomeDescription":"Private bike tour, Camping trip, game meat tasting and more",
+        "experienceHomeImage":"assets/images/pagina-estocolmo-3.jpg",
         "experienceImage":"assets/images/adventure.jpg",
         "experienceInitialDescription":"<p>Are you an adventurer by nature? Do you like to explore things by yourserlf? Then this pack is for you!<p/>",
         "experienceDetails":
@@ -67,12 +78,15 @@
                 "Swimming at Saltsjobadens Friluftsbad",
                 "Wildlife Safari"
             ],
-        "experienceEndDescription":"Be wild and free!"
+        "experienceEndDescription":"Be wild and free!",
+        "mostWanted":true
     },
 
     {
-        "experienceName":"<b>Fauna & Flora Pack</b>",
+        "experienceName":"Fauna & Flora Pack",
         "experienceCity": "Aveiro",
+        "experienceHomeDescription":"<i>Moliceiro</i> trip, conventional bakery (with <i>Ovos Moles</i>), <i>Costa Nova</i> visit and more!",
+        "experienceHomeImage":"assets/images/pagina-aveiro-4.jpg",
         "experienceImage":"assets/images/aveiro_experiences.jpg",
         "experienceInitialDescription":"<p>Aveiro is a special city to Bumblebee: it is the city of birth!<br/>So all the experiences were specially design to provide you an emersive experience to what Aveiro has best: its Fauna and Flora! This experience includes, for 3 people:</p>",              
         "experienceDetails":
@@ -85,11 +99,14 @@
                 "Visit to Natural Reserve of São Jacinto Dunes",
                 "Private tour in the city"
             ],
-        "experienceEndDescription":"A family vacation you will never forget!"
+        "experienceEndDescription":"A family vacation you will never forget!",
+        "mostWanted":true
     },
     {
-        "experienceName":"<b>Party Pack</b>",
+        "experienceName":"Party Pack",
         "experienceCity": "Dublin",
+        "experienceHomeDescription":"",
+        "experienceHomeImage":"",
         "experienceImage":"assets/images/dublin_experiences.jpg",
         "experienceInitialDescription":"<p>It's time to party! Bumblebee believe that everyone needs a time out from life.<br/>So Dublin is the best destination for that! For 2 people (leave your responsabilities at home):</p>",
         "experienceDetails":
@@ -101,7 +118,8 @@
                 "All drinks included!",
                 "Beer degustation"
             ],
-        "experienceEndDescription":"Just do it!"
+        "experienceEndDescription":"Just do it!",
+        "mostWanted":false
     }
 ]
 

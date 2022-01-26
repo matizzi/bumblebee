@@ -7,7 +7,10 @@ async function loadDynamicContent(htmlName){
     }
     else if(htmlName.includes("experiences")){
         await addExperience()
-    } 
+    }
+    else if(htmlName.includes("home")){
+        await addExperienceHome()
+    }
 }
 
 function loadCity(nomecidade){
@@ -30,7 +33,11 @@ function init() {
         new Route('experienceStockholm', 'experiences.html#stockholm'),
         new Route('experienceParis', 'experiences.html#paris'),
         new Route('experienceAveiro', 'experiences.html#aveiro'),
-        new Route('cityAveiro', 'city.html#aveiro')
+        new Route('cityAveiro', 'city.html#aveiro'),
+        new Route('formdest', 'formdest.html'),
+        new Route('formpass', 'formpass.html'),
+        new Route('formextras', 'formextras.html'),
+        new Route('formcheckout', 'formcheckout.html')
     ]);
 }
 init();
