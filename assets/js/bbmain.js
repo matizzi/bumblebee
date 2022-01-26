@@ -1,22 +1,25 @@
 async function loadDynamicContent(htmlName){
     if(htmlName.includes("cities")){
-        await adicionarCidades("json/cities.json");
+        await adicionarCidades("cidades","json/cities.json");
         await carregarTestemunhos("section-feature-testimonial","json/testemunhos.json");
     }
     else if (htmlName.includes("city")){
-        await paginasCidades("json/cities.json");
+        await paginaCidade("json/cities.json");
         await carregarTestemunhos("section-feature-testimonial","json/testemunhos.json");
     }
     else if(htmlName.includes("experiences")){
         await addExperience()
     }
     else if(htmlName.includes("home")){
-        await carrosselHome("json/cities.json")
+        await carrosselTopCities("carrosel-cidades-home","json/cities.json")
         owlCarouselFunc()
         await carregarTestemunhos("section-feature-testimonial","json/testemunhos.json");
     } 
     else if (htmlName.includes("services")){
         await adicionarServicos("json/services.json");
+        await carregarTestemunhos("section-feature-testimonial","json/testemunhos.json");
+        await carrosselCidades("carrossel-cidades-servicos","json/cities.json")
+        owlCarouselFunc()
     }
 }
 
