@@ -58,11 +58,15 @@ Router.prototype = {
 
             if(!htmlName.includes("#")){
                 window.scrollTo(0,0);
+            }else{
+                let element=htmlName.substring(htmlName.indexOf("#")+1)
+                document.getElementById(element).scrollIntoView(true);
             }
             
         })(this);
 
-        let title=htmlName.replace(".html","");
+        let title = htmlName.substring(0,htmlName.indexOf("#"));
+        title=title.replace(".html","");
         //capitalize text
         title=title[0].toUpperCase() + title.substring(1);
         document.title = title + ' - Bumblebee';

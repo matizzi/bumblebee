@@ -1,15 +1,26 @@
 async function loadDynamicContent(htmlName){
     if(htmlName.includes("cities")){
-        await adicionarCidades("json/cities.json");
+        await adicionarCidades("cidades","json/cities.json");
+        await carregarTestemunhos("section-feature-testimonial","json/testemunhos.json");
     }
     else if (htmlName.includes("city")){
-        await paginasCidades("json/cities.json");
+        await paginaCidade("json/cities.json");
+        await carregarTestemunhos("section-feature-testimonial","json/testemunhos.json");
     }
     else if(htmlName.includes("experiences")){
         await addExperience()
     }
     else if(htmlName.includes("home")){
         await addExperienceHome()
+        await carrosselTopCities("carrosel-cidades-home","json/cities.json")
+        owlCarouselFunc()
+        await carregarTestemunhos("section-feature-testimonial","json/testemunhos.json");
+    } 
+    else if (htmlName.includes("services")){
+        await adicionarServicos("json/services.json");
+        await carregarTestemunhos("section-feature-testimonial","json/testemunhos.json");
+        await carrosselCidades("carrossel-cidades-servicos","json/cities.json")
+        owlCarouselFunc()
     }
 }
 
@@ -19,8 +30,6 @@ function loadCity(nomecidade){
 }
 
 
-/////////////////////
-// second approach
 function init() {
     var router = new Router([
         new Route('home', 'home.html', true),            
@@ -28,6 +37,7 @@ function init() {
         new Route('contacts', 'contacts.html'),
         new Route('cities', 'cities.html'),
         new Route('city', 'city.html'),
+        new Route('services', 'services.html'),
         new Route('experiences', 'experiences.html'),
         new Route('experienceLondon', 'experiences.html#london'),
         new Route('experienceStockholm', 'experiences.html#stockholm'),
@@ -40,4 +50,8 @@ function init() {
         new Route('formcheckout', 'formcheckout.html')
     ]);
 }
+
+
 init();
+
+
