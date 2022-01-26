@@ -1,0 +1,33 @@
+[
+    {
+        "serviceName":"Rent a car",
+        "serviceIcon":"fas fa-car fa-5x",
+        "serviceDetails":
+            [
+                "Want to freely explore your destination, without thinking about cab numbers or bus timetables?",
+                "Just Rent a car with Bumblebee! Enjoy your trip and leave the bureaucracy with us!"
+
+            ]
+    },
+    {
+        "serviceName":"Transport From/To The Airport",
+        "serviceIcon":"fas fa-plane fa-5x",
+        "serviceDetails":
+            [
+                "We know that is not easy to find a secure transport at the airport.",
+                "Bumblebee thought of a way to make you live your experience to the fullest. Just rent the transport from and/or to the airport with us and chill out!"
+
+            ]
+    },
+    {
+        "serviceName":"Local Tourist Guide 24/7",
+        "serviceIcon":"fas fa-user-clock fa-5x",
+        "serviceDetails":
+            [
+                "Bumblebee Local Tourist Guide gives you an entirely new experience from the city you are in!",
+                "With this service, you will get access to every secret spot, only known by the ones who live in the city!",
+                "And more! This service is available 24/7, non stop!" 
+
+            ]
+    }
+]

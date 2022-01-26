@@ -8,6 +8,9 @@ async function loadDynamicContent(htmlName){
     else if(htmlName.includes("experiences")){
         await addExperience()
     } 
+    else if (htmlName.includes("services")){
+        await adicionarServicos("json/services.json");
+    }
 }
 
 function loadCity(nomecidade){
@@ -25,6 +28,7 @@ function init() {
         new Route('contacts', 'contacts.html'),
         new Route('cities', 'cities.html'),
         new Route('city', 'city.html'),
+        new Route('services', 'services.html'),
         new Route('experiences', 'experiences.html'),
         new Route('experienceLondon', 'experiences.html#london'),
         new Route('experienceStockholm', 'experiences.html#stockholm'),
