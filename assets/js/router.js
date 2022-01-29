@@ -65,11 +65,16 @@ Router.prototype = {
             
         })(this);
 
-        let title = htmlName.substring(0,htmlName.indexOf("#"));
+        let title;
+        if (htmlName.includes ("#")){
+            title=htmlName.substring(0,htmlName.indexOf("#"));
+        }
+        else {
+            title=htmlName;
+        }
         title=title.replace(".html","");
         //capitalize text
         title=title[0].toUpperCase() + title.substring(1);
         document.title = title + ' - Bumblebee';
-        
     }
 };

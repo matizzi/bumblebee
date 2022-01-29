@@ -43,6 +43,8 @@ function init() {
         new Route('experienceStockholm', 'experiences.html#stockholm'),
         new Route('experienceParis', 'experiences.html#paris'),
         new Route('experienceAveiro', 'experiences.html#aveiro'),
+        new Route('experienceDublin', 'experiences.html#dublin'),
+        new Route('experienceLisbon', 'experiences.html#lisbon'),
         new Route('cityAveiro', 'city.html#aveiro'),
         new Route('formdest', 'formdest.html'),
         new Route('formpass', 'formpass.html'),
