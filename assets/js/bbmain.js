@@ -29,6 +29,14 @@ function loadCity(nomecidade){
     localStorage.setItem("cidade_para_carregar", nomecidade);
 }
 
+function modalpromotion(){
+    var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), null)
+    myModal.show()
+}
+
+var intervalId = window.setInterval(function(){
+    modalpromotion()
+}, 180000);
 
 function init() {
     var router = new Router([
