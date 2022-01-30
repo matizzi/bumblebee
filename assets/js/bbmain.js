@@ -31,7 +31,9 @@ function loadCity(nomecidade){
 
 function modalpromotion(){
     var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), null)
-    myModal.show()
+    if (!document.getElementById("exampleModal").classList.contains("show")){
+        myModal.show()   
+    }
 }
 
 var intervalId = window.setInterval(function(){
