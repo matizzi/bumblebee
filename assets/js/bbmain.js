@@ -29,11 +29,16 @@ function loadCity(nomecidade){
     localStorage.setItem("cidade_para_carregar", nomecidade);
 }
 
+var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), null)
 function modalpromotion(){
-    var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), null)
     if (!document.getElementById("exampleModal").classList.contains("show")){
         myModal.show()   
     }
+}
+
+function modalclick(){
+    window.location.href = "#experienceParis"
+    myModal.hide()
 }
 
 var intervalId = window.setInterval(function(){
