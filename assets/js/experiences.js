@@ -56,3 +56,5 @@ async function addExperienceHome(){
     document.getElementById("mostWantedExperiences").innerHTML = generatedHtml;
 }
 
+
+
