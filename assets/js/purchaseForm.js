@@ -16,18 +16,18 @@ if(mm<10){
 today = yyyy+'-'+mm+'-'+dd;
 document.getElementById("departure").setAttribute("min", today); */
 
-function validateForm1(){
+// function validateForm1(){
 
-function validateFormDest(){
-    var depcity=document.formdest.depcity.value;
-    var packchoice=document.formdest.packchoice.value;
+// function validateFormDest(){
+//     var depcity=document.formdest.depcity.value;
+//     var packchoice=document.formdest.packchoice.value;
 
-    if (depcity == "") {
-        alert("Please choose an option");
-        return false;
-    }else if (packchoice == ""){
-        alert("Please choose an option");
-        return false;
-    }
-}
-}
+//     if (depcity == "") {
+//         alert("Please choose an option");
+//         return false;
+//     }else if (packchoice == ""){
+//         alert("Please choose an option");
+//         return false;
+//     }
+// }
+// }
