@@ -5,9 +5,9 @@ async function adicionarCidades(divid,url){
     let cities = await jsonFile.json();
     for (let cidade of cities) {
         generatedHtml+='<div class="col-lg-3 col-md-6 my_mb_80">'
-        generatedHtml+='<a class="cursor-pointer" onclick="loadCity(\''+cidade.cityname+'\')" class="probootstrap-thumbnail">'
+        generatedHtml+='<a class="cursor-pointer probootstrap-thumbnail" onclick="loadCity(\''+cidade.cityname+'\')">'
         generatedHtml+='<img src="'+cidade.cityimg+'" alt="paris" class="img-fluid">';
-        generatedHtml+="<h3><b>"+cidade.cityname+"</b></h3>";
+        generatedHtml+='<h3 class="probootstrap-text" ><b>'+cidade.cityname+"</b></h3>";
         generatedHtml+="</a>"
         generatedHtml+="</div>"
     }
@@ -40,7 +40,7 @@ async function paginaCidade(url){
             document.getElementById("nomeCidade").innerHTML=cidade.cityname;
             document.getElementById("subtituloCidade").innerHTML=cidade.subtitulo;
             document.getElementById("descricaoCidade").innerHTML=cidade.descricao;
-            document.getElementById("botaoExperiencias").innerHTML='<a href="../experiences.html#'+cidade.cityname.toLowerCase()+'" class="cidades-ver-mais" role="button" style="margin-top: 30px;">Experience Pack</a>'
+            document.getElementById("botaoExperiencias").innerHTML='<a href="#experience'+cidade.cityname+'" class="cidades-ver-mais" role="button" style="margin-top: 30px;">Experience Pack</a>'
             let numero=0
             for (let imagem of cidade.imagenscidade){
                 if(numero==0){

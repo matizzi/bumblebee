@@ -29,6 +29,21 @@ function loadCity(nomecidade){
     localStorage.setItem("cidade_para_carregar", nomecidade);
 }
 
+var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), null)
+function modalpromotion(){
+    if (!document.getElementById("exampleModal").classList.contains("show")){
+        myModal.show()   
+    }
+}
+
+function modalclick(){
+    window.location.href = "#experienceParis"
+    myModal.hide()
+}
+
+var intervalId = window.setInterval(function(){
+    modalpromotion()
+}, 180000);
 
 function init() {
     var router = new Router([
@@ -43,6 +58,8 @@ function init() {
         new Route('experienceStockholm', 'experiences.html#stockholm'),
         new Route('experienceParis', 'experiences.html#paris'),
         new Route('experienceAveiro', 'experiences.html#aveiro'),
+        new Route('experienceDublin', 'experiences.html#dublin'),
+        new Route('experienceLisbon', 'experiences.html#lisbon'),
         new Route('cityAveiro', 'city.html#aveiro'),
         new Route('formdest', 'formdest.html'),
         new Route('formpass', 'formpass.html'),

@@ -89,21 +89,6 @@
             {"atracaonome":"Phoenix Park","atracaoimagem":"assets/images/monumentos-dublin-5.jpg"}
         ],
         "imagenscidade": ["assets/images/pagina-dublin-1.jpg", "assets/images/pagina-dublin-2.jpg", "assets/images/pagina-dublin-3.jpg", "assets/images/pagina-dublin-4.jpg"]
-    },
-    {   "cityname":"Dublin2",
-        "topvisited":true,
-        "coordenadascidade": {"latitude": 53.35, "longitude": -6.26},
-        "cityimg":"assets/images/dublin.jpg",
-        "subtitulo":"<b>A warm, welcoming and fun city</b>\t&#10084;", 
-        "descricao":"Dublin,<b>the capital of Ireland</b>, is located on the east coast of the country, at the mouth of the River Liffey, which divides the city into two parts. <b>More peaceful and hospitable than London</b>, its quiet streets and easy walking distance allow you to get to know it walking through buildings of <b>18th century Georgian architecture</b>. Whether you fancy Michelin-star dining, cosy cafés, tasty Irish classics, the best in world cuisine, bustling food markets, or fresh seafood straight from the coast, <b>Dublin's a place with something to suit all tastes.</b> Also, it is home to google's european headquarters, numerous pubs and the famous guinness beer.",
-        "atracoes":[
-            {"atracaonome":"The Temple Bar","atracaoimagem":"assets/images/monumentos-dublin-1.jpg"},
-            {"atracaonome":"Guinness Storehouse","atracaoimagem":"assets/images/monumentos-dublin-2.jpg"},
-            {"atracaonome":"Dublin Castle","atracaoimagem":"assets/images/monumentos-dublin-3.jpg"},
-            {"atracaonome":"St. Patricks Cathedral","atracaoimagem":"assets/images/monumentos-dublin-4.jpg"},
-            {"atracaonome":"Phoenix Park","atracaoimagem":"assets/images/monumentos-dublin-5.jpg"}
-        ],
-        "imagenscidade": ["assets/images/pagina-dublin-1.jpg", "assets/images/pagina-dublin-2.jpg", "assets/images/pagina-dublin-3.jpg", "assets/images/pagina-dublin-4.jpg"]
     }
 ]
 
