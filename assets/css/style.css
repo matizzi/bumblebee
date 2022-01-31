@@ -932,23 +932,6 @@ a {
   width: 100%;
 }
 
-<<<<<<< HEAD
-#login-error-msg {
-  width: 23%;
-  text-align: center;
-  margin: 0;
-  padding: 5px;
-  font-size: 12px;
-  font-weight: bold;
-  color: #8a0000;
-  border: 1px solid #8a0000;
-  background-color: #e58f8f;
-  opacity: 0;
-=======
-
-
-
-
 
 #departure, #depcity, #packchoice{
   width: 100%;
@@ -1035,5 +1018,26 @@ a {
 .center{
   margin-left: auto;
   margin-right: auto;
->>>>>>> 092695c3b88e32b25e270b74a0b212f1fd81334f
+}
+
+#login-error-msg-holder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+#login-error-msg {
+  width: 80%;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #8a0000;
+  border: 1px solid #8a0000;
+  background-color: #e58f8f;
+  opacity: 0;
 }

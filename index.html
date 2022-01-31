@@ -39,9 +39,7 @@
                 <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
                 <p class="text-white-50 mb-5">Please enter your login and password!</p>
                 <form id="login-form">
-                  <div id="login-error-msg-holder">
-                    <p id="login-error-msg">Invalid username and/or password</p>
-                  </div>
+
                   <div class="form-outline form-white mb-4">
                     <input type="email" id="username" class="form-control form-control-lg" name="username"/>
                     <label class="form-label" for="username">Email</label>
@@ -55,6 +53,9 @@
                   <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p>
                 </form>
                 <button class="btn btn-outline-light btn-lg px-5" id="login-form-submit">Login</button>
+                <div id="login-error-msg-holder">
+                  <p id="login-error-msg">Invalid username and/or password</p>
+                </div>
                 <div class="d-flex justify-content-center text-center mt-4 pt-1">
                   <a href="#!" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
                   <a href="#!" class="text-white"><i class="fab fa-twitter fa-lg mx-4 px-2"></i></a>
@@ -132,8 +133,14 @@
           <form class="d-flex navbar-nav nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="nav-link login-text">Account</span><i class="navbar-user fas fa-user fa-2x footer-brand-icon"></i></a>
             <ul class="dropdown-menu user-actions" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modal-login">Login</a></li>
-              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modal-registration">Sign Up</a></li>
+              <div id="logginregis">
+                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modal-login">Login</a></li>
+                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modal-registration">Sign Up</a></li>
+              </div>
+              <div id="logoutaccount" style="display:none">
+                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modal-myaccount">My Account</a></li>
+                <li><a class="dropdown-item" data-bs-toggle="modal" onClick="refresh(this)">Logout</a></li>
+              </div>
             </ul>
           </form>
         </div>
@@ -144,6 +151,7 @@
     <div id="content">
     </div>
     
+    <!-- Footer -->
     <div class="probootstrap_footer text-white bg-dark">
       <div class="container">
         <div class="row mt-4">
