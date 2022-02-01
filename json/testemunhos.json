@@ -3,7 +3,7 @@
         "nometestemunho":"João Soares",
         "nomecollapse":"joaosoares",
         "idadetestemunho":"25 anos",
-        "imagemtestemunho":"../assets/images/person_1.jpg",
+        "imagemtestemunho":"assets/images/person_1.jpg",
         "titulotestemunho":"Best experience ever!!",
         "nomeexperiencia":"Paris Experience",
         "textotestemunho":"I can't believe I'm finally getting to write this. My experience with Bumblebee all the way from the beginning was amazing. From the cheerful people in customer service to the awesome team of guides that took me through this journey - it has incredible. Nothing would change, not one thing. I am so glad that I decided to go with Bumblebee and will."
@@ -12,7 +12,7 @@
         "nometestemunho":"Malena Tudi",
         "nomecollapse":"malenatudi",
         "idadetestemunho":"30 years",
-        "imagemtestemunho":"../assets/images/person_2.jpg",
+        "imagemtestemunho":"assets/images/person_2.jpg",
         "titulotestemunho":"Thanks for this great service",
         "nomeexperiencia":"London Experience",
         "textotestemunho":"Traveling has always been a dream of mine. I love the idea of seeing and doing new things and experiencing different cultures, but it can be hard to find someone who shares that same ambition. I was thrilled when my sister introduced me to Bumblebee – the site offers an easy way for me to plan not only my next vacation, but also any other travel plans."
@@ -20,7 +20,7 @@
     {   "nometestemunho":"Felix Pollom",
         "nomecollapse":"felixpollom",
         "idadetestemunho":"35 years",
-        "imagemtestemunho":"../assets/images/person_3.jpg",
+        "imagemtestemunho":"assets/images/person_3.jpg",
         "titulotestemunho":"You all are awesome thanks alot",
         "nomeexperiencia":"Aveiro Experience",
         "textotestemunho":"I would not be able to plan my trips without Bumblebee. I'm a big traveler, and it's hard to find time to research all the hotels, flight, restaurants, etc. Not only does Bumblebee do this for me, but it's also affordable! I can't recommend this site enough."

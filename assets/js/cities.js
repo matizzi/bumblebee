@@ -73,14 +73,10 @@ async function paginaCidade(url){
             
             var map = L.map('map').setView([cidade.coordenadascidade.latitude, cidade.coordenadascidade.longitude], 9);
 
-            L.tileLayer('https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.png', {
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 maxZoom: 20,
                 attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
             }).addTo(map);
-
-            // L.marker([51.5, -0.09]).addTo(map)
-            //     .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
-            //     .openPopup();
         }
     }
 }

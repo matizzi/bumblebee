@@ -96,10 +96,11 @@ async function addExperienceSelectField(){
     for (let experiencia of experiences){    
         generatedHtml += '<option value="' +experiencia.experienceCity.toLowerCase()+ '">' +experiencia.experienceName+ '</option>'
         }
-    document.getElementById("addExperienceSelectOptions").innerHTML = generatedHtml;
+    document.getElementById("packchoice").innerHTML = generatedHtml;
 }
 
 async function addExperienceRowToTable(){
+
     let generatedHtml="";
     let url = "json/experiences.json";
     let jsonFile = await fetch(url);
@@ -109,11 +110,9 @@ async function addExperienceRowToTable(){
         generatedHtml += '<td>' +experiencia.experienceName+ '</td>'
         generatedHtml += '<td>' +experiencia.experienceCity+ '</td>'
         generatedHtml += '<td>' +experiencia.numberOfDays+ '</td>'
-        generatedHtml += '<td>' +experiencia.numberOfPassagenrs+ '</td>'
+        generatedHtml += '<td>' +experiencia.numberOfPassengers+ '</td>'
         generatedHtml += '<td>' +experiencia.experiencePrice+ '</td>'
         generatedHtml += '</tr>'
     }
     document.getElementById("addExperienceToTable").innerHTML = generatedHtml;
 }    
-
-
