@@ -11,7 +11,7 @@ function logoutFunction() {
     }
   }
 
-function refresh(){
+function refresh() {
 localStorage.clear("userisloggedin");
 document.getElementById("logginregis").style.display = "block";
 logoutFunction();

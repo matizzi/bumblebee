@@ -2,6 +2,9 @@
     {
         "experienceName":"Leisure Pack",
         "experienceCity": "London",
+        "numberOfDays":"3",
+        "numberOfPassengers":"1",
+        "experiencePrice":"1700 €",
         "experienceHomeDescription":"3 nights in a 4 stars hotel, 1 ticket for the Hyde Park Winter Wonderland and the London Eye and more!",
         "experienceHomeImage":"assets/images/pagina-londres-4.jpg",
         "experienceImage":"assets/images/xmas_market.jpg",
@@ -23,6 +26,9 @@
     {
         "experienceName":"Cultural Pack",
         "experienceCity": "Lisbon",
+        "numberOfDays":"2",
+        "numberOfPassengers":"3",
+        "experiencePrice":"1200 €",
         "experienceHomeDescription":"",
         "experienceHomeImage":"",
         "experienceImage":"assets/images/cultural.jpg",
@@ -44,6 +50,9 @@
     {
         "experienceName":"Romantic Pack",
         "experienceCity": "Paris",
+        "numberOfDays":"2",
+        "numberOfPassengers":"2",
+        "experiencePrice":"2500 €",
         "experienceHomeDescription":"1 ticket for the Eiffel Tower, city visit with a violin interpreter, pik-nik in Champs-Élysées and more!",
         "experienceHomeImage":"assets/images/pagina-paris-3.jpg",
         "experienceImage":"assets/images/paris_romance.jpg",
@@ -65,6 +74,9 @@
     {
         "experienceName":"Adventurer Pack",
         "experienceCity": "Stockholm",
+        "numberOfDays":"2",
+        "numberOfPassengers":"1",
+        "experiencePrice":"1100 €",
         "experienceHomeDescription":"Private bike tour, Camping trip, game meat tasting and more",
         "experienceHomeImage":"assets/images/pagina-estocolmo-3.jpg",
         "experienceImage":"assets/images/adventure.jpg",
@@ -85,6 +97,9 @@
     {
         "experienceName":"Fauna & Flora Pack",
         "experienceCity": "Aveiro",
+        "numberOfDays":"2",
+        "numberOfPassengers":"3",
+        "experiencePrice":"1900 €",
         "experienceHomeDescription":"<i>Moliceiro</i> trip, conventional bakery (with <i>Ovos Moles</i>), <i>Costa Nova</i> visit and more!",
         "experienceHomeImage":"assets/images/pagina-aveiro-4.jpg",
         "experienceImage":"assets/images/aveiro_experiences.jpg",
@@ -105,6 +120,9 @@
     {
         "experienceName":"Party Pack",
         "experienceCity": "Dublin",
+        "numberOfDays":"1",
+        "numberOfPassengers":"2",
+        "experiencePrice":"900 €",
         "experienceHomeDescription":"",
         "experienceHomeImage":"",
         "experienceImage":"assets/images/dublin_experiences.jpg",
