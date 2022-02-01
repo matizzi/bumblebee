@@ -7,7 +7,10 @@
                 "Want to freely explore your destination, without thinking about cab numbers or bus timetables?",
                 "Just Rent a car with Bumblebee! Enjoy your trip and leave the bureaucracy with us!"
 
-            ]
+            ],
+        "extraValue":"extra1",
+        "priceRange":"60-90 €;",
+        "serviceValue":"rent-a-car"
     },
     {
         "serviceName":"Transport From/To The Airport",
@@ -17,7 +20,10 @@
                 "We know that is not easy to find a secure transport at the airport.",
                 "Bumblebee thought of a way to make you live your experience to the fullest. Just rent the transport from and/or to the airport with us and chill out!"
 
-            ]
+            ],
+        "extraValue":"extra2",
+        "priceRange":"30-50 €",
+        "serviceValue":"fromandtoairport"
     },
     {
         "serviceName":"Local Tourist Guide 24/7",
@@ -28,6 +34,9 @@
                 "With this service, you will get access to every secret spot, only known by the ones who live in the city!",
                 "And more! This service is available 24/7, non stop!" 
 
-            ]
+            ],
+        "extraValue":"extra3",
+        "priceRange":"20-50 €",
+        "serviceValue":"localguide"
     }
 ]

@@ -158,61 +158,43 @@
         </div>
         <div class="row col-sm-6 center mb-5" style="margin:auto; text-align: left;">
           <P>Are you looking for a rent-a-car service, transfer service or a local guide?<br/> Don't worry, we've got you! (You can choose more than one service)</P>
-          <div class="form-check ta-left">
+          <!-- <div class="form-check ta-left">
             <label class="form-check-label" for="extra1">Rent-a-car service during the stay</label>
             <input class="form-check-input" type="checkbox" id="extra1" name="extra1" value="rent-a-car">
           </div>
           <div class="form-check ta-left">
-            <label class="form-check-label" for="extra2">Transport to the Airport</label>
-            <input class="form-check-input" type="checkbox" id="extra2" name="extra2" value="toairport">
+            <label class="form-check-label" for="extra2">Transport from/to the Airport</label>
+            <input class="form-check-input" type="checkbox" id="extra2" name="extra2" value="fromandtoairport">
           </div>
           <div class="form-check ta-left">
-            <label class="form-check-label" for="extra3">Transport from the Airport</label>
-            <input class="form-check-input" type="checkbox" id="extra3" name="extra3" value="fromairport">
-          </div>
-          <div class="form-check ta-left">
-            <label class="form-check-label" for="extra4">Transport from and to the Airport</label>
-            <input class="form-check-input" type="checkbox" id="extra4" name="extra4" value="fromandtoairport">
-          </div>
-          <div class="form-check ta-left">
-            <label class="form-check-label" for="extra5">Local tourist guide 24/7</label>
-            <input class="form-check-input" type="checkbox" id="extra5" name="extra5" value="localguide">
-          </div>
+            <label class="form-check-label" for="extra3">Local tourist guide 24/7</label>
+            <input class="form-check-input" type="checkbox" id="extra3" name="extra3" value="localguide">
+          </div> -->
+          <div id="addService"></div>
         </div>
         
         <div style="overflow-x:auto;">
           <div class="table-responsive mb-5 d-flex justify-content-center">
             <table class="table table-hover center" style="width: 650px;">
-              <tr>
-                <th>Extra services</th>
-                <th>Price per day</th>
-                <th>Price per service</th>
-              </tr>
-              <tr>
+              <thead>
+                <tr>
+                  <th>Extra services</th>
+                  <th>Price range</th>
+                </tr>
+              </thead>  
+              <tbody id="addServiceToTable"></tbody>
+              <!-- <tr>
                 <td>Rent-a-car</td>
-                <td>60 &euro;</td>
-                <td>-</td>
+                <td>60-90 &euro;</td>
               </tr>
               <tr>
-                <td>Transport to the Airport</td>
-                <td>-</td>
-                <td>40 &euro;</td>
-              </tr>
-              <tr>
-                <td>Transport from the Airport</td>
-                <td>-</td>
-                <td>30 &euro;</td>
-              </tr>
-              <tr>
-                <td>Transport from and to the Airport</td>
-                <td>-</td>
-                <td>50 &euro;</td>
+                <td>Transport from/to the Airport</td>
+                <td>30-50 &euro;</td>
               </tr>
               <tr>
                 <td>Local tourist guide 24/7</td>
-                <td>20 &euro;</td>
-                <td></td>
-              </tr>
+                <td>20-50 &euro;</td>
+              </tr> -->
             </table>
           </div>
         </div>
