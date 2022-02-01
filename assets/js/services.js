@@ -19,9 +19,6 @@ async function adicionarServicos(url){
     document.getElementById("servicos").innerHTML = generatedHtml;
 }
 
-
-
-
 async function addServiceToCheckbox(){
     let generatedHtml="";
     let url = "json/services.json";
