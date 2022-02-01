@@ -22,6 +22,9 @@ async function loadDynamicContent(htmlName){
         await carrosselCidades("carrossel-cidades-servicos","json/cities.json")
         owlCarouselFunc()
     }
+    else if (htmlName.includes("myaccount")){
+        whishlist()
+    }
 }
 
 function loadCity(nomecidade){
