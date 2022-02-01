@@ -23,7 +23,7 @@ loginButton.addEventListener("click", (e) => {
     e.preventDefault();
     const username = loginForm.username.value;
     const password = loginForm.password.value;
-    if (username === "user@user.pt" && password === "web_dev") {
+    if (username === "user" && password === "user") {
         document.getElementById("modal-close").click();
         alert("You have successfully logged in.");
         localStorage.setItem("userisloggedin", true);
@@ -34,3 +34,8 @@ loginButton.addEventListener("click", (e) => {
         loginErrorMsg.style.opacity = 1;
     }
 })
+
+if (localStorage.getItem("userisloggedin")){
+  document.getElementById("logginregis").style.display = "none";
+  logoutFunction();
+}

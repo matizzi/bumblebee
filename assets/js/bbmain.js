@@ -64,7 +64,8 @@ function init() {
         new Route('formdest', 'formdest.html'),
         new Route('formpass', 'formpass.html'),
         new Route('formextras', 'formextras.html'),
-        new Route('formcheckout', 'formcheckout.html')
+        new Route('formcheckout', 'formcheckout.html'),
+        new Route('myaccount', 'myaccount.html' )
     ]);
 }
 
