@@ -18,3 +18,35 @@ async function adicionarServicos(url){
     generatedHtml+='</div> '
     document.getElementById("servicos").innerHTML = generatedHtml;
 }
+
+
+
+
+async function addServiceToCheckbox(){
+    let generatedHtml="";
+    let url = "json/services.json";
+    let jsonFile = await fetch(url);
+    let service = await jsonFile.json();
+    for (let serviço of service){
+        generatedHtml += '<div class="form-check ta-left">'
+        generatedHtml += '<label class="form-check-label" for="' +serviço.extraValue+ '">' +serviço.serviceName+ '</label>'
+        generatedHtml += '<input class="form-check-input" type="checkbox" id="' +serviço.extraValue+ '" name="' +serviço.extraValue+ '" value="' +serviço.serviceValue+ '">'
+        generatedHtml += '</div>'
+    }
+    document.getElementById("addService").innerHTML = generatedHtml;
+}  
+
+async function addServiceRowToTable(){
+    let generatedHtml="";
+    let url = "json/services.json";
+    let jsonFile = await fetch(url);
+    let service = await jsonFile.json();
+    for (let serviço of service){
+        generatedHtml += '<tr>'
+        generatedHtml += '<td>' +serviço.serviceName+ '</td>'
+        generatedHtml += '<td>' +serviço.priceRange+ '</td>'
+        generatedHtml += '</tr>'
+    }
+    document.getElementById("addServiceToTable").innerHTML = generatedHtml;
+}    
+
