@@ -15,8 +15,15 @@ function refresh() {
   localStorage.clear("userisloggedin");
   document.getElementById("logginregis").style.display = "block";
   logoutFunction();
-  alert("You have successfully logged out.");
+ /*  alert("You have successfully logged out."); */
   window.location.href="#home"
+  Toastify({
+    text: "Logout successful!",
+    duration: 3000,
+    style: {
+      background: "green",
+    }
+    }).showToast();
   /* window.location.reload("Refresh"); */
 }
 
@@ -26,12 +33,18 @@ loginButton.addEventListener("click", (e) => {
     const password = loginForm.password.value;
     if (username === "user" && password === "user") {
         document.getElementById("modal-close").click();
-        alert("You have successfully logged in.");
+       /*  alert("You have successfully logged in."); */
         localStorage.setItem("userisloggedin", true);
         localStorage.setItem("whishlist", "[]");
         document.getElementById("logginregis").style.display = "none";
         logoutFunction();
-/*         location.reload(); */
+        Toastify({
+          text: "Login successful",
+          duration: 3000,
+          style: {
+            background: "green",
+          }
+          }).showToast();
     } else {
         loginErrorMsg.style.opacity = 1;
     }
