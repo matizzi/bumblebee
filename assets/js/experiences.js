@@ -24,7 +24,16 @@ async function addExperience(){
         }
         generatedHtml+='</ul>'
         generatedHtml+='<p>' +experiencia.experienceEndDescription+ '</p>'
-        generatedHtml+='<div><a class="cidades-ver-mais" href="#formdest" role="button" >Buy Experience</a><img style="width:100px" src="assets/images/logo_1.png" alt="Bumblebee - Experience Agency">'
+        generatedHtml+='<div><a class="cidades-ver-mais" href="#formdest" role="button" >Buy Experience</a>'
+        let whishlist=JSON.parse(localStorage.getItem("whishlist"));
+        if(whishlist){
+            if(whishlist.indexOf(experiencia.experienceName)==-1){
+                generatedHtml+='<div class="heart-like-button" name="'+experiencia.experienceName+'"></div>'
+            }
+            else {
+                generatedHtml+='<div class="heart-like-button liked" name="'+experiencia.experienceName+'"></div>'
+            }
+        }
         generatedHtml+="</div>"
         generatedHtml+="</div>"
         generatedHtml+="</div>"
@@ -32,6 +41,29 @@ async function addExperience(){
         numero++;
     }
     document.getElementById("experiencesSection").innerHTML = generatedHtml;
+
+    const button = document.getElementsByClassName("heart-like-button");
+
+   for (let botao of button){
+        botao.addEventListener("click", (event) => {
+            let nomePack=event.target.getAttribute("name")
+            if (localStorage.getItem("userisloggedin")){
+                if (botao.classList.contains("liked")) {
+                    botao.classList.remove("liked");
+                    let whishlist=JSON.parse(localStorage.getItem("whishlist"));
+                    const myindex=whishlist.indexOf(nomePack);
+                    whishlist.splice(myindex, 1);
+                    localStorage.setItem("whishlist", JSON.stringify(whishlist));
+                } else {
+                    let whishlist=JSON.parse(localStorage.getItem("whishlist"));
+                    whishlist.push(nomePack);
+                    localStorage.setItem("whishlist", JSON.stringify(whishlist));
+                    botao.classList.add("liked");
+                }
+            }
+        })
+    };
+    
 }
 
 async function addExperienceHome(){

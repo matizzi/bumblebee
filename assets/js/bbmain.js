@@ -31,6 +31,9 @@ async function loadDynamicContent(htmlName){
         await addServiceRowToTable();
     }
 
+    else if (htmlName.includes("myaccount")){
+        whishlist()
+    }
 }
 
 function loadCity(nomecidade){

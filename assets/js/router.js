@@ -73,6 +73,9 @@ Router.prototype = {
             title=htmlName;
         }
         title=title.replace(".html","");
+        if (title.includes ("-")){
+            title=title.replace("-"," ");
+        }
         //capitalize text
         title=title[0].toUpperCase() + title.substring(1);
         document.title = title + ' - Bumblebee';
