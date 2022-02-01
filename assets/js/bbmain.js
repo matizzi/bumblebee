@@ -22,6 +22,15 @@ async function loadDynamicContent(htmlName){
         await carrosselCidades("carrossel-cidades-servicos","json/cities.json")
         owlCarouselFunc()
     }
+    else if (htmlName.includes("formdest")){
+        await addExperienceSelectField();
+        await addExperienceRowToTable();
+    }
+    else if (htmlName.includes("formextras")){
+        await addServiceToCheckbox();
+        await addServiceRowToTable();
+    }
+
     else if (htmlName.includes("myaccount")){
         whishlist()
     }
