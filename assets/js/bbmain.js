@@ -31,7 +31,7 @@ async function loadDynamicContent(htmlName){
         await addServiceRowToTable();
     }
 
-    else if (htmlName.includes("myaccount")){
+    else if (htmlName.includes("my-account")){
         whishlist()
     }
 }
@@ -77,7 +77,7 @@ function init() {
         new Route('formpass', 'formpass.html'),
         new Route('formextras', 'formextras.html'),
         new Route('formcheckout', 'formcheckout.html'),
-        new Route('myaccount', 'myaccount.html' )
+        new Route('my-account', 'my-account.html' )
     ]);
 }
 
