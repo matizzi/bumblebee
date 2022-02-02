@@ -76,7 +76,7 @@ Router.prototype = {
         if (title.includes ("-")){
             title=title.replace("-"," ");
         }
-        //capitalize text
+        
         title=title[0].toUpperCase() + title.substring(1);
         document.title = title + ' - Bumblebee';
     }
