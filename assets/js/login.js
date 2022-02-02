@@ -35,7 +35,7 @@ loginButton.addEventListener("click", (e) => {
         document.getElementById("modal-close").click();
        /*  alert("You have successfully logged in."); */
         localStorage.setItem("userisloggedin", true);
-        localStorage.setItem("whishlist", "[]");
+        localStorage.setItem("wishlist", "[]");
         document.getElementById("logginregis").style.display = "none";
         logoutFunction();
         Toastify({
@@ -55,10 +55,10 @@ if (localStorage.getItem("userisloggedin")){
   logoutFunction();
 }
 
-function whishlist(){
+function wishlist(){
   let generatedHtml="";
-  let whishlist=JSON.parse(localStorage.getItem("whishlist"));
-  for(experiencia of whishlist){
+  let wishlist=JSON.parse(localStorage.getItem("wishlist"));
+  for(experiencia of wishlist){
     generatedHtml+="<li>"+experiencia+"</li>";
   }
   document.getElementById("wishlist").innerHTML=generatedHtml;

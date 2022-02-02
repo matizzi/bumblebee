@@ -25,9 +25,9 @@ async function addExperience(){
         generatedHtml+='</ul>'
         generatedHtml+='<p>' +experiencia.experienceEndDescription+ '</p>'
         generatedHtml+='<div><a class="cidades-ver-mais" href="#formdest" role="button" >Buy Experience</a>'
-        let whishlist=JSON.parse(localStorage.getItem("whishlist"));
-        if(whishlist){
-            if(whishlist.indexOf(experiencia.experienceName)==-1){
+        let wishlist=JSON.parse(localStorage.getItem("wishlist"));
+        if(wishlist){
+            if(wishlist.indexOf(experiencia.experienceName)==-1){
                 generatedHtml+='<div class="heart-like-button" name="'+experiencia.experienceName+'"></div>'
             }
             else {
@@ -50,14 +50,14 @@ async function addExperience(){
             if (localStorage.getItem("userisloggedin")){
                 if (botao.classList.contains("liked")) {
                     botao.classList.remove("liked");
-                    let whishlist=JSON.parse(localStorage.getItem("whishlist"));
-                    const myindex=whishlist.indexOf(nomePack);
-                    whishlist.splice(myindex, 1);
-                    localStorage.setItem("whishlist", JSON.stringify(whishlist));
+                    let wishlist=JSON.parse(localStorage.getItem("wishlist"));
+                    const myindex=wishlist.indexOf(nomePack);
+                    wishlist.splice(myindex, 1);
+                    localStorage.setItem("wishlist", JSON.stringify(wishlist));
                 } else {
-                    let whishlist=JSON.parse(localStorage.getItem("whishlist"));
-                    whishlist.push(nomePack);
-                    localStorage.setItem("whishlist", JSON.stringify(whishlist));
+                    let wishlist=JSON.parse(localStorage.getItem("wishlist"));
+                    wishlist.push(nomePack);
+                    localStorage.setItem("wishlist", JSON.stringify(wishlist));
                     botao.classList.add("liked");
                 }
             }
